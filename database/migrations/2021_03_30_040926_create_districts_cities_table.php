@@ -20,6 +20,10 @@ class CreateDistrictsCitiesTable extends Migration
             $table->integer('type');
             $table->string('state_capital');
         });
+
+        Schema::table('users', function (Blueprint $table) {
+            $table->foreign('districts_city_id')->references('id')->on('districts_cities')->onDelete('cascade')->onUpdate('cascade');
+        });
     }
 
     /**

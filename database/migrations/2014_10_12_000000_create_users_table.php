@@ -17,8 +17,12 @@ class CreateUsersTable extends Migration
             $table->id();
             $table->string('name');
             $table->string('username')->unique();
-            $table->string('email')->unique();
+            $table->string('email')->nullable()->unique();
             $table->timestamp('email_verified_at')->nullable();
+            $table->bigInteger('province_id')->nullable()->unsigned();
+            $table->bigInteger('districts_city_id')->nullable()->unsigned();
+            $table->integer('order_province')->nullable();
+            $table->integer('order_city')->nullable();
             $table->string('password');
             $table->rememberToken();
             $table->foreignId('current_team_id')->nullable();

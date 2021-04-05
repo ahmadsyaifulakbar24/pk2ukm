@@ -17,6 +17,10 @@ class CreateProvincesTable extends Migration
             $table->id();
             $table->string('province');
         });
+
+        Schema::table('users', function (Blueprint $table) {
+            $table->foreign('province_id')->references('id')->on('provinces')->onDelete('cascade')->onUpdate('cascade');
+        });
     }
 
     /**
