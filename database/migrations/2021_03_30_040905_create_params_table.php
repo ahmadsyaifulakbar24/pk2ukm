@@ -15,7 +15,7 @@ class CreateParamsTable extends Migration
     {
         Schema::create('params', function (Blueprint $table) {
             $table->id();
-            $table->bigInteger('parent_id');
+            $table->bigInteger('parent_id')->nullable();
             $table->string('category_param');
             $table->string('param');
             $table->boolean('active');
