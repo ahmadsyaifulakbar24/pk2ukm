@@ -335,7 +335,7 @@ class ParamSeeder extends Seeder
 
         DB::table('params')->insert([
             'parent_id' => NULL,
-            'category_param' => 'type_pelatihan',
+            'category_param' => 'training_type',
             'param' => 'Pelatihan Perkoperasian',
             'active' => true,
             'order' =>  1,
@@ -343,7 +343,7 @@ class ParamSeeder extends Seeder
 
         DB::table('params')->insert([
             'parent_id' => NULL,
-            'category_param' => 'type_pelatihan',
+            'category_param' => 'training_type',
             'param' => 'Kewirausahaan',
             'active' => true,
             'order' =>  2,
@@ -351,7 +351,7 @@ class ParamSeeder extends Seeder
 
         DB::table('params')->insert([
             'parent_id' => NULL,
-            'category_param' => 'type_pelatihan',
+            'category_param' => 'training_type',
             'param' => 'Keterampilan Teknis (Vocational)',
             'active' => true,
             'order' =>  3,
@@ -359,7 +359,7 @@ class ParamSeeder extends Seeder
 
         DB::table('params')->insert([
             'parent_id' => NULL,
-            'category_param' => 'type_pelatihan',
+            'category_param' => 'training_type',
             'param' => 'Teknologi Informasi',
             'active' => true,
             'order' =>  4,
@@ -367,7 +367,7 @@ class ParamSeeder extends Seeder
 
         DB::table('params')->insert([
             'parent_id' => NULL,
-            'category_param' => 'type_pelatihan',
+            'category_param' => 'training_type',
             'param' => 'Kompetensi Berdasarkan Standar Kompetensi Kerja Nasional Indonesia',
             'active' => true,
             'order' =>  5,
@@ -375,7 +375,7 @@ class ParamSeeder extends Seeder
 
         DB::table('params')->insert([
             'parent_id' => NULL,
-            'category_param' => 'type_pelatihan',
+            'category_param' => 'training_type',
             'param' => 'Manajerial',
             'active' => true,
             'order' =>  6,

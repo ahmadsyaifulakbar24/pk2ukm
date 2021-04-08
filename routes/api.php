@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\API\Auth\LoginController;
 use App\Http\Controllers\API\Auth\LogoutController;
+use App\Http\Controllers\API\Auth\PasswordResetController;
 use App\Http\Controllers\API\Auth\UserController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
@@ -25,4 +26,5 @@ Route::post('login', LoginController::class);
 Route::middleware('auth:sanctum')->group(function () {
     Route::post('logout', LogoutController::class);
     Route::get('user', UserController::class);
+    Route::post('password_reset', PasswordResetController::class);
 });

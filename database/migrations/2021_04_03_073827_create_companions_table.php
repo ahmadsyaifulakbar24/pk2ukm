@@ -28,7 +28,6 @@ class CreateCompanionsTable extends Migration
             $table->foreignId('districts_city_id')->constrained('districts_cities')->onDelete('cascade')->onUpdate('cascade');
             $table->string('phone_number');
             $table->string('email');
-            $table->string('profile_image');
             $table->timestamps();
         });
     }

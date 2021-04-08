@@ -22,10 +22,7 @@ class CreateBudgedPerformancesTable extends Migration
             $table->bigInteger('budged_realization2');
             $table->bigInteger('document_budged_realization2');
             $table->integer('target_participant');
-            $table->integer('participant_realization1');
-            $table->integer('participant_realization2');
             $table->integer('target_companion');
-            $table->integer('companion_realization');
             $table->timestamps();
         });
     }
