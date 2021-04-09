@@ -19,7 +19,8 @@ class DatabaseSeeder extends Seeder
             ParamSeeder::class,
             ProvinceSeeder::class,
             DistrictsCitySeeder::class,
-            UserSeeder::class
+            UserSeeder::class,
+            BudgedPerformanceSeeder::class,
         ]);
     }
 }
