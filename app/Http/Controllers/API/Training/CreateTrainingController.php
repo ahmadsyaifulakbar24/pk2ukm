@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Controllers\Training;
+namespace App\Http\Controllers\API\Training;
 
 use App\Helpers\ResponseFormatter;
 use App\Http\Controllers\Controller;
@@ -40,7 +40,7 @@ class CreateTrainingController extends Controller
 
         return ResponseFormatter::success(
             new TrainingResource($training),
-            'success get training data'
+            'success create training data'
         );
     }
 }
