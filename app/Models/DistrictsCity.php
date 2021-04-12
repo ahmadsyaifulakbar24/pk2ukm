@@ -7,7 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class DistrictsCity extends Model
 {
-    protected $table = ['districts_cities'];
+    protected $table = 'districts_cities';
     protected $fillable = [
         'province_id',
         'districts_city',
@@ -16,4 +16,9 @@ class DistrictsCity extends Model
     ];
 
     use HasFactory;
+
+    public function  training()
+    {
+        return $this->hasMany(Training::class, 'districts_city_id');
+    }
 }

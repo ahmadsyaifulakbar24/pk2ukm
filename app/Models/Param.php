@@ -17,4 +17,9 @@ class Param extends Model
     ];
 
     use HasFactory;
+
+    public function training_type()
+    {
+        return $this->hasMany(Training::class, 'training_type_id');
+    }
 }
