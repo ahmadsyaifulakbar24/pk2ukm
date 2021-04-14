@@ -7,6 +7,8 @@ use Illuminate\Database\Eloquent\Model;
 
 class BudgedPerformance extends Model
 {
+    use HasFactory;
+
     protected $table = 'budged_performances';
     protected $fillable = [
         'user_id',
@@ -19,5 +21,8 @@ class BudgedPerformance extends Model
         'target_companion',
     ];
 
-    use HasFactory;
+    public function user()
+    {
+        return $this->belongsTo(User::class, 'user_id');
+    }
 }

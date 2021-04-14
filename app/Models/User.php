@@ -69,4 +69,14 @@ class User extends Authenticatable
     {
         return $this->hasMany(Training::class, 'user_id');
     }
+
+    public function skpd()
+    {
+        return $this->hasOne(Skpd::class, 'user_id', 'id');
+    }
+
+    public function budged_performance()
+    {
+        return $this->hasOne(BudgedPerformance::class, 'user_id');
+    }
 }

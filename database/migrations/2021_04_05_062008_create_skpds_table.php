@@ -15,7 +15,7 @@ class CreateSkpdsTable extends Migration
     {
         Schema::create('skpds', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('user_id')->constrained('params')->onDelete('cascade')->onUpdate('cascade');
+            $table->foreignId('user_id')->unique()->constrained('params')->onDelete('cascade')->onUpdate('cascade');
             $table->string('name_dinas');
             $table->string('nip_dinas');
             $table->string('phone_number_dinas');

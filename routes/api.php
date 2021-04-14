@@ -4,6 +4,10 @@ use App\Http\Controllers\API\Auth\LoginController;
 use App\Http\Controllers\API\Auth\LogoutController;
 use App\Http\Controllers\API\Auth\PasswordResetController;
 use App\Http\Controllers\API\Auth\UserController;
+use App\Http\Controllers\API\BudgedPerformance\GetBudgedPerformanceController;
+use App\Http\Controllers\API\BudgedPerformance\UpdateBudgedPerformanceController;
+use App\Http\Controllers\API\SKPD\CreateSkpdController;
+use App\Http\Controllers\API\Skpd\GetSkpdController;
 use App\Http\Controllers\API\Training\CreateTrainingController;
 use App\Http\Controllers\API\Training\DeleteTrainingController;
 use App\Http\Controllers\API\Training\GetTrainingController;
@@ -37,5 +41,15 @@ Route::middleware('auth:sanctum')->group(function () {
         Route::post('create', CreateTrainingController::class);
         Route::patch('{training:id}/update', UpdateTrainingController::class);
         Route::delete('{training:id}/delete', DeleteTrainingController::class);
+    });
+
+    Route::prefix('skpd')->group(function () {
+        Route::get('{user_id?}', GetSkpdController::class);
+        Route::post('create', CreateSkpdController::class);
+    });
+
+    Route::prefix('budged_performance')->group(function () {
+        Route::get('{user:id}', GetBudgedPerformanceController::class);
+        Route::post('update', UpdateBudgedPerformanceController::class);
     });
 });

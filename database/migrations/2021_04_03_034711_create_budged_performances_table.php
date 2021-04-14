@@ -15,12 +15,12 @@ class CreateBudgedPerformancesTable extends Migration
     {
         Schema::create('budged_performances', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('user_id')->constrained('users')->onDelete('cascade')->onUpdate('cascade');
+            $table->foreignId('user_id')->unique()->constrained('users')->onDelete('cascade')->onUpdate('cascade');
             $table->bigInteger('budged');
-            $table->bigInteger('budged_realization1');
-            $table->bigInteger('document_budged_realization1');
-            $table->bigInteger('budged_realization2');
-            $table->bigInteger('document_budged_realization2');
+            $table->bigInteger('budged_realization1')->nullable();
+            $table->text('document_budged_realization1')->nullable();
+            $table->bigInteger('budged_realization2')->nullable();
+            $table->text('document_budged_realization2')->nullable();
             $table->integer('target_participant');
             $table->integer('target_companion');
             $table->timestamps();
