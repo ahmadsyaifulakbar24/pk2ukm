@@ -2,6 +2,7 @@
 
 namespace App\Http\Resources\Participant;
 
+use App\Http\Resources\Monitoring\MonitoringResource;
 use App\Http\Resources\Param\ParamResource;
 use Illuminate\Http\Resources\Json\JsonResource;
 
@@ -30,13 +31,19 @@ class ParticipantResource extends JsonResource
             'province' => $this->province,
             'districts_city' => $this->districts_city,
             'profile_photo' => $this->profile_photo,
+
+            // Business Status
             'business_status' => new ParamResource($this->business_status),
+
+            // Koperasi
             'name_koperasi' => $this->name_koperasi,
             'address_koperasi' => $this->address_koperasi,
             'type_koperasi' =>  new ParamResource($this->type_koperasi),
             'date_establishment_koperasi' => $this->date_establishment_koperasi,
             'registrasion_number_koperasi' => $this->registrasion_number_koperasi,
             'position_koperasi' => new ParamResource($this->position_koperasi),
+
+            // UMKM
             'name_umkm' => $this->name_umkm,
             'address_umkm' => $this->address_umkm,
             'business_sector' => new ParamResource($this->business_sector),
@@ -45,6 +52,10 @@ class ParticipantResource extends JsonResource
             'position_umkm' => new ParamResource($this->position_umkm),
             'business_turnover' => $this->business_turnover,
             'number_employees' => $this->number_employees,
+
+            // Monitoring
+            'monitoring' => new MonitoringResource($this->monitoring),
+            
             'created_at' => $this->created_at,
             'updated_at' => $this->updated_at,
         ];

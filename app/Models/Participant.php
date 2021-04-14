@@ -54,6 +54,10 @@ class Participant extends Model
         return $this->belongsTo(Training::class, 'training_id');
     }
 
+    public function monitoring()
+    {
+        return $this->hasOne(Monitoring::class, 'participant_id');
+    }
     public function religion()
     {
         return $this->belongsTo(Param::class, 'religion_id');

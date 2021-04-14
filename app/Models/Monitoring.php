@@ -7,6 +7,8 @@ use Illuminate\Database\Eloquent\Model;
 
 class Monitoring extends Model
 {
+    use HasFactory;
+
     protected $table = 'monitorings';
     protected $fillable = [
         'participant_id',
@@ -15,5 +17,13 @@ class Monitoring extends Model
         'm3',
     ];
 
-    use HasFactory;
+    public function participant()
+    {
+        return $this->belongsTo(Participant::class, 'participant_id');
+    }
+
+    public function m2()
+    {
+        return $this->belongsTo(Param::class, 'm2_id');
+    }
 }

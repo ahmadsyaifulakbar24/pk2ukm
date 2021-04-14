@@ -94,6 +94,16 @@ class CreateParticipantController extends Controller
                     return $query->where('category_param', 'position_koperasi');
                 })
             ],
+
+            // Monitoring
+            'm1' => ['required', 'string'],
+            'm2_id' => [
+                'required',
+                Rule::exists('params', 'id')->where(function ($query) {
+                    return $query->where('category_param', 'training_needs');
+                }) 
+            ],
+            'm3' => ['required', 'string'],
         ]);
 
         if($training->status == 'unpublish'){
@@ -142,6 +152,13 @@ class CreateParticipantController extends Controller
         }
         
         $participant = $training->participant()->create($input);
+
+        $participant->monitoring()->create([
+            'm1' => $request->m1,
+            'm2_id' => $request->m2_id,
+            'm3' => $request->m3,
+        ]);
+        
         return new ParticipantResource($participant);
     }
 }
