@@ -6,6 +6,11 @@ use App\Http\Controllers\API\Auth\PasswordResetController;
 use App\Http\Controllers\API\Auth\UserController;
 use App\Http\Controllers\API\BudgedPerformance\GetBudgedPerformanceController;
 use App\Http\Controllers\API\BudgedPerformance\UpdateBudgedPerformanceController;
+use App\Http\Controllers\API\Param\GetParamController;
+use App\Http\Controllers\API\Participant\CreateParticipantController;
+use App\Http\Controllers\API\Participant\DeleteParticipantController;
+use App\Http\Controllers\API\Participant\GetParticipantController;
+use App\Http\Controllers\API\Participant\UpdateParticipantController;
 use App\Http\Controllers\API\SKPD\CreateSkpdController;
 use App\Http\Controllers\API\Skpd\GetSkpdController;
 use App\Http\Controllers\API\Training\CreateTrainingController;
@@ -39,7 +44,8 @@ Route::middleware('auth:sanctum')->group(function () {
     Route::prefix('training')->group(function () {
         Route::get('{user_id?}', GetTrainingController::class);
         Route::post('create', CreateTrainingController::class);
-        Route::patch('{training:id}/update', UpdateTrainingController::class);
+        Route::patch('{training:id}/update', [UpdateTrainingController::class, 'training']);
+        Route::patch('{training:id}/update_status', [UpdateTrainingController::class, 'status']);
         Route::delete('{training:id}/delete', DeleteTrainingController::class);
     });
 
@@ -51,5 +57,24 @@ Route::middleware('auth:sanctum')->group(function () {
     Route::prefix('budged_performance')->group(function () {
         Route::get('{user:id}', GetBudgedPerformanceController::class);
         Route::post('update', UpdateBudgedPerformanceController::class);
+    });
+
+    Route::prefix('participant')->group(function () {
+        Route::get('{training:id}', GetParticipantController::class);
+        Route::post('{training:id}/create', CreateParticipantController::class);
+        Route::post('{participant:id}/update', UpdateParticipantController::class);
+        Route::delete('{participant:id}/delete', DeleteParticipantController::class);
+    });
+
+    Route::prefix('param')->group(function () {
+        Route::get('education', [GetParamController::class, 'education']);
+        Route::get('religion', [GetParamController::class, 'religion']);
+        Route::get('business_status', [GetParamController::class, 'business_status']);
+        Route::get('business_sector', [GetParamController::class, 'business_sector']);
+        Route::get('position_umkm', [GetParamController::class, 'position_umkm']);
+        Route::get('type_koperasi', [GetParamController::class, 'type_koperasi']);
+        Route::get('position_koperasi', [GetParamController::class, 'position_koperasi']);
+        Route::get('training_needs', [GetParamController::class, 'training_needs']);
+        Route::get('training_type', [GetParamController::class, 'training_type']);
     });
 });

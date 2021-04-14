@@ -17,6 +17,7 @@ class Training extends Model
         'place',
         'province_id',
         'districts_city_id',
+        'status',
     ];
 
     use HasFactory;
@@ -39,5 +40,10 @@ class Training extends Model
     public function districts_city()
     {
         return $this->belongsTo(DistrictsCity::class, 'districts_city_id');
+    }
+
+    public function participant()
+    {
+        return $this->hasMany(Participant::class, 'training_id');
     }
 }

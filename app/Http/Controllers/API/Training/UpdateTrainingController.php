@@ -11,7 +11,7 @@ use Illuminate\Validation\Rule;
 
 class UpdateTrainingController extends Controller
 {
-    public function __invoke(Request $request, Training $training)
+    public function training(Request $request, Training $training)
     {
         $this->validate($request, [
             'training_type_id' => [
@@ -33,6 +33,20 @@ class UpdateTrainingController extends Controller
         return ResponseFormatter::success(
             new TrainingResource($training),
             'success update training data'    
+        );
+
+    }
+
+    public function status(Request $request, Training $training)
+    {
+        $this->validate($request, [
+            'status' => ['required', 'in:publish,unpublish'],
+        ]);
+        
+        $training->update([ 'status' => $request->status ]);
+        return ResponseFormatter::success(
+            new TrainingResource($training),
+            'success update data status training'
         );
 
     }

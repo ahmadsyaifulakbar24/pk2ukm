@@ -36,6 +36,7 @@ class CreateTrainingController extends Controller
 
         $inputTraining = $request->all();
         $inputTraining['province_id'] =  $user->province_id;
+        $inputTraining['status'] =  'publish';
         $training = $user->training()->create($inputTraining);
 
         return ResponseFormatter::success(

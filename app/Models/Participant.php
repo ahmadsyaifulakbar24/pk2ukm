@@ -7,6 +7,8 @@ use Illuminate\Database\Eloquent\Model;
 
 class Participant extends Model
 {
+    use HasFactory;
+
     protected $table = 'participants';
     protected $fillable = [
         'training_id',
@@ -21,8 +23,9 @@ class Participant extends Model
         'education_id',
         'phone_number', 
         'email',
-        'province',
+        'province_id',
         'districts_city_id',
+        'profile_photo',
 
         // participant status
         'business_status_id',
@@ -45,6 +48,54 @@ class Participant extends Model
         'registrasion_number_koperasi',
         'position_koperasi_id',
     ]; 
-    
-    use HasFactory;
+
+    public function training ()
+    {
+        return $this->belongsTo(Training::class, 'training_id');
+    }
+
+    public function religion()
+    {
+        return $this->belongsTo(Param::class, 'religion_id');
+    }
+
+    public function education()
+    {
+        return $this->belongsTo(Param::class, 'education_id');
+    }
+
+    public function province()
+    {
+        return $this->belongsTo(Province::class, 'province_id');
+    }
+
+    public function districts_city()
+    {
+        return $this->belongsTo(DistrictsCity::class, 'districts_city_id');
+    }
+
+    public function business_status()
+    {
+        return $this->belongsTo(Param::class, 'business_status_id');
+    }
+
+    public function type_koperasi()
+    {
+        return $this->belongsTo(Param::class, 'type_koperasi_id');
+    }
+
+    public function position_koperasi()
+    {
+        return $this->belongsTo(Param::class, 'position_koperasi_id');
+    }
+
+    public function business_sector()
+    {
+        return $this->belongsTo(Param::class, 'business_sector_id');
+    }
+
+    public function position_umkm()
+    {
+        return $this->belongsTo(Param::class, 'position_umkm_id');
+    }
 }

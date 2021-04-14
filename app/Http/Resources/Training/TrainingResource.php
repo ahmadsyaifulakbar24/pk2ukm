@@ -24,6 +24,7 @@ class TrainingResource extends JsonResource
             'place' => $this->place,
             'province' => $this->province,
             'districts_city' => $this->districts_city,
+            'status' => $this->status,
             'crated_at' => $this->created_at,
             'update_at' => $this->updated_at,
         ];

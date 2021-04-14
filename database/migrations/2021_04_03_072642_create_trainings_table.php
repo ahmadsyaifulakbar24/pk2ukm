@@ -23,6 +23,7 @@ class CreateTrainingsTable extends Migration
             $table->string('place');
             $table->foreignId('province_id')->constrained('provinces')->onDelete('cascade')->onUpdate('cascade');
             $table->foreignId('districts_city_id')->constrained('districts_cities')->onDelete('cascade')->onUpdate('cascade');
+            $table->string('status');
             $table->timestamps();
         });
     }
