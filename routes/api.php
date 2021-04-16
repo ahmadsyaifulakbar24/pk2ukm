@@ -15,7 +15,7 @@ use App\Http\Controllers\API\Participant\CreateParticipantController;
 use App\Http\Controllers\API\Participant\DeleteParticipantController;
 use App\Http\Controllers\API\Participant\GetParticipantController;
 use App\Http\Controllers\API\Participant\UpdateParticipantController;
-use App\Http\Controllers\API\SKPD\CreateSkpdController;
+use App\Http\Controllers\API\Skpd\CreateSkpdController;
 use App\Http\Controllers\API\Skpd\GetSkpdController;
 use App\Http\Controllers\API\Training\CreateTrainingController;
 use App\Http\Controllers\API\Training\DeleteTrainingController;
