@@ -139,9 +139,9 @@ class UpdateParticipantController extends Controller
             }
         }
 
-        $participant_id = $participant->update($input);
+        $participant->update($input);
         return ResponseFormatter::success(
-            new ParticipantResource(Participant::find($participant_id)),
+            new ParticipantResource($participant),
             'success update participant',
         );
     }

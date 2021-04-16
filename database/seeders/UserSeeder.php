@@ -34,7 +34,7 @@ class UserSeeder extends Seeder
             'two_factor_secret' => NULL,
             'two_factor_recovery_codes' => NULL,
             'remember_token' => NULL,
-            'role_id' => NULL,
+            'role_id' => 200,
             'profile_photo_path' => NULL,
             'created_at' => NULL,
             'updated_at' => NULL
@@ -52,7 +52,7 @@ class UserSeeder extends Seeder
             'two_factor_secret' => NULL,
             'two_factor_recovery_codes' => NULL,
             'remember_token' => NULL,
-            'role_id' => NULL,
+            'role_id' => 200,
             'profile_photo_path' => NULL,
             'created_at' => NULL,
             'updated_at' => NULL
@@ -70,7 +70,7 @@ class UserSeeder extends Seeder
             'two_factor_secret' => NULL,
             'two_factor_recovery_codes' => NULL,
             'remember_token' => NULL,
-            'role_id' => NULL,
+            'role_id' => 200,
             'profile_photo_path' => NULL,
             'created_at' => NULL,
             'updated_at' => NULL
@@ -88,7 +88,7 @@ class UserSeeder extends Seeder
             'two_factor_secret' => NULL,
             'two_factor_recovery_codes' => NULL,
             'remember_token' => NULL,
-            'role_id' => NULL,
+            'role_id' => 200,
             'profile_photo_path' => NULL,
             'created_at' => NULL,
             'updated_at' => NULL
@@ -106,7 +106,7 @@ class UserSeeder extends Seeder
             'two_factor_secret' => NULL,
             'two_factor_recovery_codes' => NULL,
             'remember_token' => NULL,
-            'role_id' => NULL,
+            'role_id' => 200,
             'profile_photo_path' => NULL,
             'created_at' => NULL,
             'updated_at' => NULL
@@ -124,7 +124,7 @@ class UserSeeder extends Seeder
             'two_factor_secret' => NULL,
             'two_factor_recovery_codes' => NULL,
             'remember_token' => NULL,
-            'role_id' => NULL,
+            'role_id' => 200,
             'profile_photo_path' => NULL,
             'created_at' => NULL,
             'updated_at' => NULL
@@ -142,7 +142,7 @@ class UserSeeder extends Seeder
             'two_factor_secret' => NULL,
             'two_factor_recovery_codes' => NULL,
             'remember_token' => NULL,
-            'role_id' => NULL,
+            'role_id' => 200,
             'profile_photo_path' => NULL,
             'created_at' => NULL,
             'updated_at' => NULL
@@ -160,7 +160,7 @@ class UserSeeder extends Seeder
             'two_factor_secret' => NULL,
             'two_factor_recovery_codes' => NULL,
             'remember_token' => NULL,
-            'role_id' => NULL,
+            'role_id' => 200,
             'profile_photo_path' => NULL,
             'created_at' => NULL,
             'updated_at' => NULL
@@ -178,7 +178,7 @@ class UserSeeder extends Seeder
             'two_factor_secret' => NULL,
             'two_factor_recovery_codes' => NULL,
             'remember_token' => NULL,
-            'role_id' => NULL,
+            'role_id' => 200,
             'profile_photo_path' => NULL,
             'created_at' => NULL,
             'updated_at' => NULL
@@ -196,7 +196,7 @@ class UserSeeder extends Seeder
             'two_factor_secret' => NULL,
             'two_factor_recovery_codes' => NULL,
             'remember_token' => NULL,
-            'role_id' => NULL,
+            'role_id' => 200,
             'profile_photo_path' => NULL,
             'created_at' => NULL,
             'updated_at' => NULL
@@ -214,7 +214,7 @@ class UserSeeder extends Seeder
             'two_factor_secret' => NULL,
             'two_factor_recovery_codes' => NULL,
             'remember_token' => NULL,
-            'role_id' => NULL,
+            'role_id' => 200,
             'profile_photo_path' => NULL,
             'created_at' => NULL,
             'updated_at' => NULL
@@ -232,7 +232,7 @@ class UserSeeder extends Seeder
             'two_factor_secret' => NULL,
             'two_factor_recovery_codes' => NULL,
             'remember_token' => NULL,
-            'role_id' => NULL,
+            'role_id' => 200,
             'profile_photo_path' => NULL,
             'created_at' => NULL,
             'updated_at' => NULL
@@ -250,7 +250,7 @@ class UserSeeder extends Seeder
             'two_factor_secret' => NULL,
             'two_factor_recovery_codes' => NULL,
             'remember_token' => NULL,
-            'role_id' => NULL,
+            'role_id' => 200,
             'profile_photo_path' => NULL,
             'created_at' => NULL,
             'updated_at' => NULL
@@ -268,7 +268,7 @@ class UserSeeder extends Seeder
             'two_factor_secret' => NULL,
             'two_factor_recovery_codes' => NULL,
             'remember_token' => NULL,
-            'role_id' => NULL,
+            'role_id' => 200,
             'profile_photo_path' => NULL,
             'created_at' => NULL,
             'updated_at' => NULL
@@ -286,7 +286,7 @@ class UserSeeder extends Seeder
             'two_factor_secret' => NULL,
             'two_factor_recovery_codes' => NULL,
             'remember_token' => NULL,
-            'role_id' => NULL,
+            'role_id' => 200,
             'profile_photo_path' => NULL,
             'created_at' => NULL,
             'updated_at' => NULL
@@ -304,7 +304,7 @@ class UserSeeder extends Seeder
             'two_factor_secret' => NULL,
             'two_factor_recovery_codes' => NULL,
             'remember_token' => NULL,
-            'role_id' => NULL,
+            'role_id' => 200,
             'profile_photo_path' => NULL,
             'created_at' => NULL,
             'updated_at' => NULL
@@ -322,7 +322,7 @@ class UserSeeder extends Seeder
             'two_factor_secret' => NULL,
             'two_factor_recovery_codes' => NULL,
             'remember_token' => NULL,
-            'role_id' => NULL,
+            'role_id' => 200,
             'profile_photo_path' => NULL,
             'created_at' => NULL,
             'updated_at' => NULL
@@ -340,7 +340,7 @@ class UserSeeder extends Seeder
             'two_factor_secret' => NULL,
             'two_factor_recovery_codes' => NULL,
             'remember_token' => NULL,
-            'role_id' => NULL,
+            'role_id' => 200,
             'profile_photo_path' => NULL,
             'created_at' => NULL,
             'updated_at' => NULL
@@ -358,7 +358,7 @@ class UserSeeder extends Seeder
             'two_factor_secret' => NULL,
             'two_factor_recovery_codes' => NULL,
             'remember_token' => NULL,
-            'role_id' => NULL,
+            'role_id' => 200,
             'profile_photo_path' => NULL,
             'created_at' => NULL,
             'updated_at' => NULL
@@ -376,7 +376,7 @@ class UserSeeder extends Seeder
             'two_factor_secret' => NULL,
             'two_factor_recovery_codes' => NULL,
             'remember_token' => NULL,
-            'role_id' => NULL,
+            'role_id' => 200,
             'profile_photo_path' => NULL,
             'created_at' => NULL,
             'updated_at' => NULL
@@ -394,7 +394,7 @@ class UserSeeder extends Seeder
             'two_factor_secret' => NULL,
             'two_factor_recovery_codes' => NULL,
             'remember_token' => NULL,
-            'role_id' => NULL,
+            'role_id' => 200,
             'profile_photo_path' => NULL,
             'created_at' => NULL,
             'updated_at' => NULL
@@ -412,7 +412,7 @@ class UserSeeder extends Seeder
             'two_factor_secret' => NULL,
             'two_factor_recovery_codes' => NULL,
             'remember_token' => NULL,
-            'role_id' => NULL,
+            'role_id' => 200,
             'profile_photo_path' => NULL,
             'created_at' => NULL,
             'updated_at' => NULL
@@ -430,7 +430,7 @@ class UserSeeder extends Seeder
             'two_factor_secret' => NULL,
             'two_factor_recovery_codes' => NULL,
             'remember_token' => NULL,
-            'role_id' => NULL,
+            'role_id' => 200,
             'profile_photo_path' => NULL,
             'created_at' => NULL,
             'updated_at' => NULL
@@ -448,7 +448,7 @@ class UserSeeder extends Seeder
             'two_factor_secret' => NULL,
             'two_factor_recovery_codes' => NULL,
             'remember_token' => NULL,
-            'role_id' => NULL,
+            'role_id' => 200,
             'profile_photo_path' => NULL,
             'created_at' => NULL,
             'updated_at' => NULL
@@ -466,7 +466,7 @@ class UserSeeder extends Seeder
             'two_factor_secret' => NULL,
             'two_factor_recovery_codes' => NULL,
             'remember_token' => NULL,
-            'role_id' => NULL,
+            'role_id' => 200,
             'profile_photo_path' => NULL,
             'created_at' => NULL,
             'updated_at' => NULL
@@ -484,7 +484,7 @@ class UserSeeder extends Seeder
             'two_factor_secret' => NULL,
             'two_factor_recovery_codes' => NULL,
             'remember_token' => NULL,
-            'role_id' => NULL,
+            'role_id' => 200,
             'profile_photo_path' => NULL,
             'created_at' => NULL,
             'updated_at' => NULL
@@ -502,7 +502,7 @@ class UserSeeder extends Seeder
             'two_factor_secret' => NULL,
             'two_factor_recovery_codes' => NULL,
             'remember_token' => NULL,
-            'role_id' => NULL,
+            'role_id' => 200,
             'profile_photo_path' => NULL,
             'created_at' => NULL,
             'updated_at' => NULL
@@ -520,7 +520,7 @@ class UserSeeder extends Seeder
             'two_factor_secret' => NULL,
             'two_factor_recovery_codes' => NULL,
             'remember_token' => NULL,
-            'role_id' => NULL,
+            'role_id' => 200,
             'profile_photo_path' => NULL,
             'created_at' => NULL,
             'updated_at' => NULL
@@ -538,7 +538,7 @@ class UserSeeder extends Seeder
             'two_factor_secret' => NULL,
             'two_factor_recovery_codes' => NULL,
             'remember_token' => NULL,
-            'role_id' => NULL,
+            'role_id' => 200,
             'profile_photo_path' => NULL,
             'created_at' => NULL,
             'updated_at' => NULL
@@ -556,7 +556,7 @@ class UserSeeder extends Seeder
             'two_factor_secret' => NULL,
             'two_factor_recovery_codes' => NULL,
             'remember_token' => NULL,
-            'role_id' => NULL,
+            'role_id' => 200,
             'profile_photo_path' => NULL,
             'created_at' => NULL,
             'updated_at' => NULL
@@ -574,7 +574,7 @@ class UserSeeder extends Seeder
             'two_factor_secret' => NULL,
             'two_factor_recovery_codes' => NULL,
             'remember_token' => NULL,
-            'role_id' => NULL,
+            'role_id' => 200,
             'profile_photo_path' => NULL,
             'created_at' => NULL,
             'updated_at' => NULL
@@ -592,7 +592,7 @@ class UserSeeder extends Seeder
             'two_factor_secret' => NULL,
             'two_factor_recovery_codes' => NULL,
             'remember_token' => NULL,
-            'role_id' => NULL,
+            'role_id' => 200,
             'profile_photo_path' => NULL,
             'created_at' => NULL,
             'updated_at' => NULL
@@ -610,7 +610,7 @@ class UserSeeder extends Seeder
             'two_factor_secret' => NULL,
             'two_factor_recovery_codes' => NULL,
             'remember_token' => NULL,
-            'role_id' => NULL,
+            'role_id' => 200,
             'profile_photo_path' => NULL,
             'created_at' => NULL,
             'updated_at' => NULL
@@ -628,7 +628,7 @@ class UserSeeder extends Seeder
             'two_factor_secret' => NULL,
             'two_factor_recovery_codes' => NULL,
             'remember_token' => NULL,
-            'role_id' => NULL,
+            'role_id' => 200,
             'profile_photo_path' => NULL,
             'created_at' => NULL,
             'updated_at' => NULL
@@ -646,7 +646,7 @@ class UserSeeder extends Seeder
             'two_factor_secret' => NULL,
             'two_factor_recovery_codes' => NULL,
             'remember_token' => NULL,
-            'role_id' => NULL,
+            'role_id' => 200,
             'profile_photo_path' => NULL,
             'created_at' => NULL,
             'updated_at' => NULL
@@ -664,7 +664,7 @@ class UserSeeder extends Seeder
             'two_factor_secret' => NULL,
             'two_factor_recovery_codes' => NULL,
             'remember_token' => NULL,
-            'role_id' => NULL,
+            'role_id' => 200,
             'profile_photo_path' => NULL,
             'created_at' => NULL,
             'updated_at' => NULL
@@ -682,7 +682,7 @@ class UserSeeder extends Seeder
             'two_factor_secret' => NULL,
             'two_factor_recovery_codes' => NULL,
             'remember_token' => NULL,
-            'role_id' => NULL,
+            'role_id' => 200,
             'profile_photo_path' => NULL,
             'created_at' => NULL,
             'updated_at' => NULL
@@ -700,7 +700,7 @@ class UserSeeder extends Seeder
             'two_factor_secret' => NULL,
             'two_factor_recovery_codes' => NULL,
             'remember_token' => NULL,
-            'role_id' => NULL,
+            'role_id' => 200,
             'profile_photo_path' => NULL,
             'created_at' => NULL,
             'updated_at' => NULL
@@ -718,7 +718,7 @@ class UserSeeder extends Seeder
             'two_factor_secret' => NULL,
             'two_factor_recovery_codes' => NULL,
             'remember_token' => NULL,
-            'role_id' => NULL,
+            'role_id' => 200,
             'profile_photo_path' => NULL,
             'created_at' => NULL,
             'updated_at' => NULL
@@ -736,7 +736,7 @@ class UserSeeder extends Seeder
             'two_factor_secret' => NULL,
             'two_factor_recovery_codes' => NULL,
             'remember_token' => NULL,
-            'role_id' => NULL,
+            'role_id' => 200,
             'profile_photo_path' => NULL,
             'created_at' => NULL,
             'updated_at' => NULL
@@ -754,7 +754,7 @@ class UserSeeder extends Seeder
             'two_factor_secret' => NULL,
             'two_factor_recovery_codes' => NULL,
             'remember_token' => NULL,
-            'role_id' => NULL,
+            'role_id' => 200,
             'profile_photo_path' => NULL,
             'created_at' => NULL,
             'updated_at' => NULL
@@ -772,7 +772,7 @@ class UserSeeder extends Seeder
             'two_factor_secret' => NULL,
             'two_factor_recovery_codes' => NULL,
             'remember_token' => NULL,
-            'role_id' => NULL,
+            'role_id' => 200,
             'profile_photo_path' => NULL,
             'created_at' => NULL,
             'updated_at' => NULL
@@ -790,7 +790,7 @@ class UserSeeder extends Seeder
             'two_factor_secret' => NULL,
             'two_factor_recovery_codes' => NULL,
             'remember_token' => NULL,
-            'role_id' => NULL,
+            'role_id' => 200,
             'profile_photo_path' => NULL,
             'created_at' => NULL,
             'updated_at' => NULL
@@ -808,7 +808,7 @@ class UserSeeder extends Seeder
             'two_factor_secret' => NULL,
             'two_factor_recovery_codes' => NULL,
             'remember_token' => NULL,
-            'role_id' => NULL,
+            'role_id' => 200,
             'profile_photo_path' => NULL,
             'created_at' => NULL,
             'updated_at' => NULL
@@ -826,7 +826,7 @@ class UserSeeder extends Seeder
             'two_factor_secret' => NULL,
             'two_factor_recovery_codes' => NULL,
             'remember_token' => NULL,
-            'role_id' => NULL,
+            'role_id' => 200,
             'profile_photo_path' => NULL,
             'created_at' => NULL,
             'updated_at' => NULL
@@ -844,7 +844,7 @@ class UserSeeder extends Seeder
             'two_factor_secret' => NULL,
             'two_factor_recovery_codes' => NULL,
             'remember_token' => NULL,
-            'role_id' => NULL,
+            'role_id' => 200,
             'profile_photo_path' => NULL,
             'created_at' => NULL,
             'updated_at' => NULL
@@ -862,7 +862,7 @@ class UserSeeder extends Seeder
             'two_factor_secret' => NULL,
             'two_factor_recovery_codes' => NULL,
             'remember_token' => NULL,
-            'role_id' => NULL,
+            'role_id' => 200,
             'profile_photo_path' => NULL,
             'created_at' => NULL,
             'updated_at' => NULL
@@ -880,7 +880,7 @@ class UserSeeder extends Seeder
             'two_factor_secret' => NULL,
             'two_factor_recovery_codes' => NULL,
             'remember_token' => NULL,
-            'role_id' => NULL,
+            'role_id' => 200,
             'profile_photo_path' => NULL,
             'created_at' => NULL,
             'updated_at' => NULL
@@ -898,7 +898,7 @@ class UserSeeder extends Seeder
             'two_factor_secret' => NULL,
             'two_factor_recovery_codes' => NULL,
             'remember_token' => NULL,
-            'role_id' => NULL,
+            'role_id' => 200,
             'profile_photo_path' => NULL,
             'created_at' => NULL,
             'updated_at' => NULL
@@ -916,7 +916,7 @@ class UserSeeder extends Seeder
             'two_factor_secret' => NULL,
             'two_factor_recovery_codes' => NULL,
             'remember_token' => NULL,
-            'role_id' => NULL,
+            'role_id' => 200,
             'profile_photo_path' => NULL,
             'created_at' => NULL,
             'updated_at' => NULL
@@ -934,7 +934,7 @@ class UserSeeder extends Seeder
             'two_factor_secret' => NULL,
             'two_factor_recovery_codes' => NULL,
             'remember_token' => NULL,
-            'role_id' => NULL,
+            'role_id' => 200,
             'profile_photo_path' => NULL,
             'created_at' => NULL,
             'updated_at' => NULL
@@ -952,7 +952,7 @@ class UserSeeder extends Seeder
             'two_factor_secret' => NULL,
             'two_factor_recovery_codes' => NULL,
             'remember_token' => NULL,
-            'role_id' => NULL,
+            'role_id' => 200,
             'profile_photo_path' => NULL,
             'created_at' => NULL,
             'updated_at' => NULL
@@ -970,7 +970,7 @@ class UserSeeder extends Seeder
             'two_factor_secret' => NULL,
             'two_factor_recovery_codes' => NULL,
             'remember_token' => NULL,
-            'role_id' => NULL,
+            'role_id' => 200,
             'profile_photo_path' => NULL,
             'created_at' => NULL,
             'updated_at' => NULL
@@ -988,7 +988,7 @@ class UserSeeder extends Seeder
             'two_factor_secret' => NULL,
             'two_factor_recovery_codes' => NULL,
             'remember_token' => NULL,
-            'role_id' => NULL,
+            'role_id' => 200,
             'profile_photo_path' => NULL,
             'created_at' => NULL,
             'updated_at' => NULL
@@ -1006,7 +1006,7 @@ class UserSeeder extends Seeder
             'two_factor_secret' => NULL,
             'two_factor_recovery_codes' => NULL,
             'remember_token' => NULL,
-            'role_id' => NULL,
+            'role_id' => 200,
             'profile_photo_path' => NULL,
             'created_at' => NULL,
             'updated_at' => NULL
@@ -1024,7 +1024,7 @@ class UserSeeder extends Seeder
             'two_factor_secret' => NULL,
             'two_factor_recovery_codes' => NULL,
             'remember_token' => NULL,
-            'role_id' => NULL,
+            'role_id' => 200,
             'profile_photo_path' => NULL,
             'created_at' => NULL,
             'updated_at' => NULL
@@ -1042,7 +1042,7 @@ class UserSeeder extends Seeder
             'two_factor_secret' => NULL,
             'two_factor_recovery_codes' => NULL,
             'remember_token' => NULL,
-            'role_id' => NULL,
+            'role_id' => 200,
             'profile_photo_path' => NULL,
             'created_at' => NULL,
             'updated_at' => NULL
@@ -1060,7 +1060,7 @@ class UserSeeder extends Seeder
             'two_factor_secret' => NULL,
             'two_factor_recovery_codes' => NULL,
             'remember_token' => NULL,
-            'role_id' => NULL,
+            'role_id' => 200,
             'profile_photo_path' => NULL,
             'created_at' => NULL,
             'updated_at' => NULL
@@ -1078,7 +1078,7 @@ class UserSeeder extends Seeder
             'two_factor_secret' => NULL,
             'two_factor_recovery_codes' => NULL,
             'remember_token' => NULL,
-            'role_id' => NULL,
+            'role_id' => 200,
             'profile_photo_path' => NULL,
             'created_at' => NULL,
             'updated_at' => NULL
@@ -1096,7 +1096,7 @@ class UserSeeder extends Seeder
             'two_factor_secret' => NULL,
             'two_factor_recovery_codes' => NULL,
             'remember_token' => NULL,
-            'role_id' => NULL,
+            'role_id' => 200,
             'profile_photo_path' => NULL,
             'created_at' => NULL,
             'updated_at' => NULL
@@ -1114,7 +1114,7 @@ class UserSeeder extends Seeder
             'two_factor_secret' => NULL,
             'two_factor_recovery_codes' => NULL,
             'remember_token' => NULL,
-            'role_id' => NULL,
+            'role_id' => 200,
             'profile_photo_path' => NULL,
             'created_at' => NULL,
             'updated_at' => NULL
@@ -1132,7 +1132,7 @@ class UserSeeder extends Seeder
             'two_factor_secret' => NULL,
             'two_factor_recovery_codes' => NULL,
             'remember_token' => NULL,
-            'role_id' => NULL,
+            'role_id' => 200,
             'profile_photo_path' => NULL,
             'created_at' => NULL,
             'updated_at' => NULL
@@ -1150,7 +1150,7 @@ class UserSeeder extends Seeder
             'two_factor_secret' => NULL,
             'two_factor_recovery_codes' => NULL,
             'remember_token' => NULL,
-            'role_id' => NULL,
+            'role_id' => 200,
             'profile_photo_path' => NULL,
             'created_at' => NULL,
             'updated_at' => NULL
@@ -1168,7 +1168,7 @@ class UserSeeder extends Seeder
             'two_factor_secret' => NULL,
             'two_factor_recovery_codes' => NULL,
             'remember_token' => NULL,
-            'role_id' => NULL,
+            'role_id' => 200,
             'profile_photo_path' => NULL,
             'created_at' => NULL,
             'updated_at' => NULL
@@ -1186,7 +1186,7 @@ class UserSeeder extends Seeder
             'two_factor_secret' => NULL,
             'two_factor_recovery_codes' => NULL,
             'remember_token' => NULL,
-            'role_id' => NULL,
+            'role_id' => 200,
             'profile_photo_path' => NULL,
             'created_at' => NULL,
             'updated_at' => NULL
@@ -1204,7 +1204,7 @@ class UserSeeder extends Seeder
             'two_factor_secret' => NULL,
             'two_factor_recovery_codes' => NULL,
             'remember_token' => NULL,
-            'role_id' => NULL,
+            'role_id' => 200,
             'profile_photo_path' => NULL,
             'created_at' => NULL,
             'updated_at' => NULL
@@ -1222,7 +1222,7 @@ class UserSeeder extends Seeder
             'two_factor_secret' => NULL,
             'two_factor_recovery_codes' => NULL,
             'remember_token' => NULL,
-            'role_id' => NULL,
+            'role_id' => 200,
             'profile_photo_path' => NULL,
             'created_at' => NULL,
             'updated_at' => NULL
@@ -1240,7 +1240,7 @@ class UserSeeder extends Seeder
             'two_factor_secret' => NULL,
             'two_factor_recovery_codes' => NULL,
             'remember_token' => NULL,
-            'role_id' => NULL,
+            'role_id' => 200,
             'profile_photo_path' => NULL,
             'created_at' => NULL,
             'updated_at' => NULL
@@ -1258,7 +1258,7 @@ class UserSeeder extends Seeder
             'two_factor_secret' => NULL,
             'two_factor_recovery_codes' => NULL,
             'remember_token' => NULL,
-            'role_id' => NULL,
+            'role_id' => 200,
             'profile_photo_path' => NULL,
             'created_at' => NULL,
             'updated_at' => NULL
@@ -1276,7 +1276,7 @@ class UserSeeder extends Seeder
             'two_factor_secret' => NULL,
             'two_factor_recovery_codes' => NULL,
             'remember_token' => NULL,
-            'role_id' => NULL,
+            'role_id' => 200,
             'profile_photo_path' => NULL,
             'created_at' => NULL,
             'updated_at' => NULL
@@ -1294,7 +1294,7 @@ class UserSeeder extends Seeder
             'two_factor_secret' => NULL,
             'two_factor_recovery_codes' => NULL,
             'remember_token' => NULL,
-            'role_id' => NULL,
+            'role_id' => 200,
             'profile_photo_path' => NULL,
             'created_at' => NULL,
             'updated_at' => NULL
@@ -1312,7 +1312,7 @@ class UserSeeder extends Seeder
             'two_factor_secret' => NULL,
             'two_factor_recovery_codes' => NULL,
             'remember_token' => NULL,
-            'role_id' => NULL,
+            'role_id' => 200,
             'profile_photo_path' => NULL,
             'created_at' => NULL,
             'updated_at' => NULL
@@ -1330,7 +1330,7 @@ class UserSeeder extends Seeder
             'two_factor_secret' => NULL,
             'two_factor_recovery_codes' => NULL,
             'remember_token' => NULL,
-            'role_id' => NULL,
+            'role_id' => 200,
             'profile_photo_path' => NULL,
             'created_at' => NULL,
             'updated_at' => NULL
@@ -1348,7 +1348,7 @@ class UserSeeder extends Seeder
             'two_factor_secret' => NULL,
             'two_factor_recovery_codes' => NULL,
             'remember_token' => NULL,
-            'role_id' => NULL,
+            'role_id' => 200,
             'profile_photo_path' => NULL,
             'created_at' => NULL,
             'updated_at' => NULL
@@ -1366,7 +1366,7 @@ class UserSeeder extends Seeder
             'two_factor_secret' => NULL,
             'two_factor_recovery_codes' => NULL,
             'remember_token' => NULL,
-            'role_id' => NULL,
+            'role_id' => 200,
             'profile_photo_path' => NULL,
             'created_at' => NULL,
             'updated_at' => NULL
@@ -1384,7 +1384,7 @@ class UserSeeder extends Seeder
             'two_factor_secret' => NULL,
             'two_factor_recovery_codes' => NULL,
             'remember_token' => NULL,
-            'role_id' => NULL,
+            'role_id' => 200,
             'profile_photo_path' => NULL,
             'created_at' => NULL,
             'updated_at' => NULL
@@ -1402,7 +1402,7 @@ class UserSeeder extends Seeder
             'two_factor_secret' => NULL,
             'two_factor_recovery_codes' => NULL,
             'remember_token' => NULL,
-            'role_id' => NULL,
+            'role_id' => 200,
             'profile_photo_path' => NULL,
             'created_at' => NULL,
             'updated_at' => NULL
@@ -1420,7 +1420,7 @@ class UserSeeder extends Seeder
             'two_factor_secret' => NULL,
             'two_factor_recovery_codes' => NULL,
             'remember_token' => NULL,
-            'role_id' => NULL,
+            'role_id' => 200,
             'profile_photo_path' => NULL,
             'created_at' => NULL,
             'updated_at' => NULL
@@ -1438,7 +1438,7 @@ class UserSeeder extends Seeder
             'two_factor_secret' => NULL,
             'two_factor_recovery_codes' => NULL,
             'remember_token' => NULL,
-            'role_id' => NULL,
+            'role_id' => 200,
             'profile_photo_path' => NULL,
             'created_at' => NULL,
             'updated_at' => NULL
@@ -1456,7 +1456,7 @@ class UserSeeder extends Seeder
             'two_factor_secret' => NULL,
             'two_factor_recovery_codes' => NULL,
             'remember_token' => NULL,
-            'role_id' => NULL,
+            'role_id' => 200,
             'profile_photo_path' => NULL,
             'created_at' => NULL,
             'updated_at' => NULL
@@ -1474,7 +1474,7 @@ class UserSeeder extends Seeder
             'two_factor_secret' => NULL,
             'two_factor_recovery_codes' => NULL,
             'remember_token' => NULL,
-            'role_id' => NULL,
+            'role_id' => 200,
             'profile_photo_path' => NULL,
             'created_at' => NULL,
             'updated_at' => NULL
@@ -1492,7 +1492,7 @@ class UserSeeder extends Seeder
             'two_factor_secret' => NULL,
             'two_factor_recovery_codes' => NULL,
             'remember_token' => NULL,
-            'role_id' => NULL,
+            'role_id' => 200,
             'profile_photo_path' => NULL,
             'created_at' => NULL,
             'updated_at' => NULL
@@ -1510,7 +1510,7 @@ class UserSeeder extends Seeder
             'two_factor_secret' => NULL,
             'two_factor_recovery_codes' => NULL,
             'remember_token' => NULL,
-            'role_id' => NULL,
+            'role_id' => 200,
             'profile_photo_path' => NULL,
             'created_at' => NULL,
             'updated_at' => NULL
@@ -1528,7 +1528,7 @@ class UserSeeder extends Seeder
             'two_factor_secret' => NULL,
             'two_factor_recovery_codes' => NULL,
             'remember_token' => NULL,
-            'role_id' => NULL,
+            'role_id' => 200,
             'profile_photo_path' => NULL,
             'created_at' => NULL,
             'updated_at' => NULL
@@ -1546,7 +1546,7 @@ class UserSeeder extends Seeder
             'two_factor_secret' => NULL,
             'two_factor_recovery_codes' => NULL,
             'remember_token' => NULL,
-            'role_id' => NULL,
+            'role_id' => 200,
             'profile_photo_path' => NULL,
             'created_at' => NULL,
             'updated_at' => NULL
@@ -1564,7 +1564,7 @@ class UserSeeder extends Seeder
             'two_factor_secret' => NULL,
             'two_factor_recovery_codes' => NULL,
             'remember_token' => NULL,
-            'role_id' => NULL,
+            'role_id' => 200,
             'profile_photo_path' => NULL,
             'created_at' => NULL,
             'updated_at' => NULL
@@ -1582,7 +1582,7 @@ class UserSeeder extends Seeder
             'two_factor_secret' => NULL,
             'two_factor_recovery_codes' => NULL,
             'remember_token' => NULL,
-            'role_id' => NULL,
+            'role_id' => 200,
             'profile_photo_path' => NULL,
             'created_at' => NULL,
             'updated_at' => NULL
@@ -1600,7 +1600,7 @@ class UserSeeder extends Seeder
             'two_factor_secret' => NULL,
             'two_factor_recovery_codes' => NULL,
             'remember_token' => NULL,
-            'role_id' => NULL,
+            'role_id' => 200,
             'profile_photo_path' => NULL,
             'created_at' => NULL,
             'updated_at' => NULL
@@ -1618,7 +1618,7 @@ class UserSeeder extends Seeder
             'two_factor_secret' => NULL,
             'two_factor_recovery_codes' => NULL,
             'remember_token' => NULL,
-            'role_id' => NULL,
+            'role_id' => 200,
             'profile_photo_path' => NULL,
             'created_at' => NULL,
             'updated_at' => NULL
@@ -1636,7 +1636,7 @@ class UserSeeder extends Seeder
             'two_factor_secret' => NULL,
             'two_factor_recovery_codes' => NULL,
             'remember_token' => NULL,
-            'role_id' => NULL,
+            'role_id' => 200,
             'profile_photo_path' => NULL,
             'created_at' => NULL,
             'updated_at' => NULL
@@ -1654,7 +1654,7 @@ class UserSeeder extends Seeder
             'two_factor_secret' => NULL,
             'two_factor_recovery_codes' => NULL,
             'remember_token' => NULL,
-            'role_id' => NULL,
+            'role_id' => 200,
             'profile_photo_path' => NULL,
             'created_at' => NULL,
             'updated_at' => NULL
@@ -1672,7 +1672,7 @@ class UserSeeder extends Seeder
             'two_factor_secret' => NULL,
             'two_factor_recovery_codes' => NULL,
             'remember_token' => NULL,
-            'role_id' => NULL,
+            'role_id' => 200,
             'profile_photo_path' => NULL,
             'created_at' => NULL,
             'updated_at' => NULL
@@ -1690,7 +1690,7 @@ class UserSeeder extends Seeder
             'two_factor_secret' => NULL,
             'two_factor_recovery_codes' => NULL,
             'remember_token' => NULL,
-            'role_id' => NULL,
+            'role_id' => 200,
             'profile_photo_path' => NULL,
             'created_at' => NULL,
             'updated_at' => NULL
@@ -1708,7 +1708,7 @@ class UserSeeder extends Seeder
             'two_factor_secret' => NULL,
             'two_factor_recovery_codes' => NULL,
             'remember_token' => NULL,
-            'role_id' => NULL,
+            'role_id' => 200,
             'profile_photo_path' => NULL,
             'created_at' => NULL,
             'updated_at' => NULL
@@ -1726,7 +1726,7 @@ class UserSeeder extends Seeder
             'two_factor_secret' => NULL,
             'two_factor_recovery_codes' => NULL,
             'remember_token' => NULL,
-            'role_id' => NULL,
+            'role_id' => 200,
             'profile_photo_path' => NULL,
             'created_at' => NULL,
             'updated_at' => NULL
@@ -1744,7 +1744,7 @@ class UserSeeder extends Seeder
             'two_factor_secret' => NULL,
             'two_factor_recovery_codes' => NULL,
             'remember_token' => NULL,
-            'role_id' => NULL,
+            'role_id' => 200,
             'profile_photo_path' => NULL,
             'created_at' => NULL,
             'updated_at' => NULL
@@ -1762,7 +1762,7 @@ class UserSeeder extends Seeder
             'two_factor_secret' => NULL,
             'two_factor_recovery_codes' => NULL,
             'remember_token' => NULL,
-            'role_id' => NULL,
+            'role_id' => 200,
             'profile_photo_path' => NULL,
             'created_at' => NULL,
             'updated_at' => NULL
@@ -1780,7 +1780,7 @@ class UserSeeder extends Seeder
             'two_factor_secret' => NULL,
             'two_factor_recovery_codes' => NULL,
             'remember_token' => NULL,
-            'role_id' => NULL,
+            'role_id' => 200,
             'profile_photo_path' => NULL,
             'created_at' => NULL,
             'updated_at' => NULL
@@ -1798,7 +1798,7 @@ class UserSeeder extends Seeder
             'two_factor_secret' => NULL,
             'two_factor_recovery_codes' => NULL,
             'remember_token' => NULL,
-            'role_id' => NULL,
+            'role_id' => 200,
             'profile_photo_path' => NULL,
             'created_at' => NULL,
             'updated_at' => NULL
@@ -1816,7 +1816,7 @@ class UserSeeder extends Seeder
             'two_factor_secret' => NULL,
             'two_factor_recovery_codes' => NULL,
             'remember_token' => NULL,
-            'role_id' => NULL,
+            'role_id' => 200,
             'profile_photo_path' => NULL,
             'created_at' => NULL,
             'updated_at' => NULL
@@ -1834,7 +1834,7 @@ class UserSeeder extends Seeder
             'two_factor_secret' => NULL,
             'two_factor_recovery_codes' => NULL,
             'remember_token' => NULL,
-            'role_id' => NULL,
+            'role_id' => 200,
             'profile_photo_path' => NULL,
             'created_at' => NULL,
             'updated_at' => NULL
@@ -1852,7 +1852,7 @@ class UserSeeder extends Seeder
             'two_factor_secret' => NULL,
             'two_factor_recovery_codes' => NULL,
             'remember_token' => NULL,
-            'role_id' => NULL,
+            'role_id' => 200,
             'profile_photo_path' => NULL,
             'created_at' => NULL,
             'updated_at' => NULL
@@ -1870,7 +1870,7 @@ class UserSeeder extends Seeder
             'two_factor_secret' => NULL,
             'two_factor_recovery_codes' => NULL,
             'remember_token' => NULL,
-            'role_id' => NULL,
+            'role_id' => 200,
             'profile_photo_path' => NULL,
             'created_at' => NULL,
             'updated_at' => NULL
@@ -1888,7 +1888,7 @@ class UserSeeder extends Seeder
             'two_factor_secret' => NULL,
             'two_factor_recovery_codes' => NULL,
             'remember_token' => NULL,
-            'role_id' => NULL,
+            'role_id' => 200,
             'profile_photo_path' => NULL,
             'created_at' => NULL,
             'updated_at' => NULL
@@ -1906,7 +1906,7 @@ class UserSeeder extends Seeder
             'two_factor_secret' => NULL,
             'two_factor_recovery_codes' => NULL,
             'remember_token' => NULL,
-            'role_id' => NULL,
+            'role_id' => 200,
             'profile_photo_path' => NULL,
             'created_at' => NULL,
             'updated_at' => NULL
@@ -1924,7 +1924,7 @@ class UserSeeder extends Seeder
             'two_factor_secret' => NULL,
             'two_factor_recovery_codes' => NULL,
             'remember_token' => NULL,
-            'role_id' => NULL,
+            'role_id' => 200,
             'profile_photo_path' => NULL,
             'created_at' => NULL,
             'updated_at' => NULL
@@ -1942,7 +1942,7 @@ class UserSeeder extends Seeder
             'two_factor_secret' => NULL,
             'two_factor_recovery_codes' => NULL,
             'remember_token' => NULL,
-            'role_id' => NULL,
+            'role_id' => 200,
             'profile_photo_path' => NULL,
             'created_at' => NULL,
             'updated_at' => NULL
@@ -1960,7 +1960,7 @@ class UserSeeder extends Seeder
             'two_factor_secret' => NULL,
             'two_factor_recovery_codes' => NULL,
             'remember_token' => NULL,
-            'role_id' => NULL,
+            'role_id' => 200,
             'profile_photo_path' => NULL,
             'created_at' => NULL,
             'updated_at' => NULL
@@ -1978,7 +1978,7 @@ class UserSeeder extends Seeder
             'two_factor_secret' => NULL,
             'two_factor_recovery_codes' => NULL,
             'remember_token' => NULL,
-            'role_id' => NULL,
+            'role_id' => 200,
             'profile_photo_path' => NULL,
             'created_at' => NULL,
             'updated_at' => NULL
@@ -1996,7 +1996,7 @@ class UserSeeder extends Seeder
             'two_factor_secret' => NULL,
             'two_factor_recovery_codes' => NULL,
             'remember_token' => NULL,
-            'role_id' => NULL,
+            'role_id' => 200,
             'profile_photo_path' => NULL,
             'created_at' => NULL,
             'updated_at' => NULL
@@ -2014,7 +2014,7 @@ class UserSeeder extends Seeder
             'two_factor_secret' => NULL,
             'two_factor_recovery_codes' => NULL,
             'remember_token' => NULL,
-            'role_id' => NULL,
+            'role_id' => 200,
             'profile_photo_path' => NULL,
             'created_at' => NULL,
             'updated_at' => NULL
@@ -2032,7 +2032,7 @@ class UserSeeder extends Seeder
             'two_factor_secret' => NULL,
             'two_factor_recovery_codes' => NULL,
             'remember_token' => NULL,
-            'role_id' => NULL,
+            'role_id' => 200,
             'profile_photo_path' => NULL,
             'created_at' => NULL,
             'updated_at' => NULL
@@ -2050,7 +2050,7 @@ class UserSeeder extends Seeder
             'two_factor_secret' => NULL,
             'two_factor_recovery_codes' => NULL,
             'remember_token' => NULL,
-            'role_id' => NULL,
+            'role_id' => 200,
             'profile_photo_path' => NULL,
             'created_at' => NULL,
             'updated_at' => NULL
@@ -2068,7 +2068,7 @@ class UserSeeder extends Seeder
             'two_factor_secret' => NULL,
             'two_factor_recovery_codes' => NULL,
             'remember_token' => NULL,
-            'role_id' => NULL,
+            'role_id' => 200,
             'profile_photo_path' => NULL,
             'created_at' => NULL,
             'updated_at' => NULL
@@ -2086,7 +2086,7 @@ class UserSeeder extends Seeder
             'two_factor_secret' => NULL,
             'two_factor_recovery_codes' => NULL,
             'remember_token' => NULL,
-            'role_id' => NULL,
+            'role_id' => 200,
             'profile_photo_path' => NULL,
             'created_at' => NULL,
             'updated_at' => NULL
@@ -2104,7 +2104,7 @@ class UserSeeder extends Seeder
             'two_factor_secret' => NULL,
             'two_factor_recovery_codes' => NULL,
             'remember_token' => NULL,
-            'role_id' => NULL,
+            'role_id' => 200,
             'profile_photo_path' => NULL,
             'created_at' => NULL,
             'updated_at' => NULL
@@ -2122,7 +2122,7 @@ class UserSeeder extends Seeder
             'two_factor_secret' => NULL,
             'two_factor_recovery_codes' => NULL,
             'remember_token' => NULL,
-            'role_id' => NULL,
+            'role_id' => 200,
             'profile_photo_path' => NULL,
             'created_at' => NULL,
             'updated_at' => NULL
@@ -2140,7 +2140,7 @@ class UserSeeder extends Seeder
             'two_factor_secret' => NULL,
             'two_factor_recovery_codes' => NULL,
             'remember_token' => NULL,
-            'role_id' => NULL,
+            'role_id' => 200,
             'profile_photo_path' => NULL,
             'created_at' => NULL,
             'updated_at' => NULL
@@ -2158,7 +2158,7 @@ class UserSeeder extends Seeder
             'two_factor_secret' => NULL,
             'two_factor_recovery_codes' => NULL,
             'remember_token' => NULL,
-            'role_id' => NULL,
+            'role_id' => 200,
             'profile_photo_path' => NULL,
             'created_at' => NULL,
             'updated_at' => NULL
@@ -2176,7 +2176,7 @@ class UserSeeder extends Seeder
             'two_factor_secret' => NULL,
             'two_factor_recovery_codes' => NULL,
             'remember_token' => NULL,
-            'role_id' => NULL,
+            'role_id' => 200,
             'profile_photo_path' => NULL,
             'created_at' => NULL,
             'updated_at' => NULL
@@ -2194,7 +2194,7 @@ class UserSeeder extends Seeder
             'two_factor_secret' => NULL,
             'two_factor_recovery_codes' => NULL,
             'remember_token' => NULL,
-            'role_id' => NULL,
+            'role_id' => 200,
             'profile_photo_path' => NULL,
             'created_at' => NULL,
             'updated_at' => NULL
@@ -2212,7 +2212,7 @@ class UserSeeder extends Seeder
             'two_factor_secret' => NULL,
             'two_factor_recovery_codes' => NULL,
             'remember_token' => NULL,
-            'role_id' => NULL,
+            'role_id' => 200,
             'profile_photo_path' => NULL,
             'created_at' => NULL,
             'updated_at' => NULL
@@ -2230,7 +2230,7 @@ class UserSeeder extends Seeder
             'two_factor_secret' => NULL,
             'two_factor_recovery_codes' => NULL,
             'remember_token' => NULL,
-            'role_id' => NULL,
+            'role_id' => 200,
             'profile_photo_path' => NULL,
             'created_at' => NULL,
             'updated_at' => NULL
@@ -2248,7 +2248,7 @@ class UserSeeder extends Seeder
             'two_factor_secret' => NULL,
             'two_factor_recovery_codes' => NULL,
             'remember_token' => NULL,
-            'role_id' => NULL,
+            'role_id' => 200,
             'profile_photo_path' => NULL,
             'created_at' => NULL,
             'updated_at' => NULL
@@ -2266,7 +2266,7 @@ class UserSeeder extends Seeder
             'two_factor_secret' => NULL,
             'two_factor_recovery_codes' => NULL,
             'remember_token' => NULL,
-            'role_id' => NULL,
+            'role_id' => 200,
             'profile_photo_path' => NULL,
             'created_at' => NULL,
             'updated_at' => NULL
@@ -2284,7 +2284,7 @@ class UserSeeder extends Seeder
             'two_factor_secret' => NULL,
             'two_factor_recovery_codes' => NULL,
             'remember_token' => NULL,
-            'role_id' => NULL,
+            'role_id' => 200,
             'profile_photo_path' => NULL,
             'created_at' => NULL,
             'updated_at' => NULL
@@ -2302,7 +2302,7 @@ class UserSeeder extends Seeder
             'two_factor_secret' => NULL,
             'two_factor_recovery_codes' => NULL,
             'remember_token' => NULL,
-            'role_id' => NULL,
+            'role_id' => 200,
             'profile_photo_path' => NULL,
             'created_at' => NULL,
             'updated_at' => NULL
@@ -2320,7 +2320,7 @@ class UserSeeder extends Seeder
             'two_factor_secret' => NULL,
             'two_factor_recovery_codes' => NULL,
             'remember_token' => NULL,
-            'role_id' => NULL,
+            'role_id' => 200,
             'profile_photo_path' => NULL,
             'created_at' => NULL,
             'updated_at' => NULL
@@ -2338,7 +2338,7 @@ class UserSeeder extends Seeder
             'two_factor_secret' => NULL,
             'two_factor_recovery_codes' => NULL,
             'remember_token' => NULL,
-            'role_id' => NULL,
+            'role_id' => 200,
             'profile_photo_path' => NULL,
             'created_at' => NULL,
             'updated_at' => NULL
@@ -2356,7 +2356,7 @@ class UserSeeder extends Seeder
             'two_factor_secret' => NULL,
             'two_factor_recovery_codes' => NULL,
             'remember_token' => NULL,
-            'role_id' => NULL,
+            'role_id' => 200,
             'profile_photo_path' => NULL,
             'created_at' => NULL,
             'updated_at' => NULL
@@ -2374,7 +2374,7 @@ class UserSeeder extends Seeder
             'two_factor_secret' => NULL,
             'two_factor_recovery_codes' => NULL,
             'remember_token' => NULL,
-            'role_id' => NULL,
+            'role_id' => 200,
             'profile_photo_path' => NULL,
             'created_at' => NULL,
             'updated_at' => NULL
@@ -2392,7 +2392,7 @@ class UserSeeder extends Seeder
             'two_factor_secret' => NULL,
             'two_factor_recovery_codes' => NULL,
             'remember_token' => NULL,
-            'role_id' => NULL,
+            'role_id' => 200,
             'profile_photo_path' => NULL,
             'created_at' => NULL,
             'updated_at' => NULL
@@ -2410,7 +2410,7 @@ class UserSeeder extends Seeder
             'two_factor_secret' => NULL,
             'two_factor_recovery_codes' => NULL,
             'remember_token' => NULL,
-            'role_id' => NULL,
+            'role_id' => 200,
             'profile_photo_path' => NULL,
             'created_at' => NULL,
             'updated_at' => NULL
@@ -2428,7 +2428,7 @@ class UserSeeder extends Seeder
             'two_factor_secret' => NULL,
             'two_factor_recovery_codes' => NULL,
             'remember_token' => NULL,
-            'role_id' => NULL,
+            'role_id' => 200,
             'profile_photo_path' => NULL,
             'created_at' => NULL,
             'updated_at' => NULL
@@ -2446,7 +2446,7 @@ class UserSeeder extends Seeder
             'two_factor_secret' => NULL,
             'two_factor_recovery_codes' => NULL,
             'remember_token' => NULL,
-            'role_id' => NULL,
+            'role_id' => 200,
             'profile_photo_path' => NULL,
             'created_at' => NULL,
             'updated_at' => NULL
@@ -2464,7 +2464,7 @@ class UserSeeder extends Seeder
             'two_factor_secret' => NULL,
             'two_factor_recovery_codes' => NULL,
             'remember_token' => NULL,
-            'role_id' => NULL,
+            'role_id' => 200,
             'profile_photo_path' => NULL,
             'created_at' => NULL,
             'updated_at' => NULL
@@ -2482,7 +2482,7 @@ class UserSeeder extends Seeder
             'two_factor_secret' => NULL,
             'two_factor_recovery_codes' => NULL,
             'remember_token' => NULL,
-            'role_id' => NULL,
+            'role_id' => 200,
             'profile_photo_path' => NULL,
             'created_at' => NULL,
             'updated_at' => NULL
@@ -2500,7 +2500,7 @@ class UserSeeder extends Seeder
             'two_factor_secret' => NULL,
             'two_factor_recovery_codes' => NULL,
             'remember_token' => NULL,
-            'role_id' => NULL,
+            'role_id' => 200,
             'profile_photo_path' => NULL,
             'created_at' => NULL,
             'updated_at' => NULL
@@ -2518,7 +2518,7 @@ class UserSeeder extends Seeder
             'two_factor_secret' => NULL,
             'two_factor_recovery_codes' => NULL,
             'remember_token' => NULL,
-            'role_id' => NULL,
+            'role_id' => 200,
             'profile_photo_path' => NULL,
             'created_at' => NULL,
             'updated_at' => NULL
@@ -2536,7 +2536,7 @@ class UserSeeder extends Seeder
             'two_factor_secret' => NULL,
             'two_factor_recovery_codes' => NULL,
             'remember_token' => NULL,
-            'role_id' => NULL,
+            'role_id' => 200,
             'profile_photo_path' => NULL,
             'created_at' => NULL,
             'updated_at' => NULL
@@ -2554,7 +2554,7 @@ class UserSeeder extends Seeder
             'two_factor_secret' => NULL,
             'two_factor_recovery_codes' => NULL,
             'remember_token' => NULL,
-            'role_id' => NULL,
+            'role_id' => 200,
             'profile_photo_path' => NULL,
             'created_at' => NULL,
             'updated_at' => NULL
@@ -2572,7 +2572,7 @@ class UserSeeder extends Seeder
             'two_factor_secret' => NULL,
             'two_factor_recovery_codes' => NULL,
             'remember_token' => NULL,
-            'role_id' => NULL,
+            'role_id' => 200,
             'profile_photo_path' => NULL,
             'created_at' => NULL,
             'updated_at' => NULL
@@ -2590,7 +2590,7 @@ class UserSeeder extends Seeder
             'two_factor_secret' => NULL,
             'two_factor_recovery_codes' => NULL,
             'remember_token' => NULL,
-            'role_id' => NULL,
+            'role_id' => 200,
             'profile_photo_path' => NULL,
             'created_at' => NULL,
             'updated_at' => NULL
@@ -2608,7 +2608,7 @@ class UserSeeder extends Seeder
             'two_factor_secret' => NULL,
             'two_factor_recovery_codes' => NULL,
             'remember_token' => NULL,
-            'role_id' => NULL,
+            'role_id' => 200,
             'profile_photo_path' => NULL,
             'created_at' => NULL,
             'updated_at' => NULL
@@ -2626,7 +2626,7 @@ class UserSeeder extends Seeder
             'two_factor_secret' => NULL,
             'two_factor_recovery_codes' => NULL,
             'remember_token' => NULL,
-            'role_id' => NULL,
+            'role_id' => 200,
             'profile_photo_path' => NULL,
             'created_at' => NULL,
             'updated_at' => NULL
@@ -2644,7 +2644,7 @@ class UserSeeder extends Seeder
             'two_factor_secret' => NULL,
             'two_factor_recovery_codes' => NULL,
             'remember_token' => NULL,
-            'role_id' => NULL,
+            'role_id' => 200,
             'profile_photo_path' => NULL,
             'created_at' => NULL,
             'updated_at' => NULL
@@ -2662,7 +2662,7 @@ class UserSeeder extends Seeder
             'two_factor_secret' => NULL,
             'two_factor_recovery_codes' => NULL,
             'remember_token' => NULL,
-            'role_id' => NULL,
+            'role_id' => 200,
             'profile_photo_path' => NULL,
             'created_at' => NULL,
             'updated_at' => NULL
@@ -2680,7 +2680,7 @@ class UserSeeder extends Seeder
             'two_factor_secret' => NULL,
             'two_factor_recovery_codes' => NULL,
             'remember_token' => NULL,
-            'role_id' => NULL,
+            'role_id' => 200,
             'profile_photo_path' => NULL,
             'created_at' => NULL,
             'updated_at' => NULL
@@ -2698,7 +2698,7 @@ class UserSeeder extends Seeder
             'two_factor_secret' => NULL,
             'two_factor_recovery_codes' => NULL,
             'remember_token' => NULL,
-            'role_id' => NULL,
+            'role_id' => 200,
             'profile_photo_path' => NULL,
             'created_at' => NULL,
             'updated_at' => NULL
@@ -2716,7 +2716,7 @@ class UserSeeder extends Seeder
             'two_factor_secret' => NULL,
             'two_factor_recovery_codes' => NULL,
             'remember_token' => NULL,
-            'role_id' => NULL,
+            'role_id' => 200,
             'profile_photo_path' => NULL,
             'created_at' => NULL,
             'updated_at' => NULL
@@ -2734,7 +2734,7 @@ class UserSeeder extends Seeder
             'two_factor_secret' => NULL,
             'two_factor_recovery_codes' => NULL,
             'remember_token' => NULL,
-            'role_id' => NULL,
+            'role_id' => 200,
             'profile_photo_path' => NULL,
             'created_at' => NULL,
             'updated_at' => NULL
@@ -2752,7 +2752,7 @@ class UserSeeder extends Seeder
             'two_factor_secret' => NULL,
             'two_factor_recovery_codes' => NULL,
             'remember_token' => NULL,
-            'role_id' => NULL,
+            'role_id' => 200,
             'profile_photo_path' => NULL,
             'created_at' => NULL,
             'updated_at' => NULL
@@ -2770,7 +2770,7 @@ class UserSeeder extends Seeder
             'two_factor_secret' => NULL,
             'two_factor_recovery_codes' => NULL,
             'remember_token' => NULL,
-            'role_id' => NULL,
+            'role_id' => 200,
             'profile_photo_path' => NULL,
             'created_at' => NULL,
             'updated_at' => NULL
@@ -2788,7 +2788,7 @@ class UserSeeder extends Seeder
             'two_factor_secret' => NULL,
             'two_factor_recovery_codes' => NULL,
             'remember_token' => NULL,
-            'role_id' => NULL,
+            'role_id' => 200,
             'profile_photo_path' => NULL,
             'created_at' => NULL,
             'updated_at' => NULL
@@ -2806,7 +2806,7 @@ class UserSeeder extends Seeder
             'two_factor_secret' => NULL,
             'two_factor_recovery_codes' => NULL,
             'remember_token' => NULL,
-            'role_id' => NULL,
+            'role_id' => 200,
             'profile_photo_path' => NULL,
             'created_at' => NULL,
             'updated_at' => NULL
@@ -2824,7 +2824,7 @@ class UserSeeder extends Seeder
             'two_factor_secret' => NULL,
             'two_factor_recovery_codes' => NULL,
             'remember_token' => NULL,
-            'role_id' => NULL,
+            'role_id' => 200,
             'profile_photo_path' => NULL,
             'created_at' => NULL,
             'updated_at' => NULL
@@ -2842,7 +2842,7 @@ class UserSeeder extends Seeder
             'two_factor_secret' => NULL,
             'two_factor_recovery_codes' => NULL,
             'remember_token' => NULL,
-            'role_id' => NULL,
+            'role_id' => 200,
             'profile_photo_path' => NULL,
             'created_at' => NULL,
             'updated_at' => NULL
@@ -2860,7 +2860,7 @@ class UserSeeder extends Seeder
             'two_factor_secret' => NULL,
             'two_factor_recovery_codes' => NULL,
             'remember_token' => NULL,
-            'role_id' => NULL,
+            'role_id' => 200,
             'profile_photo_path' => NULL,
             'created_at' => NULL,
             'updated_at' => NULL
@@ -2878,7 +2878,7 @@ class UserSeeder extends Seeder
             'two_factor_secret' => NULL,
             'two_factor_recovery_codes' => NULL,
             'remember_token' => NULL,
-            'role_id' => NULL,
+            'role_id' => 200,
             'profile_photo_path' => NULL,
             'created_at' => NULL,
             'updated_at' => NULL
@@ -2896,7 +2896,7 @@ class UserSeeder extends Seeder
             'two_factor_secret' => NULL,
             'two_factor_recovery_codes' => NULL,
             'remember_token' => NULL,
-            'role_id' => NULL,
+            'role_id' => 200,
             'profile_photo_path' => NULL,
             'created_at' => NULL,
             'updated_at' => NULL
@@ -2914,7 +2914,7 @@ class UserSeeder extends Seeder
             'two_factor_secret' => NULL,
             'two_factor_recovery_codes' => NULL,
             'remember_token' => NULL,
-            'role_id' => NULL,
+            'role_id' => 200,
             'profile_photo_path' => NULL,
             'created_at' => NULL,
             'updated_at' => NULL
@@ -2932,7 +2932,7 @@ class UserSeeder extends Seeder
             'two_factor_secret' => NULL,
             'two_factor_recovery_codes' => NULL,
             'remember_token' => NULL,
-            'role_id' => NULL,
+            'role_id' => 200,
             'profile_photo_path' => NULL,
             'created_at' => NULL,
             'updated_at' => NULL
@@ -2950,7 +2950,7 @@ class UserSeeder extends Seeder
             'two_factor_secret' => NULL,
             'two_factor_recovery_codes' => NULL,
             'remember_token' => NULL,
-            'role_id' => NULL,
+            'role_id' => 200,
             'profile_photo_path' => NULL,
             'created_at' => NULL,
             'updated_at' => NULL
@@ -2968,7 +2968,7 @@ class UserSeeder extends Seeder
             'two_factor_secret' => NULL,
             'two_factor_recovery_codes' => NULL,
             'remember_token' => NULL,
-            'role_id' => NULL,
+            'role_id' => 200,
             'profile_photo_path' => NULL,
             'created_at' => NULL,
             'updated_at' => NULL
@@ -2986,7 +2986,7 @@ class UserSeeder extends Seeder
             'two_factor_secret' => NULL,
             'two_factor_recovery_codes' => NULL,
             'remember_token' => NULL,
-            'role_id' => NULL,
+            'role_id' => 200,
             'profile_photo_path' => NULL,
             'created_at' => NULL,
             'updated_at' => NULL
@@ -3004,7 +3004,7 @@ class UserSeeder extends Seeder
             'two_factor_secret' => NULL,
             'two_factor_recovery_codes' => NULL,
             'remember_token' => NULL,
-            'role_id' => NULL,
+            'role_id' => 200,
             'profile_photo_path' => NULL,
             'created_at' => NULL,
             'updated_at' => NULL
@@ -3022,7 +3022,7 @@ class UserSeeder extends Seeder
             'two_factor_secret' => NULL,
             'two_factor_recovery_codes' => NULL,
             'remember_token' => NULL,
-            'role_id' => NULL,
+            'role_id' => 200,
             'profile_photo_path' => NULL,
             'created_at' => NULL,
             'updated_at' => NULL
@@ -3040,7 +3040,7 @@ class UserSeeder extends Seeder
             'two_factor_secret' => NULL,
             'two_factor_recovery_codes' => NULL,
             'remember_token' => NULL,
-            'role_id' => NULL,
+            'role_id' => 200,
             'profile_photo_path' => NULL,
             'created_at' => NULL,
             'updated_at' => NULL
@@ -3058,7 +3058,7 @@ class UserSeeder extends Seeder
             'two_factor_secret' => NULL,
             'two_factor_recovery_codes' => NULL,
             'remember_token' => NULL,
-            'role_id' => NULL,
+            'role_id' => 200,
             'profile_photo_path' => NULL,
             'created_at' => NULL,
             'updated_at' => NULL
@@ -3076,7 +3076,7 @@ class UserSeeder extends Seeder
             'two_factor_secret' => NULL,
             'two_factor_recovery_codes' => NULL,
             'remember_token' => NULL,
-            'role_id' => NULL,
+            'role_id' => 200,
             'profile_photo_path' => NULL,
             'created_at' => NULL,
             'updated_at' => NULL
@@ -3094,7 +3094,7 @@ class UserSeeder extends Seeder
             'two_factor_secret' => NULL,
             'two_factor_recovery_codes' => NULL,
             'remember_token' => NULL,
-            'role_id' => NULL,
+            'role_id' => 200,
             'profile_photo_path' => NULL,
             'created_at' => NULL,
             'updated_at' => NULL
@@ -3112,7 +3112,7 @@ class UserSeeder extends Seeder
             'two_factor_secret' => NULL,
             'two_factor_recovery_codes' => NULL,
             'remember_token' => NULL,
-            'role_id' => NULL,
+            'role_id' => 200,
             'profile_photo_path' => NULL,
             'created_at' => NULL,
             'updated_at' => NULL
@@ -3130,7 +3130,7 @@ class UserSeeder extends Seeder
             'two_factor_secret' => NULL,
             'two_factor_recovery_codes' => NULL,
             'remember_token' => NULL,
-            'role_id' => NULL,
+            'role_id' => 200,
             'profile_photo_path' => NULL,
             'created_at' => NULL,
             'updated_at' => NULL
@@ -3148,7 +3148,7 @@ class UserSeeder extends Seeder
             'two_factor_secret' => NULL,
             'two_factor_recovery_codes' => NULL,
             'remember_token' => NULL,
-            'role_id' => NULL,
+            'role_id' => 200,
             'profile_photo_path' => NULL,
             'created_at' => NULL,
             'updated_at' => NULL
@@ -3166,7 +3166,7 @@ class UserSeeder extends Seeder
             'two_factor_secret' => NULL,
             'two_factor_recovery_codes' => NULL,
             'remember_token' => NULL,
-            'role_id' => NULL,
+            'role_id' => 200,
             'profile_photo_path' => NULL,
             'created_at' => NULL,
             'updated_at' => NULL
@@ -3184,7 +3184,7 @@ class UserSeeder extends Seeder
             'two_factor_secret' => NULL,
             'two_factor_recovery_codes' => NULL,
             'remember_token' => NULL,
-            'role_id' => NULL,
+            'role_id' => 200,
             'profile_photo_path' => NULL,
             'created_at' => NULL,
             'updated_at' => NULL
@@ -3202,7 +3202,7 @@ class UserSeeder extends Seeder
             'two_factor_secret' => NULL,
             'two_factor_recovery_codes' => NULL,
             'remember_token' => NULL,
-            'role_id' => NULL,
+            'role_id' => 200,
             'profile_photo_path' => NULL,
             'created_at' => NULL,
             'updated_at' => NULL
@@ -3220,7 +3220,7 @@ class UserSeeder extends Seeder
             'two_factor_secret' => NULL,
             'two_factor_recovery_codes' => NULL,
             'remember_token' => NULL,
-            'role_id' => NULL,
+            'role_id' => 200,
             'profile_photo_path' => NULL,
             'created_at' => NULL,
             'updated_at' => NULL
@@ -3238,7 +3238,7 @@ class UserSeeder extends Seeder
             'two_factor_secret' => NULL,
             'two_factor_recovery_codes' => NULL,
             'remember_token' => NULL,
-            'role_id' => NULL,
+            'role_id' => 200,
             'profile_photo_path' => NULL,
             'created_at' => NULL,
             'updated_at' => NULL
@@ -3256,7 +3256,7 @@ class UserSeeder extends Seeder
             'two_factor_secret' => NULL,
             'two_factor_recovery_codes' => NULL,
             'remember_token' => NULL,
-            'role_id' => NULL,
+            'role_id' => 200,
             'profile_photo_path' => NULL,
             'created_at' => NULL,
             'updated_at' => NULL
@@ -3274,7 +3274,7 @@ class UserSeeder extends Seeder
             'two_factor_secret' => NULL,
             'two_factor_recovery_codes' => NULL,
             'remember_token' => NULL,
-            'role_id' => NULL,
+            'role_id' => 200,
             'profile_photo_path' => NULL,
             'created_at' => NULL,
             'updated_at' => NULL
@@ -3292,7 +3292,7 @@ class UserSeeder extends Seeder
             'two_factor_secret' => NULL,
             'two_factor_recovery_codes' => NULL,
             'remember_token' => NULL,
-            'role_id' => NULL,
+            'role_id' => 200,
             'profile_photo_path' => NULL,
             'created_at' => NULL,
             'updated_at' => NULL
@@ -3310,7 +3310,7 @@ class UserSeeder extends Seeder
             'two_factor_secret' => NULL,
             'two_factor_recovery_codes' => NULL,
             'remember_token' => NULL,
-            'role_id' => NULL,
+            'role_id' => 200,
             'profile_photo_path' => NULL,
             'created_at' => NULL,
             'updated_at' => NULL
@@ -3328,7 +3328,7 @@ class UserSeeder extends Seeder
             'two_factor_secret' => NULL,
             'two_factor_recovery_codes' => NULL,
             'remember_token' => NULL,
-            'role_id' => NULL,
+            'role_id' => 200,
             'profile_photo_path' => NULL,
             'created_at' => NULL,
             'updated_at' => NULL
@@ -3346,7 +3346,7 @@ class UserSeeder extends Seeder
             'two_factor_secret' => NULL,
             'two_factor_recovery_codes' => NULL,
             'remember_token' => NULL,
-            'role_id' => NULL,
+            'role_id' => 200,
             'profile_photo_path' => NULL,
             'created_at' => NULL,
             'updated_at' => NULL
@@ -3364,7 +3364,7 @@ class UserSeeder extends Seeder
             'two_factor_secret' => NULL,
             'two_factor_recovery_codes' => NULL,
             'remember_token' => NULL,
-            'role_id' => NULL,
+            'role_id' => 200,
             'profile_photo_path' => NULL,
             'created_at' => NULL,
             'updated_at' => NULL
@@ -3382,7 +3382,7 @@ class UserSeeder extends Seeder
             'two_factor_secret' => NULL,
             'two_factor_recovery_codes' => NULL,
             'remember_token' => NULL,
-            'role_id' => NULL,
+            'role_id' => 200,
             'profile_photo_path' => NULL,
             'created_at' => NULL,
             'updated_at' => NULL
@@ -3400,7 +3400,7 @@ class UserSeeder extends Seeder
             'two_factor_secret' => NULL,
             'two_factor_recovery_codes' => NULL,
             'remember_token' => NULL,
-            'role_id' => NULL,
+            'role_id' => 200,
             'profile_photo_path' => NULL,
             'created_at' => NULL,
             'updated_at' => NULL
@@ -3418,7 +3418,7 @@ class UserSeeder extends Seeder
             'two_factor_secret' => NULL,
             'two_factor_recovery_codes' => NULL,
             'remember_token' => NULL,
-            'role_id' => NULL,
+            'role_id' => 200,
             'profile_photo_path' => NULL,
             'created_at' => NULL,
             'updated_at' => NULL
@@ -3436,7 +3436,7 @@ class UserSeeder extends Seeder
             'two_factor_secret' => NULL,
             'two_factor_recovery_codes' => NULL,
             'remember_token' => NULL,
-            'role_id' => NULL,
+            'role_id' => 200,
             'profile_photo_path' => NULL,
             'created_at' => NULL,
             'updated_at' => NULL
@@ -3454,7 +3454,7 @@ class UserSeeder extends Seeder
             'two_factor_secret' => NULL,
             'two_factor_recovery_codes' => NULL,
             'remember_token' => NULL,
-            'role_id' => NULL,
+            'role_id' => 200,
             'profile_photo_path' => NULL,
             'created_at' => NULL,
             'updated_at' => NULL
@@ -3472,7 +3472,7 @@ class UserSeeder extends Seeder
             'two_factor_secret' => NULL,
             'two_factor_recovery_codes' => NULL,
             'remember_token' => NULL,
-            'role_id' => NULL,
+            'role_id' => 200,
             'profile_photo_path' => NULL,
             'created_at' => NULL,
             'updated_at' => NULL
@@ -3490,7 +3490,7 @@ class UserSeeder extends Seeder
             'two_factor_secret' => NULL,
             'two_factor_recovery_codes' => NULL,
             'remember_token' => NULL,
-            'role_id' => NULL,
+            'role_id' => 200,
             'profile_photo_path' => NULL,
             'created_at' => NULL,
             'updated_at' => NULL
@@ -3508,7 +3508,7 @@ class UserSeeder extends Seeder
             'two_factor_secret' => NULL,
             'two_factor_recovery_codes' => NULL,
             'remember_token' => NULL,
-            'role_id' => NULL,
+            'role_id' => 200,
             'profile_photo_path' => NULL,
             'created_at' => NULL,
             'updated_at' => NULL
@@ -3526,7 +3526,7 @@ class UserSeeder extends Seeder
             'two_factor_secret' => NULL,
             'two_factor_recovery_codes' => NULL,
             'remember_token' => NULL,
-            'role_id' => NULL,
+            'role_id' => 200,
             'profile_photo_path' => NULL,
             'created_at' => NULL,
             'updated_at' => NULL
@@ -3544,7 +3544,7 @@ class UserSeeder extends Seeder
             'two_factor_secret' => NULL,
             'two_factor_recovery_codes' => NULL,
             'remember_token' => NULL,
-            'role_id' => NULL,
+            'role_id' => 200,
             'profile_photo_path' => NULL,
             'created_at' => NULL,
             'updated_at' => NULL
@@ -3562,7 +3562,7 @@ class UserSeeder extends Seeder
             'two_factor_secret' => NULL,
             'two_factor_recovery_codes' => NULL,
             'remember_token' => NULL,
-            'role_id' => NULL,
+            'role_id' => 200,
             'profile_photo_path' => NULL,
             'created_at' => NULL,
             'updated_at' => NULL
@@ -3580,7 +3580,7 @@ class UserSeeder extends Seeder
             'two_factor_secret' => NULL,
             'two_factor_recovery_codes' => NULL,
             'remember_token' => NULL,
-            'role_id' => NULL,
+            'role_id' => 200,
             'profile_photo_path' => NULL,
             'created_at' => NULL,
             'updated_at' => NULL
@@ -3598,7 +3598,7 @@ class UserSeeder extends Seeder
             'two_factor_secret' => NULL,
             'two_factor_recovery_codes' => NULL,
             'remember_token' => NULL,
-            'role_id' => NULL,
+            'role_id' => 200,
             'profile_photo_path' => NULL,
             'created_at' => NULL,
             'updated_at' => NULL
@@ -3616,7 +3616,7 @@ class UserSeeder extends Seeder
             'two_factor_secret' => NULL,
             'two_factor_recovery_codes' => NULL,
             'remember_token' => NULL,
-            'role_id' => NULL,
+            'role_id' => 200,
             'profile_photo_path' => NULL,
             'created_at' => NULL,
             'updated_at' => NULL
@@ -3634,7 +3634,7 @@ class UserSeeder extends Seeder
             'two_factor_secret' => NULL,
             'two_factor_recovery_codes' => NULL,
             'remember_token' => NULL,
-            'role_id' => NULL,
+            'role_id' => 200,
             'profile_photo_path' => NULL,
             'created_at' => NULL,
             'updated_at' => NULL
@@ -3652,7 +3652,7 @@ class UserSeeder extends Seeder
             'two_factor_secret' => NULL,
             'two_factor_recovery_codes' => NULL,
             'remember_token' => NULL,
-            'role_id' => NULL,
+            'role_id' => 200,
             'profile_photo_path' => NULL,
             'created_at' => NULL,
             'updated_at' => NULL
@@ -3670,7 +3670,7 @@ class UserSeeder extends Seeder
             'two_factor_secret' => NULL,
             'two_factor_recovery_codes' => NULL,
             'remember_token' => NULL,
-            'role_id' => NULL,
+            'role_id' => 200,
             'profile_photo_path' => NULL,
             'created_at' => NULL,
             'updated_at' => NULL
@@ -3688,7 +3688,7 @@ class UserSeeder extends Seeder
             'two_factor_secret' => NULL,
             'two_factor_recovery_codes' => NULL,
             'remember_token' => NULL,
-            'role_id' => NULL,
+            'role_id' => 200,
             'profile_photo_path' => NULL,
             'created_at' => NULL,
             'updated_at' => NULL
@@ -3706,7 +3706,7 @@ class UserSeeder extends Seeder
             'two_factor_secret' => NULL,
             'two_factor_recovery_codes' => NULL,
             'remember_token' => NULL,
-            'role_id' => NULL,
+            'role_id' => 200,
             'profile_photo_path' => NULL,
             'created_at' => NULL,
             'updated_at' => NULL
@@ -3724,7 +3724,7 @@ class UserSeeder extends Seeder
             'two_factor_secret' => NULL,
             'two_factor_recovery_codes' => NULL,
             'remember_token' => NULL,
-            'role_id' => NULL,
+            'role_id' => 200,
             'profile_photo_path' => NULL,
             'created_at' => NULL,
             'updated_at' => NULL
@@ -3742,7 +3742,7 @@ class UserSeeder extends Seeder
             'two_factor_secret' => NULL,
             'two_factor_recovery_codes' => NULL,
             'remember_token' => NULL,
-            'role_id' => NULL,
+            'role_id' => 200,
             'profile_photo_path' => NULL,
             'created_at' => NULL,
             'updated_at' => NULL
@@ -3760,7 +3760,7 @@ class UserSeeder extends Seeder
             'two_factor_secret' => NULL,
             'two_factor_recovery_codes' => NULL,
             'remember_token' => NULL,
-            'role_id' => NULL,
+            'role_id' => 200,
             'profile_photo_path' => NULL,
             'created_at' => NULL,
             'updated_at' => NULL
@@ -3778,7 +3778,7 @@ class UserSeeder extends Seeder
             'two_factor_secret' => NULL,
             'two_factor_recovery_codes' => NULL,
             'remember_token' => NULL,
-            'role_id' => NULL,
+            'role_id' => 200,
             'profile_photo_path' => NULL,
             'created_at' => NULL,
             'updated_at' => NULL
@@ -3796,7 +3796,7 @@ class UserSeeder extends Seeder
             'two_factor_secret' => NULL,
             'two_factor_recovery_codes' => NULL,
             'remember_token' => NULL,
-            'role_id' => NULL,
+            'role_id' => 200,
             'profile_photo_path' => NULL,
             'created_at' => NULL,
             'updated_at' => NULL
@@ -3814,7 +3814,7 @@ class UserSeeder extends Seeder
             'two_factor_secret' => NULL,
             'two_factor_recovery_codes' => NULL,
             'remember_token' => NULL,
-            'role_id' => NULL,
+            'role_id' => 200,
             'profile_photo_path' => NULL,
             'created_at' => NULL,
             'updated_at' => NULL
@@ -3832,7 +3832,7 @@ class UserSeeder extends Seeder
             'two_factor_secret' => NULL,
             'two_factor_recovery_codes' => NULL,
             'remember_token' => NULL,
-            'role_id' => NULL,
+            'role_id' => 200,
             'profile_photo_path' => NULL,
             'created_at' => NULL,
             'updated_at' => NULL
@@ -3850,7 +3850,7 @@ class UserSeeder extends Seeder
             'two_factor_secret' => NULL,
             'two_factor_recovery_codes' => NULL,
             'remember_token' => NULL,
-            'role_id' => NULL,
+            'role_id' => 200,
             'profile_photo_path' => NULL,
             'created_at' => NULL,
             'updated_at' => NULL
@@ -3868,7 +3868,7 @@ class UserSeeder extends Seeder
             'two_factor_secret' => NULL,
             'two_factor_recovery_codes' => NULL,
             'remember_token' => NULL,
-            'role_id' => NULL,
+            'role_id' => 200,
             'profile_photo_path' => NULL,
             'created_at' => NULL,
             'updated_at' => NULL
@@ -3886,7 +3886,7 @@ class UserSeeder extends Seeder
             'two_factor_secret' => NULL,
             'two_factor_recovery_codes' => NULL,
             'remember_token' => NULL,
-            'role_id' => NULL,
+            'role_id' => 200,
             'profile_photo_path' => NULL,
             'created_at' => NULL,
             'updated_at' => NULL
@@ -3904,7 +3904,7 @@ class UserSeeder extends Seeder
             'two_factor_secret' => NULL,
             'two_factor_recovery_codes' => NULL,
             'remember_token' => NULL,
-            'role_id' => NULL,
+            'role_id' => 200,
             'profile_photo_path' => NULL,
             'created_at' => NULL,
             'updated_at' => NULL
@@ -3922,7 +3922,7 @@ class UserSeeder extends Seeder
             'two_factor_secret' => NULL,
             'two_factor_recovery_codes' => NULL,
             'remember_token' => NULL,
-            'role_id' => NULL,
+            'role_id' => 200,
             'profile_photo_path' => NULL,
             'created_at' => NULL,
             'updated_at' => NULL
@@ -3940,7 +3940,7 @@ class UserSeeder extends Seeder
             'two_factor_secret' => NULL,
             'two_factor_recovery_codes' => NULL,
             'remember_token' => NULL,
-            'role_id' => NULL,
+            'role_id' => 200,
             'profile_photo_path' => NULL,
             'created_at' => NULL,
             'updated_at' => NULL
@@ -3958,7 +3958,7 @@ class UserSeeder extends Seeder
             'two_factor_secret' => NULL,
             'two_factor_recovery_codes' => NULL,
             'remember_token' => NULL,
-            'role_id' => NULL,
+            'role_id' => 200,
             'profile_photo_path' => NULL,
             'created_at' => NULL,
             'updated_at' => NULL
@@ -3976,7 +3976,7 @@ class UserSeeder extends Seeder
             'two_factor_secret' => NULL,
             'two_factor_recovery_codes' => NULL,
             'remember_token' => NULL,
-            'role_id' => NULL,
+            'role_id' => 200,
             'profile_photo_path' => NULL,
             'created_at' => NULL,
             'updated_at' => NULL
@@ -3994,7 +3994,7 @@ class UserSeeder extends Seeder
             'two_factor_secret' => NULL,
             'two_factor_recovery_codes' => NULL,
             'remember_token' => NULL,
-            'role_id' => NULL,
+            'role_id' => 200,
             'profile_photo_path' => NULL,
             'created_at' => NULL,
             'updated_at' => NULL
@@ -4012,7 +4012,7 @@ class UserSeeder extends Seeder
             'two_factor_secret' => NULL,
             'two_factor_recovery_codes' => NULL,
             'remember_token' => NULL,
-            'role_id' => NULL,
+            'role_id' => 200,
             'profile_photo_path' => NULL,
             'created_at' => NULL,
             'updated_at' => NULL
@@ -4030,7 +4030,7 @@ class UserSeeder extends Seeder
             'two_factor_secret' => NULL,
             'two_factor_recovery_codes' => NULL,
             'remember_token' => NULL,
-            'role_id' => NULL,
+            'role_id' => 200,
             'profile_photo_path' => NULL,
             'created_at' => NULL,
             'updated_at' => NULL
@@ -4048,7 +4048,7 @@ class UserSeeder extends Seeder
             'two_factor_secret' => NULL,
             'two_factor_recovery_codes' => NULL,
             'remember_token' => NULL,
-            'role_id' => NULL,
+            'role_id' => 200,
             'profile_photo_path' => NULL,
             'created_at' => NULL,
             'updated_at' => NULL
@@ -4066,7 +4066,7 @@ class UserSeeder extends Seeder
             'two_factor_secret' => NULL,
             'two_factor_recovery_codes' => NULL,
             'remember_token' => NULL,
-            'role_id' => NULL,
+            'role_id' => 200,
             'profile_photo_path' => NULL,
             'created_at' => NULL,
             'updated_at' => NULL
@@ -4084,7 +4084,7 @@ class UserSeeder extends Seeder
             'two_factor_secret' => NULL,
             'two_factor_recovery_codes' => NULL,
             'remember_token' => NULL,
-            'role_id' => NULL,
+            'role_id' => 200,
             'profile_photo_path' => NULL,
             'created_at' => NULL,
             'updated_at' => NULL
@@ -4102,7 +4102,7 @@ class UserSeeder extends Seeder
             'two_factor_secret' => NULL,
             'two_factor_recovery_codes' => NULL,
             'remember_token' => NULL,
-            'role_id' => NULL,
+            'role_id' => 200,
             'profile_photo_path' => NULL,
             'created_at' => NULL,
             'updated_at' => NULL
@@ -4120,7 +4120,7 @@ class UserSeeder extends Seeder
             'two_factor_secret' => NULL,
             'two_factor_recovery_codes' => NULL,
             'remember_token' => NULL,
-            'role_id' => NULL,
+            'role_id' => 200,
             'profile_photo_path' => NULL,
             'created_at' => NULL,
             'updated_at' => NULL
@@ -4138,7 +4138,7 @@ class UserSeeder extends Seeder
             'two_factor_secret' => NULL,
             'two_factor_recovery_codes' => NULL,
             'remember_token' => NULL,
-            'role_id' => NULL,
+            'role_id' => 200,
             'profile_photo_path' => NULL,
             'created_at' => NULL,
             'updated_at' => NULL
@@ -4156,7 +4156,7 @@ class UserSeeder extends Seeder
             'two_factor_secret' => NULL,
             'two_factor_recovery_codes' => NULL,
             'remember_token' => NULL,
-            'role_id' => NULL,
+            'role_id' => 200,
             'profile_photo_path' => NULL,
             'created_at' => NULL,
             'updated_at' => NULL
@@ -4174,7 +4174,7 @@ class UserSeeder extends Seeder
             'two_factor_secret' => NULL,
             'two_factor_recovery_codes' => NULL,
             'remember_token' => NULL,
-            'role_id' => NULL,
+            'role_id' => 200,
             'profile_photo_path' => NULL,
             'created_at' => NULL,
             'updated_at' => NULL
@@ -4192,7 +4192,7 @@ class UserSeeder extends Seeder
             'two_factor_secret' => NULL,
             'two_factor_recovery_codes' => NULL,
             'remember_token' => NULL,
-            'role_id' => NULL,
+            'role_id' => 200,
             'profile_photo_path' => NULL,
             'created_at' => NULL,
             'updated_at' => NULL
@@ -4210,7 +4210,7 @@ class UserSeeder extends Seeder
             'two_factor_secret' => NULL,
             'two_factor_recovery_codes' => NULL,
             'remember_token' => NULL,
-            'role_id' => NULL,
+            'role_id' => 200,
             'profile_photo_path' => NULL,
             'created_at' => NULL,
             'updated_at' => NULL
@@ -4228,7 +4228,7 @@ class UserSeeder extends Seeder
             'two_factor_secret' => NULL,
             'two_factor_recovery_codes' => NULL,
             'remember_token' => NULL,
-            'role_id' => NULL,
+            'role_id' => 200,
             'profile_photo_path' => NULL,
             'created_at' => NULL,
             'updated_at' => NULL
@@ -4246,7 +4246,7 @@ class UserSeeder extends Seeder
             'two_factor_secret' => NULL,
             'two_factor_recovery_codes' => NULL,
             'remember_token' => NULL,
-            'role_id' => NULL,
+            'role_id' => 200,
             'profile_photo_path' => NULL,
             'created_at' => NULL,
             'updated_at' => NULL
@@ -4264,7 +4264,7 @@ class UserSeeder extends Seeder
             'two_factor_secret' => NULL,
             'two_factor_recovery_codes' => NULL,
             'remember_token' => NULL,
-            'role_id' => NULL,
+            'role_id' => 200,
             'profile_photo_path' => NULL,
             'created_at' => NULL,
             'updated_at' => NULL
@@ -4282,7 +4282,7 @@ class UserSeeder extends Seeder
             'two_factor_secret' => NULL,
             'two_factor_recovery_codes' => NULL,
             'remember_token' => NULL,
-            'role_id' => NULL,
+            'role_id' => 200,
             'profile_photo_path' => NULL,
             'created_at' => NULL,
             'updated_at' => NULL
@@ -4300,7 +4300,7 @@ class UserSeeder extends Seeder
             'two_factor_secret' => NULL,
             'two_factor_recovery_codes' => NULL,
             'remember_token' => NULL,
-            'role_id' => NULL,
+            'role_id' => 200,
             'profile_photo_path' => NULL,
             'created_at' => NULL,
             'updated_at' => NULL
@@ -4318,7 +4318,7 @@ class UserSeeder extends Seeder
             'two_factor_secret' => NULL,
             'two_factor_recovery_codes' => NULL,
             'remember_token' => NULL,
-            'role_id' => NULL,
+            'role_id' => 200,
             'profile_photo_path' => NULL,
             'created_at' => NULL,
             'updated_at' => NULL
@@ -4336,7 +4336,7 @@ class UserSeeder extends Seeder
             'two_factor_secret' => NULL,
             'two_factor_recovery_codes' => NULL,
             'remember_token' => NULL,
-            'role_id' => NULL,
+            'role_id' => 200,
             'profile_photo_path' => NULL,
             'created_at' => NULL,
             'updated_at' => NULL
@@ -4354,7 +4354,7 @@ class UserSeeder extends Seeder
             'two_factor_secret' => NULL,
             'two_factor_recovery_codes' => NULL,
             'remember_token' => NULL,
-            'role_id' => NULL,
+            'role_id' => 200,
             'profile_photo_path' => NULL,
             'created_at' => NULL,
             'updated_at' => NULL
@@ -4372,7 +4372,7 @@ class UserSeeder extends Seeder
             'two_factor_secret' => NULL,
             'two_factor_recovery_codes' => NULL,
             'remember_token' => NULL,
-            'role_id' => NULL,
+            'role_id' => 200,
             'profile_photo_path' => NULL,
             'created_at' => NULL,
             'updated_at' => NULL
@@ -4390,7 +4390,7 @@ class UserSeeder extends Seeder
             'two_factor_secret' => NULL,
             'two_factor_recovery_codes' => NULL,
             'remember_token' => NULL,
-            'role_id' => NULL,
+            'role_id' => 200,
             'profile_photo_path' => NULL,
             'created_at' => NULL,
             'updated_at' => NULL
@@ -4408,7 +4408,7 @@ class UserSeeder extends Seeder
             'two_factor_secret' => NULL,
             'two_factor_recovery_codes' => NULL,
             'remember_token' => NULL,
-            'role_id' => NULL,
+            'role_id' => 200,
             'profile_photo_path' => NULL,
             'created_at' => NULL,
             'updated_at' => NULL
@@ -4426,7 +4426,7 @@ class UserSeeder extends Seeder
             'two_factor_secret' => NULL,
             'two_factor_recovery_codes' => NULL,
             'remember_token' => NULL,
-            'role_id' => NULL,
+            'role_id' => 200,
             'profile_photo_path' => NULL,
             'created_at' => NULL,
             'updated_at' => NULL
@@ -4444,7 +4444,7 @@ class UserSeeder extends Seeder
             'two_factor_secret' => NULL,
             'two_factor_recovery_codes' => NULL,
             'remember_token' => NULL,
-            'role_id' => NULL,
+            'role_id' => 200,
             'profile_photo_path' => NULL,
             'created_at' => NULL,
             'updated_at' => NULL
@@ -4462,7 +4462,7 @@ class UserSeeder extends Seeder
             'two_factor_secret' => NULL,
             'two_factor_recovery_codes' => NULL,
             'remember_token' => NULL,
-            'role_id' => NULL,
+            'role_id' => 200,
             'profile_photo_path' => NULL,
             'created_at' => NULL,
             'updated_at' => NULL
@@ -4480,7 +4480,7 @@ class UserSeeder extends Seeder
             'two_factor_secret' => NULL,
             'two_factor_recovery_codes' => NULL,
             'remember_token' => NULL,
-            'role_id' => NULL,
+            'role_id' => 200,
             'profile_photo_path' => NULL,
             'created_at' => NULL,
             'updated_at' => NULL
@@ -4498,7 +4498,7 @@ class UserSeeder extends Seeder
             'two_factor_secret' => NULL,
             'two_factor_recovery_codes' => NULL,
             'remember_token' => NULL,
-            'role_id' => NULL,
+            'role_id' => 200,
             'profile_photo_path' => NULL,
             'created_at' => NULL,
             'updated_at' => NULL
@@ -4516,7 +4516,7 @@ class UserSeeder extends Seeder
             'two_factor_secret' => NULL,
             'two_factor_recovery_codes' => NULL,
             'remember_token' => NULL,
-            'role_id' => NULL,
+            'role_id' => 200,
             'profile_photo_path' => NULL,
             'created_at' => NULL,
             'updated_at' => NULL
@@ -4534,7 +4534,7 @@ class UserSeeder extends Seeder
             'two_factor_secret' => NULL,
             'two_factor_recovery_codes' => NULL,
             'remember_token' => NULL,
-            'role_id' => NULL,
+            'role_id' => 200,
             'profile_photo_path' => NULL,
             'created_at' => NULL,
             'updated_at' => NULL
@@ -4552,7 +4552,7 @@ class UserSeeder extends Seeder
             'two_factor_secret' => NULL,
             'two_factor_recovery_codes' => NULL,
             'remember_token' => NULL,
-            'role_id' => NULL,
+            'role_id' => 200,
             'profile_photo_path' => NULL,
             'created_at' => NULL,
             'updated_at' => NULL
@@ -4570,7 +4570,7 @@ class UserSeeder extends Seeder
             'two_factor_secret' => NULL,
             'two_factor_recovery_codes' => NULL,
             'remember_token' => NULL,
-            'role_id' => NULL,
+            'role_id' => 200,
             'profile_photo_path' => NULL,
             'created_at' => NULL,
             'updated_at' => NULL
@@ -4588,7 +4588,7 @@ class UserSeeder extends Seeder
             'two_factor_secret' => NULL,
             'two_factor_recovery_codes' => NULL,
             'remember_token' => NULL,
-            'role_id' => NULL,
+            'role_id' => 200,
             'profile_photo_path' => NULL,
             'created_at' => NULL,
             'updated_at' => NULL
@@ -4606,7 +4606,7 @@ class UserSeeder extends Seeder
             'two_factor_secret' => NULL,
             'two_factor_recovery_codes' => NULL,
             'remember_token' => NULL,
-            'role_id' => NULL,
+            'role_id' => 200,
             'profile_photo_path' => NULL,
             'created_at' => NULL,
             'updated_at' => NULL
@@ -4624,7 +4624,7 @@ class UserSeeder extends Seeder
             'two_factor_secret' => NULL,
             'two_factor_recovery_codes' => NULL,
             'remember_token' => NULL,
-            'role_id' => NULL,
+            'role_id' => 200,
             'profile_photo_path' => NULL,
             'created_at' => NULL,
             'updated_at' => NULL
@@ -4642,7 +4642,7 @@ class UserSeeder extends Seeder
             'two_factor_secret' => NULL,
             'two_factor_recovery_codes' => NULL,
             'remember_token' => NULL,
-            'role_id' => NULL,
+            'role_id' => 200,
             'profile_photo_path' => NULL,
             'created_at' => NULL,
             'updated_at' => NULL
@@ -4660,7 +4660,7 @@ class UserSeeder extends Seeder
             'two_factor_secret' => NULL,
             'two_factor_recovery_codes' => NULL,
             'remember_token' => NULL,
-            'role_id' => NULL,
+            'role_id' => 200,
             'profile_photo_path' => NULL,
             'created_at' => NULL,
             'updated_at' => NULL
@@ -4678,7 +4678,7 @@ class UserSeeder extends Seeder
             'two_factor_secret' => NULL,
             'two_factor_recovery_codes' => NULL,
             'remember_token' => NULL,
-            'role_id' => NULL,
+            'role_id' => 200,
             'profile_photo_path' => NULL,
             'created_at' => NULL,
             'updated_at' => NULL
@@ -4696,7 +4696,7 @@ class UserSeeder extends Seeder
             'two_factor_secret' => NULL,
             'two_factor_recovery_codes' => NULL,
             'remember_token' => NULL,
-            'role_id' => NULL,
+            'role_id' => 200,
             'profile_photo_path' => NULL,
             'created_at' => NULL,
             'updated_at' => NULL
@@ -4714,7 +4714,7 @@ class UserSeeder extends Seeder
             'two_factor_secret' => NULL,
             'two_factor_recovery_codes' => NULL,
             'remember_token' => NULL,
-            'role_id' => NULL,
+            'role_id' => 200,
             'profile_photo_path' => NULL,
             'created_at' => NULL,
             'updated_at' => NULL
@@ -4732,7 +4732,7 @@ class UserSeeder extends Seeder
             'two_factor_secret' => NULL,
             'two_factor_recovery_codes' => NULL,
             'remember_token' => NULL,
-            'role_id' => NULL,
+            'role_id' => 200,
             'profile_photo_path' => NULL,
             'created_at' => NULL,
             'updated_at' => NULL
@@ -4750,7 +4750,7 @@ class UserSeeder extends Seeder
             'two_factor_secret' => NULL,
             'two_factor_recovery_codes' => NULL,
             'remember_token' => NULL,
-            'role_id' => NULL,
+            'role_id' => 200,
             'profile_photo_path' => NULL,
             'created_at' => NULL,
             'updated_at' => NULL
@@ -4768,7 +4768,7 @@ class UserSeeder extends Seeder
             'two_factor_secret' => NULL,
             'two_factor_recovery_codes' => NULL,
             'remember_token' => NULL,
-            'role_id' => NULL,
+            'role_id' => 200,
             'profile_photo_path' => NULL,
             'created_at' => NULL,
             'updated_at' => NULL
@@ -4786,7 +4786,7 @@ class UserSeeder extends Seeder
             'two_factor_secret' => NULL,
             'two_factor_recovery_codes' => NULL,
             'remember_token' => NULL,
-            'role_id' => NULL,
+            'role_id' => 200,
             'profile_photo_path' => NULL,
             'created_at' => NULL,
             'updated_at' => NULL
@@ -4804,7 +4804,7 @@ class UserSeeder extends Seeder
             'two_factor_secret' => NULL,
             'two_factor_recovery_codes' => NULL,
             'remember_token' => NULL,
-            'role_id' => NULL,
+            'role_id' => 200,
             'profile_photo_path' => NULL,
             'created_at' => NULL,
             'updated_at' => NULL
@@ -4822,7 +4822,7 @@ class UserSeeder extends Seeder
             'two_factor_secret' => NULL,
             'two_factor_recovery_codes' => NULL,
             'remember_token' => NULL,
-            'role_id' => NULL,
+            'role_id' => 200,
             'profile_photo_path' => NULL,
             'created_at' => NULL,
             'updated_at' => NULL
@@ -4840,7 +4840,7 @@ class UserSeeder extends Seeder
             'two_factor_secret' => NULL,
             'two_factor_recovery_codes' => NULL,
             'remember_token' => NULL,
-            'role_id' => NULL,
+            'role_id' => 200,
             'profile_photo_path' => NULL,
             'created_at' => NULL,
             'updated_at' => NULL
@@ -4858,7 +4858,7 @@ class UserSeeder extends Seeder
             'two_factor_secret' => NULL,
             'two_factor_recovery_codes' => NULL,
             'remember_token' => NULL,
-            'role_id' => NULL,
+            'role_id' => 200,
             'profile_photo_path' => NULL,
             'created_at' => NULL,
             'updated_at' => NULL
@@ -4876,7 +4876,7 @@ class UserSeeder extends Seeder
             'two_factor_secret' => NULL,
             'two_factor_recovery_codes' => NULL,
             'remember_token' => NULL,
-            'role_id' => NULL,
+            'role_id' => 200,
             'profile_photo_path' => NULL,
             'created_at' => NULL,
             'updated_at' => NULL
@@ -4894,7 +4894,7 @@ class UserSeeder extends Seeder
             'two_factor_secret' => NULL,
             'two_factor_recovery_codes' => NULL,
             'remember_token' => NULL,
-            'role_id' => NULL,
+            'role_id' => 200,
             'profile_photo_path' => NULL,
             'created_at' => NULL,
             'updated_at' => NULL
@@ -4912,7 +4912,7 @@ class UserSeeder extends Seeder
             'two_factor_secret' => NULL,
             'two_factor_recovery_codes' => NULL,
             'remember_token' => NULL,
-            'role_id' => NULL,
+            'role_id' => 200,
             'profile_photo_path' => NULL,
             'created_at' => NULL,
             'updated_at' => NULL
@@ -4930,7 +4930,7 @@ class UserSeeder extends Seeder
             'two_factor_secret' => NULL,
             'two_factor_recovery_codes' => NULL,
             'remember_token' => NULL,
-            'role_id' => NULL,
+            'role_id' => 200,
             'profile_photo_path' => NULL,
             'created_at' => NULL,
             'updated_at' => NULL
@@ -4948,7 +4948,7 @@ class UserSeeder extends Seeder
             'two_factor_secret' => NULL,
             'two_factor_recovery_codes' => NULL,
             'remember_token' => NULL,
-            'role_id' => NULL,
+            'role_id' => 200,
             'profile_photo_path' => NULL,
             'created_at' => NULL,
             'updated_at' => NULL
@@ -4966,7 +4966,7 @@ class UserSeeder extends Seeder
             'two_factor_secret' => NULL,
             'two_factor_recovery_codes' => NULL,
             'remember_token' => NULL,
-            'role_id' => NULL,
+            'role_id' => 200,
             'profile_photo_path' => NULL,
             'created_at' => NULL,
             'updated_at' => NULL
@@ -4984,7 +4984,7 @@ class UserSeeder extends Seeder
             'two_factor_secret' => NULL,
             'two_factor_recovery_codes' => NULL,
             'remember_token' => NULL,
-            'role_id' => NULL,
+            'role_id' => 200,
             'profile_photo_path' => NULL,
             'created_at' => NULL,
             'updated_at' => NULL
@@ -5002,7 +5002,7 @@ class UserSeeder extends Seeder
             'two_factor_secret' => NULL,
             'two_factor_recovery_codes' => NULL,
             'remember_token' => NULL,
-            'role_id' => NULL,
+            'role_id' => 200,
             'profile_photo_path' => NULL,
             'created_at' => NULL,
             'updated_at' => NULL
@@ -5020,7 +5020,7 @@ class UserSeeder extends Seeder
             'two_factor_secret' => NULL,
             'two_factor_recovery_codes' => NULL,
             'remember_token' => NULL,
-            'role_id' => NULL,
+            'role_id' => 200,
             'profile_photo_path' => NULL,
             'created_at' => NULL,
             'updated_at' => NULL
@@ -5038,7 +5038,7 @@ class UserSeeder extends Seeder
             'two_factor_secret' => NULL,
             'two_factor_recovery_codes' => NULL,
             'remember_token' => NULL,
-            'role_id' => NULL,
+            'role_id' => 200,
             'profile_photo_path' => NULL,
             'created_at' => NULL,
             'updated_at' => NULL
@@ -5056,7 +5056,7 @@ class UserSeeder extends Seeder
             'two_factor_secret' => NULL,
             'two_factor_recovery_codes' => NULL,
             'remember_token' => NULL,
-            'role_id' => NULL,
+            'role_id' => 200,
             'profile_photo_path' => NULL,
             'created_at' => NULL,
             'updated_at' => NULL
@@ -5074,7 +5074,7 @@ class UserSeeder extends Seeder
             'two_factor_secret' => NULL,
             'two_factor_recovery_codes' => NULL,
             'remember_token' => NULL,
-            'role_id' => NULL,
+            'role_id' => 200,
             'profile_photo_path' => NULL,
             'created_at' => NULL,
             'updated_at' => NULL
@@ -5092,7 +5092,7 @@ class UserSeeder extends Seeder
             'two_factor_secret' => NULL,
             'two_factor_recovery_codes' => NULL,
             'remember_token' => NULL,
-            'role_id' => NULL,
+            'role_id' => 200,
             'profile_photo_path' => NULL,
             'created_at' => NULL,
             'updated_at' => NULL
@@ -5110,7 +5110,7 @@ class UserSeeder extends Seeder
             'two_factor_secret' => NULL,
             'two_factor_recovery_codes' => NULL,
             'remember_token' => NULL,
-            'role_id' => NULL,
+            'role_id' => 200,
             'profile_photo_path' => NULL,
             'created_at' => NULL,
             'updated_at' => NULL
@@ -5128,7 +5128,7 @@ class UserSeeder extends Seeder
             'two_factor_secret' => NULL,
             'two_factor_recovery_codes' => NULL,
             'remember_token' => NULL,
-            'role_id' => NULL,
+            'role_id' => 200,
             'profile_photo_path' => NULL,
             'created_at' => NULL,
             'updated_at' => NULL
@@ -5146,7 +5146,7 @@ class UserSeeder extends Seeder
             'two_factor_secret' => NULL,
             'two_factor_recovery_codes' => NULL,
             'remember_token' => NULL,
-            'role_id' => NULL,
+            'role_id' => 200,
             'profile_photo_path' => NULL,
             'created_at' => NULL,
             'updated_at' => NULL
@@ -5164,7 +5164,7 @@ class UserSeeder extends Seeder
             'two_factor_secret' => NULL,
             'two_factor_recovery_codes' => NULL,
             'remember_token' => NULL,
-            'role_id' => NULL,
+            'role_id' => 200,
             'profile_photo_path' => NULL,
             'created_at' => NULL,
             'updated_at' => NULL
@@ -5182,7 +5182,7 @@ class UserSeeder extends Seeder
             'two_factor_secret' => NULL,
             'two_factor_recovery_codes' => NULL,
             'remember_token' => NULL,
-            'role_id' => NULL,
+            'role_id' => 200,
             'profile_photo_path' => NULL,
             'created_at' => NULL,
             'updated_at' => NULL
@@ -5200,7 +5200,7 @@ class UserSeeder extends Seeder
             'two_factor_secret' => NULL,
             'two_factor_recovery_codes' => NULL,
             'remember_token' => NULL,
-            'role_id' => NULL,
+            'role_id' => 200,
             'profile_photo_path' => NULL,
             'created_at' => NULL,
             'updated_at' => NULL
@@ -5218,7 +5218,7 @@ class UserSeeder extends Seeder
             'two_factor_secret' => NULL,
             'two_factor_recovery_codes' => NULL,
             'remember_token' => NULL,
-            'role_id' => NULL,
+            'role_id' => 200,
             'profile_photo_path' => NULL,
             'created_at' => NULL,
             'updated_at' => NULL
@@ -5236,7 +5236,7 @@ class UserSeeder extends Seeder
             'two_factor_secret' => NULL,
             'two_factor_recovery_codes' => NULL,
             'remember_token' => NULL,
-            'role_id' => NULL,
+            'role_id' => 200,
             'profile_photo_path' => NULL,
             'created_at' => NULL,
             'updated_at' => NULL
@@ -5254,7 +5254,7 @@ class UserSeeder extends Seeder
             'two_factor_secret' => NULL,
             'two_factor_recovery_codes' => NULL,
             'remember_token' => NULL,
-            'role_id' => NULL,
+            'role_id' => 200,
             'profile_photo_path' => NULL,
             'created_at' => NULL,
             'updated_at' => NULL
@@ -5272,7 +5272,7 @@ class UserSeeder extends Seeder
             'two_factor_secret' => NULL,
             'two_factor_recovery_codes' => NULL,
             'remember_token' => NULL,
-            'role_id' => NULL,
+            'role_id' => 200,
             'profile_photo_path' => NULL,
             'created_at' => NULL,
             'updated_at' => NULL
@@ -5290,7 +5290,7 @@ class UserSeeder extends Seeder
             'two_factor_secret' => NULL,
             'two_factor_recovery_codes' => NULL,
             'remember_token' => NULL,
-            'role_id' => NULL,
+            'role_id' => 200,
             'profile_photo_path' => NULL,
             'created_at' => NULL,
             'updated_at' => NULL
@@ -5308,7 +5308,7 @@ class UserSeeder extends Seeder
             'two_factor_secret' => NULL,
             'two_factor_recovery_codes' => NULL,
             'remember_token' => NULL,
-            'role_id' => NULL,
+            'role_id' => 200,
             'profile_photo_path' => NULL,
             'created_at' => NULL,
             'updated_at' => NULL
@@ -5326,7 +5326,7 @@ class UserSeeder extends Seeder
             'two_factor_secret' => NULL,
             'two_factor_recovery_codes' => NULL,
             'remember_token' => NULL,
-            'role_id' => NULL,
+            'role_id' => 200,
             'profile_photo_path' => NULL,
             'created_at' => NULL,
             'updated_at' => NULL
@@ -5344,7 +5344,7 @@ class UserSeeder extends Seeder
             'two_factor_secret' => NULL,
             'two_factor_recovery_codes' => NULL,
             'remember_token' => NULL,
-            'role_id' => NULL,
+            'role_id' => 200,
             'profile_photo_path' => NULL,
             'created_at' => NULL,
             'updated_at' => NULL
@@ -5362,7 +5362,7 @@ class UserSeeder extends Seeder
             'two_factor_secret' => NULL,
             'two_factor_recovery_codes' => NULL,
             'remember_token' => NULL,
-            'role_id' => NULL,
+            'role_id' => 200,
             'profile_photo_path' => NULL,
             'created_at' => NULL,
             'updated_at' => NULL
@@ -5380,7 +5380,7 @@ class UserSeeder extends Seeder
             'two_factor_secret' => NULL,
             'two_factor_recovery_codes' => NULL,
             'remember_token' => NULL,
-            'role_id' => NULL,
+            'role_id' => 200,
             'profile_photo_path' => NULL,
             'created_at' => NULL,
             'updated_at' => NULL
@@ -5398,7 +5398,7 @@ class UserSeeder extends Seeder
             'two_factor_secret' => NULL,
             'two_factor_recovery_codes' => NULL,
             'remember_token' => NULL,
-            'role_id' => NULL,
+            'role_id' => 200,
             'profile_photo_path' => NULL,
             'created_at' => NULL,
             'updated_at' => NULL
@@ -5416,7 +5416,7 @@ class UserSeeder extends Seeder
             'two_factor_secret' => NULL,
             'two_factor_recovery_codes' => NULL,
             'remember_token' => NULL,
-            'role_id' => NULL,
+            'role_id' => 200,
             'profile_photo_path' => NULL,
             'created_at' => NULL,
             'updated_at' => NULL
@@ -5434,7 +5434,7 @@ class UserSeeder extends Seeder
             'two_factor_secret' => NULL,
             'two_factor_recovery_codes' => NULL,
             'remember_token' => NULL,
-            'role_id' => NULL,
+            'role_id' => 200,
             'profile_photo_path' => NULL,
             'created_at' => NULL,
             'updated_at' => NULL
@@ -5452,7 +5452,7 @@ class UserSeeder extends Seeder
             'two_factor_secret' => NULL,
             'two_factor_recovery_codes' => NULL,
             'remember_token' => NULL,
-            'role_id' => NULL,
+            'role_id' => 200,
             'profile_photo_path' => NULL,
             'created_at' => NULL,
             'updated_at' => NULL
@@ -5470,7 +5470,7 @@ class UserSeeder extends Seeder
             'two_factor_secret' => NULL,
             'two_factor_recovery_codes' => NULL,
             'remember_token' => NULL,
-            'role_id' => NULL,
+            'role_id' => 200,
             'profile_photo_path' => NULL,
             'created_at' => NULL,
             'updated_at' => NULL
@@ -5488,7 +5488,7 @@ class UserSeeder extends Seeder
             'two_factor_secret' => NULL,
             'two_factor_recovery_codes' => NULL,
             'remember_token' => NULL,
-            'role_id' => NULL,
+            'role_id' => 200,
             'profile_photo_path' => NULL,
             'created_at' => NULL,
             'updated_at' => NULL
@@ -5506,7 +5506,7 @@ class UserSeeder extends Seeder
             'two_factor_secret' => NULL,
             'two_factor_recovery_codes' => NULL,
             'remember_token' => NULL,
-            'role_id' => NULL,
+            'role_id' => 200,
             'profile_photo_path' => NULL,
             'created_at' => NULL,
             'updated_at' => NULL
@@ -5524,7 +5524,7 @@ class UserSeeder extends Seeder
             'two_factor_secret' => NULL,
             'two_factor_recovery_codes' => NULL,
             'remember_token' => NULL,
-            'role_id' => NULL,
+            'role_id' => 200,
             'profile_photo_path' => NULL,
             'created_at' => NULL,
             'updated_at' => NULL

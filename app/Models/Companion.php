@@ -7,6 +7,8 @@ use Illuminate\Database\Eloquent\Model;
 
 class Companion extends Model
 {
+    use HasFactory;
+
     protected $table = 'companions';
     protected $fillable = [
         'parent_user_id',
@@ -23,6 +25,24 @@ class Companion extends Model
         'phone_number',
         'email',
     ];
-    
-    use HasFactory;
+
+    public function user()
+    {
+        return $this->belongsTo(User::class, 'user_id');
+    }
+
+    public function  religion()
+    {
+        return $this->belongsTo(Param::class, 'religion_id');
+    }
+
+    public function  education()
+    {
+        return $this->belongsTo(Param::class, 'education_id');
+    }
+
+    public function districts_city()
+    {
+        return $this->belongsTo(DistrictsCity::class, 'districts_city_id');
+    }
 }

@@ -15,19 +15,19 @@ class CreateCompanionsTable extends Migration
     {
         Schema::create('companions', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('parent_user_id');
-            $table->foreignId('user_id');
-            $table->string('no_ktp');
-            $table->enum('status', ['lajang','menikah']);
-            $table->enum('gender', ['laki-laki','perempuan']);
-            $table->string('place_birth');
-            $table->date('date_birth');
-            $table->foreignId('religion_id')->constrained('params')->onDelete('cascade')->onUpdate('cascade');
-            $table->foreignId('education_id')->constrained('params')->onDelete('cascade')->onUpdate('cascade');
-            $table->text('home_address');
-            $table->foreignId('districts_city_id')->constrained('districts_cities')->onDelete('cascade')->onUpdate('cascade');
-            $table->string('phone_number');
-            $table->string('email');
+            $table->foreignId('parent_user_id')->constrained('users')->onDelete('cascade')->onUpdate('cascade');
+            $table->foreignId('user_id')->constrained('users')->onDelete('cascade')->onUpdate('cascade');
+            $table->string('no_ktp')->nullable();
+            $table->enum('status', ['lajang','menikah'])->nullable();
+            $table->enum('gender', ['laki-laki','perempuan'])->nullable();
+            $table->string('place_birth')->nullable();
+            $table->date('date_birth')->nullable();
+            $table->foreignId('religion_id')->nullable()->constrained('params')->onDelete('cascade')->onUpdate('cascade');
+            $table->foreignId('education_id')->nullable()->constrained('params')->onDelete('cascade')->onUpdate('cascade');
+            $table->text('home_address')->nullable();
+            $table->foreignId('districts_city_id')->nullable()->constrained('districts_cities')->onDelete('cascade')->onUpdate('cascade');
+            $table->string('phone_number')->nullable();
+            $table->string('email')->nullable();
             $table->timestamps();
         });
     }

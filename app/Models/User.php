@@ -32,6 +32,7 @@ class User extends Authenticatable
         'order_province',
         'order_city',
         'role_id',
+        'profile_photo_path',
         'password',
     ];
 
@@ -78,5 +79,10 @@ class User extends Authenticatable
     public function budged_performance()
     {
         return $this->hasOne(BudgedPerformance::class, 'user_id');
+    }
+
+    public function  companion()
+    {
+        return $this->hasOne(Companion::class, 'user_id');
     }
 }

@@ -41,11 +41,11 @@ class UpdateBudgedPerformanceController extends Controller
 
         $input['budged_realization1'] = $request->budged_realization1;
         $input['budged_realization2'] = $request->budged_realization2;
-        $budged_performance_id = $user->budged_performance()->update($input);
-        $budged_performance = BudgedPerformance::find($budged_performance_id);
+        $user->budged_performance()->update($input);
+        
         
         return ResponseFormatter::success(
-            new BudgedPerformanceResource($budged_performance),
+            new BudgedPerformanceResource($user->budged_performance),
             'success update budged performance data'
         );
     }

@@ -6,6 +6,10 @@ use App\Http\Controllers\API\Auth\PasswordResetController;
 use App\Http\Controllers\API\Auth\UserController;
 use App\Http\Controllers\API\BudgedPerformance\GetBudgedPerformanceController;
 use App\Http\Controllers\API\BudgedPerformance\UpdateBudgedPerformanceController;
+use App\Http\Controllers\API\Companion\CreateCompanionController;
+use App\Http\Controllers\API\Companion\DeleteCompanionController;
+use App\Http\Controllers\API\Companion\GetCompanionController;
+use App\Http\Controllers\API\Companion\UpdateCompanionController;
 use App\Http\Controllers\API\Param\GetParamController;
 use App\Http\Controllers\API\Participant\CreateParticipantController;
 use App\Http\Controllers\API\Participant\DeleteParticipantController;
@@ -76,5 +80,12 @@ Route::middleware('auth:sanctum')->group(function () {
         Route::get('position_koperasi', [GetParamController::class, 'position_koperasi']);
         Route::get('training_needs', [GetParamController::class, 'training_needs']);
         Route::get('training_type', [GetParamController::class, 'training_type']);
+    });
+
+    Route::prefix('companion')->group(function () {
+        Route::get('/', GetCompanionController::class);
+        Route::post('/', CreateCompanionController::class);
+        Route::post('{user:id}/update', UpdateCompanionController::class);
+        Route::delete('{user_id}/delete', DeleteCompanionController::class);
     });
 });
