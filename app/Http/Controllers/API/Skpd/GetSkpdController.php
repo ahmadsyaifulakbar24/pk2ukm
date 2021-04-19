@@ -5,13 +5,14 @@ namespace App\Http\Controllers\API\Skpd;
 use App\Helpers\ResponseFormatter;
 use App\Http\Controllers\Controller;
 use App\Http\Resources\Skpd\SkpdResource;
+use App\Http\Resources\Skpd\UserSkpdResource;
 use App\Models\Skpd;
 use App\Models\User;
 use Illuminate\Http\Request;
 
 class GetSkpdController extends Controller
 {
-    public function __invoke(Request $request, $user_id = null) 
+    public function get(Request $request, $user_id = null) 
     {
         if($user_id) {
             $skpd = Skpd::where('user_id', $user_id)->first();
@@ -31,5 +32,14 @@ class GetSkpdController extends Controller
             $skpd = Skpd::paginate($limit);
             return SkpdResource::collection($skpd);
         }
+    }
+
+    public function get_by_province($province_id)
+    {
+        $userSkpd = User::with('skpd')->where('province_id', $province_id)->get();
+        return ResponseFormatter::success(
+            UserSkpdResource::collection($userSkpd),
+            'success get data skpd by province',
+        );
     }
 }

@@ -15,6 +15,7 @@ use App\Http\Controllers\API\Participant\CreateParticipantController;
 use App\Http\Controllers\API\Participant\DeleteParticipantController;
 use App\Http\Controllers\API\Participant\GetParticipantController;
 use App\Http\Controllers\API\Participant\UpdateParticipantController;
+use App\Http\Controllers\API\Report\GetReportController;
 use App\Http\Controllers\API\Skpd\CreateSkpdController;
 use App\Http\Controllers\API\Skpd\GetSkpdController;
 use App\Http\Controllers\API\Training\CreateTrainingController;
@@ -54,13 +55,15 @@ Route::middleware('auth:sanctum')->group(function () {
     });
 
     Route::prefix('skpd')->group(function () {
-        Route::get('{user_id?}', GetSkpdController::class);
+        Route::get('{user_id?}', [GetSkpdController::class, 'get']);
+        Route::get('{province_id}/get_by_province', [GetSkpdController::class, 'get_by_province']);
         Route::post('create', CreateSkpdController::class);
     });
 
     Route::prefix('budged_performance')->group(function () {
-        Route::get('{user:id}', GetBudgedPerformanceController::class);
+        Route::get('{user:id}/get', [GetBudgedPerformanceController::class, 'fetch']);
         Route::post('update', UpdateBudgedPerformanceController::class);
+        Route::get('persentase_budged_realization', [GetBudgedPerformanceController::class, 'persentase_budged_realization']);
     });
 
     Route::prefix('participant')->group(function () {
@@ -87,5 +90,16 @@ Route::middleware('auth:sanctum')->group(function () {
         Route::post('/', CreateCompanionController::class);
         Route::post('{user:id}/update', UpdateCompanionController::class);
         Route::delete('{user_id}/delete', DeleteCompanionController::class);
+    });
+
+    Route::prefix('report')->group(function () {
+        Route::get('total_participant_by_gender', [GetReportController::class, 'total_participant_by_gender']);
+        Route::get('total_participant_by_religion', [GetReportController::class, 'total_participant_by_religion']);
+        Route::get('total_participant_by_training_type', [GetReportController::class, 'total_participant_by_training_type']);
+        Route::get('total_participant_by_education', [GetReportController::class, 'total_participant_by_education']);
+        Route::get('total_participant_by_business_status', [GetReportController::class, 'total_participant_by_business_status']);
+        Route::get('total_user_by_province', [GetReportController::class, 'total_user_by_province']);
+        Route::get('total_training_by_province', [GetReportController::class, 'total_training_by_province']);
+        Route::get('total_companion_by_province', [GetReportController::class, 'total_companion_by_province']);
     });
 });

@@ -85,4 +85,14 @@ class User extends Authenticatable
     {
         return $this->hasOne(Companion::class, 'user_id');
     }
+
+    public function province()
+    {
+        return $this->belongsTo(Province::class, 'province_id');
+    }
+
+    public function districts_city()
+    {
+        return $this->belongsTo(DistrictsCity::class, 'districts_city_id');
+    }
 }
