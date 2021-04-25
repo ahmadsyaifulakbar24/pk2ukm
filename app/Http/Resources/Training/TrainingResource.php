@@ -2,6 +2,7 @@
 
 namespace App\Http\Resources\Training;
 
+use App\Models\Participant;
 use Illuminate\Http\Resources\Json\JsonResource;
 
 class TrainingResource extends JsonResource
@@ -27,6 +28,7 @@ class TrainingResource extends JsonResource
             'status' => $this->status,
             'crated_at' => $this->created_at,
             'update_at' => $this->updated_at,
+            'total_participant' => $this->participant()->count(),
         ];
     }
 }

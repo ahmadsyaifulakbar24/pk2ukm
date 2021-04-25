@@ -22,6 +22,7 @@ use App\Http\Controllers\API\Training\CreateTrainingController;
 use App\Http\Controllers\API\Training\DeleteTrainingController;
 use App\Http\Controllers\API\Training\GetTrainingController;
 use App\Http\Controllers\API\Training\UpdateTrainingController;
+use App\Http\Controllers\API\User\GetUserController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -46,6 +47,9 @@ Route::middleware('auth:sanctum')->group(function () {
     Route::get('user', UserController::class);
     Route::post('password_reset', PasswordResetController::class);
 
+    Route::prefix('user')->group(function () {
+        Route::get('/', [GetUserController::class, 'get']);
+    });
     Route::prefix('training')->group(function () {
         Route::get('{user_id?}', GetTrainingController::class);
         Route::post('create', CreateTrainingController::class);
@@ -62,8 +66,9 @@ Route::middleware('auth:sanctum')->group(function () {
 
     Route::prefix('budged_performance')->group(function () {
         Route::get('{user:id}/get', [GetBudgedPerformanceController::class, 'fetch']);
-        Route::post('update', UpdateBudgedPerformanceController::class);
+        Route::get('{province_id}/by_province', [GetBudgedPerformanceController::class, 'by_province']);
         Route::get('persentase_budged_realization', [GetBudgedPerformanceController::class, 'persentase_budged_realization']);
+        Route::post('update', UpdateBudgedPerformanceController::class);
     });
 
     Route::prefix('participant')->group(function () {

@@ -5,6 +5,7 @@ namespace App\Http\Controllers\API\BudgedPerformance;
 use App\Helpers\ResponseFormatter;
 use App\Http\Controllers\Controller;
 use App\Http\Resources\BudgedPerformance\BudgedPerformanceResource;
+use App\Http\Resources\BudgedPerformance\UserBudgedPerformanceResource;
 use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
@@ -17,6 +18,15 @@ class GetBudgedPerformanceController extends Controller
         return ResponseFormatter::success(
             new BudgedPerformanceResource($budged_performance),
             'success get budged performance data'
+        );
+    }
+
+    public function by_province($province_id) 
+    {
+        $user_budged_performance = User::with('budged_performance')->where('province_id', $province_id)->get();
+        return ResponseFormatter::success(
+            UserBudgedPerformanceResource::collection($user_budged_performance),
+            'success get budged performance by id'
         );
     }
 
