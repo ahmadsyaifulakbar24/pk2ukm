@@ -50,6 +50,7 @@ Route::middleware('auth:sanctum')->group(function () {
     Route::prefix('user')->group(function () {
         Route::get('/', [GetUserController::class, 'get']);
     });
+    
     Route::prefix('training')->group(function () {
         Route::get('{user_id?}', GetTrainingController::class);
         Route::post('create', CreateTrainingController::class);

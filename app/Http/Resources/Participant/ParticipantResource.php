@@ -30,7 +30,7 @@ class ParticipantResource extends JsonResource
             'email' => $this->email,
             'province' => $this->province,
             'districts_city' => $this->districts_city,
-            'profile_photo' => $this->profile_photo,
+            'profile_photo' => $this->profile_photo_url,
 
             // Business Status
             'business_status' => new ParamResource($this->business_status),

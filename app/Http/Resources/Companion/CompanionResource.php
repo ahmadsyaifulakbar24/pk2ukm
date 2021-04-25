@@ -18,7 +18,6 @@ class CompanionResource extends JsonResource
         return [
             'name' => $this->user->name,
             'username' => $this->user->username,
-            'profile_photo_path' => $this->user->profile_photo_path,
             'profile_photo_url' => $this->user->profile_photo_url,
             'no_ktp' => $this->no_ktp,
             'status' => $this->status,

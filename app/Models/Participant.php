@@ -4,6 +4,7 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Support\Facades\Storage;
 
 class Participant extends Model
 {
@@ -48,6 +49,16 @@ class Participant extends Model
         'registrasion_number_koperasi',
         'position_koperasi_id',
     ]; 
+
+
+    protected $appends = [
+        'profile_photo_url'
+    ];
+
+    public function getProfilePhotoUrlAttribute()
+    {
+        return url('') . Storage::url($this->attributes['profile_photo']);
+    }
 
     public function training ()
     {
