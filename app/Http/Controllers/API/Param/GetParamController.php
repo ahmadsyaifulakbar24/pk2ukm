@@ -4,12 +4,34 @@ namespace App\Http\Controllers\API\Param;
 
 use App\Helpers\ResponseFormatter;
 use App\Http\Controllers\Controller;
+use App\Http\Resources\DistrictsCity\DistrictsCityResource;
 use App\Http\Resources\Param\ParamResource;
+use App\Models\DistrictsCity;
 use App\Models\Param;
+use App\Models\Province;
+use Facade\FlareClient\Http\Response;
 use Illuminate\Http\Request;
 
 class GetParamController extends Controller
 {
+    public function province() 
+    {
+        $province = Province::all();
+        return ResponseFormatter::success(
+            $province,
+            'success get data province'
+        );
+    }
+    
+    public function districts_city($province_id)
+    {
+        $districts_city = DistrictsCity::where('province_id', $province_id)->get();
+        return ResponseFormatter::success(
+            DistrictsCityResource::collection($districts_city),
+            'success get data districts city'
+        );
+
+    }
     public function education()
     {
         $education = Param::where([['category_param', 'education'], ['active', 1]])->orderBy('order', 'asc')->get();

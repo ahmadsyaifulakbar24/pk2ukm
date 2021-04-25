@@ -68,21 +68,8 @@ Route::middleware('auth:sanctum')->group(function () {
 
     Route::prefix('participant')->group(function () {
         Route::get('{training:id}', GetParticipantController::class);
-        Route::post('{training:id}/create', CreateParticipantController::class);
         Route::post('{participant:id}/update', UpdateParticipantController::class);
         Route::delete('{participant:id}/delete', DeleteParticipantController::class);
-    });
-
-    Route::prefix('param')->group(function () {
-        Route::get('education', [GetParamController::class, 'education']);
-        Route::get('religion', [GetParamController::class, 'religion']);
-        Route::get('business_status', [GetParamController::class, 'business_status']);
-        Route::get('business_sector', [GetParamController::class, 'business_sector']);
-        Route::get('position_umkm', [GetParamController::class, 'position_umkm']);
-        Route::get('type_koperasi', [GetParamController::class, 'type_koperasi']);
-        Route::get('position_koperasi', [GetParamController::class, 'position_koperasi']);
-        Route::get('training_needs', [GetParamController::class, 'training_needs']);
-        Route::get('training_type', [GetParamController::class, 'training_type']);
     });
 
     Route::prefix('companion')->group(function () {
@@ -102,4 +89,22 @@ Route::middleware('auth:sanctum')->group(function () {
         Route::get('total_training_by_province', [GetReportController::class, 'total_training_by_province']);
         Route::get('total_companion_by_province', [GetReportController::class, 'total_companion_by_province']);
     });
+});
+
+Route::prefix('participant')->group(function () {
+    Route::post('{training:id}/create', CreateParticipantController::class);
+});
+
+Route::prefix('param')->group(function () {
+    Route::get('province', [GetParamController::class, 'province']);
+    Route::get('districts_city/{province_id}', [GetParamController::class, 'districts_city']);
+    Route::get('education', [GetParamController::class, 'education']);
+    Route::get('religion', [GetParamController::class, 'religion']);
+    Route::get('business_status', [GetParamController::class, 'business_status']);
+    Route::get('business_sector', [GetParamController::class, 'business_sector']);
+    Route::get('position_umkm', [GetParamController::class, 'position_umkm']);
+    Route::get('type_koperasi', [GetParamController::class, 'type_koperasi']);
+    Route::get('position_koperasi', [GetParamController::class, 'position_koperasi']);
+    Route::get('training_needs', [GetParamController::class, 'training_needs']);
+    Route::get('training_type', [GetParamController::class, 'training_type']);
 });
