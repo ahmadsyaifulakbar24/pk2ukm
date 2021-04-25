@@ -18,6 +18,7 @@ class SkpdResource extends JsonResource
             'id' => $this->id,
             'user' => $this->user,
             'name_dinas' => $this->name_dinas,
+            'nip_dinas' => $this->nip_dinas,
             'phone_number_dinas' => $this->phone_number_dinas,
             'name_responsible_person' => $this->name_responsible_person,
             'phone_number_responsible_person' => $this->phone_number_responsible_person,
