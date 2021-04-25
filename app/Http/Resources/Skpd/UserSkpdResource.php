@@ -19,6 +19,7 @@ class UserSkpdResource extends JsonResource
             $skpd = [
                 'id' => $this->skpd->id,
                 'name_dinas' => $this->skpd->name_dinas,
+                'nip_dinas' => $this->skpd->nip_dinas,
                 'phone_number_dinas' => $this->skpd->phone_number_dinas,
                 'name_responsible_person' => $this->skpd->name_responsible_person,
                 'phone_number_responsible_person' => $this->skpd->phone_number_responsible_person,
