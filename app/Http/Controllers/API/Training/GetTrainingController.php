@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers\API\Training;
 
+use App\Helpers\ResponseFormatter;
 use App\Http\Controllers\Controller;
 use App\Http\Resources\Training\TrainingResource;
 use App\Models\Training;
@@ -9,7 +10,7 @@ use Illuminate\Http\Request;
 
 class GetTrainingController extends Controller
 {
-    public function __invoke(Request $request, $user_id = null)
+    public function all(Request $request, $user_id = null)
     {
         $limit = $request->input('limit', 15);
         $training = Training::orderBy('id', 'desc');
@@ -21,5 +22,13 @@ class GetTrainingController extends Controller
         $result = $training->paginate($limit);
         
         return TrainingResource::collection($result);
+    }
+
+    public function by_id(Training $training)
+    {
+        return ResponseFormatter::success(
+            new TrainingResource($training),
+            'success get data training'
+        );
     }
 }
