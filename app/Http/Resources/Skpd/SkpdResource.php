@@ -2,6 +2,7 @@
 
 namespace App\Http\Resources\Skpd;
 
+use App\Http\Resources\User\UserResource;
 use Illuminate\Http\Resources\Json\JsonResource;
 
 class SkpdResource extends JsonResource
@@ -16,7 +17,7 @@ class SkpdResource extends JsonResource
     {
         return[
             'id' => $this->id,
-            'user' => $this->user,
+            'user' => new UserResource($this->user),
             'name_dinas' => $this->name_dinas,
             'nip_dinas' => $this->nip_dinas,
             'phone_number_dinas' => $this->phone_number_dinas,
