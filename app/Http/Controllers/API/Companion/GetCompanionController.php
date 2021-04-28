@@ -27,14 +27,22 @@ class GetCompanionController extends Controller
         
         if($request->parent_user_id) {
             $companion = Companion::where('parent_user_id', $request->parent_user_id)->get();
+            $return_companion = CompanionResource::collection($companion);
         }
 
         if($request->user_id) {
-            return $companion = Companion::where('user_id', $request->user_id)->first();
+            $companion = Companion::where('user_id', $request->user_id)->first();
+            if($companion) {
+                $return_companion = new CompanionResource($companion);
+            } else {
+                return ResponseFormatter::error([
+                    'message' => 'data not found'
+                ], 'error get companion data', 404);
+            }
         }
 
         return ResponseFormatter::success(
-            CompanionResource::collection($companion),
+            $return_companion,
             'success get companion data'
         );
     }
