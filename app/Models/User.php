@@ -67,11 +67,6 @@ class User extends Authenticatable
         'profile_photo_url',
     ];
 
-    public function getProfilePhotoUrlAttribute()
-    {
-        return url('') . Storage::url($this->attributes['profile_photo_path']);
-    }
-
     public function  training()
     {
         return $this->hasMany(Training::class, 'user_id');
