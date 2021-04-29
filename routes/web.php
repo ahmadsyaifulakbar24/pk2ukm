@@ -125,4 +125,9 @@ Route::group(['middleware'=>['beforeMiddleware']], function () {
 	Route::get('bantuan', function () { //done
 	    return view('bantuan');
 	});
+
+    Route::get('unduh-kegiatan', function() {
+        return view('export/kegiatan-lengkap');
+    });
 });
+

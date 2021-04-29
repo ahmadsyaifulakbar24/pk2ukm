@@ -55,6 +55,7 @@ Route::middleware('auth:sanctum')->group(function () {
     
     Route::prefix('training')->group(function () {
         Route::get('all/{user_id?}', [GetTrainingController::class, 'all']);
+        Route::get('with_user/{user_id?}', [GetTrainingController::class, 'with_user']);
         Route::get('{training:id}/by_id', [GetTrainingController::class, 'by_id']);
         Route::post('create', CreateTrainingController::class);
         Route::patch('{training:id}/update', [UpdateTrainingController::class, 'training']);
