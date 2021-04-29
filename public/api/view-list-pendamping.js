@@ -2,34 +2,36 @@ get_data()
 
 function get_data(page) {
     $.ajax({
-        url: `${api_url}companion/all/${id}`,
+        url: `${api_url}companion`,
         type: 'GET',
         data: {
-            page: page
+            page: page,
+            parent_user_id: id
         },
         beforeSend: function(xhr) {
             xhr.setRequestHeader("Authorization", "Bearer " + token)
         },
         success: function(result) {
-            // console.log(result)
+        	// console.log(result)
             $('#table').html('')
             $('#loading').hide()
             if (result.data.length > 0) {
 	            $('#data').show()
-                let from = result.meta.from
+                let year = new Date()
                 $.each(result.data, function(index, value) {
-					append = `<tr>
-		            	<td class="text-center">${from}.</td>
-		            	<td><a href="${root}kegiatan/${value.id}">${value.training_title}</a></td>
-		            	<td>${value.districts_city.districts_city}</td>
-		            	<td>${tanggal(value.start_date)} s.d ${tanggal(value.finish_date)}</td>
-		            	<td>${value.user.name}</td>
-		            	<td class="text-center">${value.total_participant}</td>
+		            // console.log(value)
+		            value.gender != null ? jenis_kelamin = value.gender : jenis_kelamin = ''
+		            value.date_birth != null ? tanggal_lahir = parseInt(year.getFullYear()) - parseInt(value.date_birth) + ' Tahun' : tanggal_lahir = ''
+		            value.phone_number != null ? nomor_telepon = value.phone_number : nomor_telepon = ''
+					append = `<tr data-id="${value.user_id}" data-name="${value.name}">
+		            	<td class="text-center">${index + 1}.</td>
+		            	<td><a href="${root}pendamping/${value.user_id}">${value.name}</a></td>
+		            	<td class="text-capitalize">${jenis_kelamin}</td>
+		            	<td class="text-truncate">${tanggal_lahir}</td>
+		            	<td>${nomor_telepon}</td>
 		            </tr>`
                     $('#table').append(append)
-                    from++
                 })
-	            pagination(result.links, result.meta, result.meta.path)
             } else {
                 $('#empty').show()
             }

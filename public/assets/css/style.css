@@ -207,7 +207,7 @@ a:hover {
 .sidebar small {
     display: flex;
     padding: 0 16px;
-    margin-top: 15px;
+    margin-top: 20px;
     margin-bottom: 10px;
 }
 
@@ -405,6 +405,10 @@ td:last-child {
     .sidebar {
         left: -230px;
         z-index: 5;
+    }
+
+    .sidebar small {
+    	margin-top: 15px;
     }
 
     .main {

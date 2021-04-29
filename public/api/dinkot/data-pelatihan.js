@@ -15,18 +15,18 @@ function get_data(page) {
             $('#table').html('')
             $('#loading').hide()
             if (result.data.length > 0) {
-	            $('#data').show()
+	            $('#card').show()
                 let from = result.meta.from
                 $.each(result.data, function(index, value) {
-					append = `<tr>
+					append = `<tr data-id="${value.id}" data-name="${value.training_title}">
 		            	<td class="text-center">${from}.</td>
 		            	<td><a href="${root}kegiatan/${value.id}">${value.training_title}</a></td>
 		            	<td>${value.districts_city.districts_city}</td>
 		            	<td>${tanggal(value.start_date)} s.d ${tanggal(value.finish_date)}</td>
 		            	<td>${value.user.name}</td>
 		            	<td class="text-center">${value.total_participant}</td>
-		            	<td><a href="${root}dinkot/data-pelatihan/edit/${value.id}" class="btn btn-block btn-sm btn-outline-primary">Edit</a></td>
-		            	<td><div class="btn btn-block btn-sm btn-outline-danger">Delete</div></td>
+		            	<td><a href="${root}kegiatan/edit/${value.id}" class="btn btn-block btn-sm btn-outline-primary">Edit</a></td>
+		            	<td><div class="btn btn-block btn-sm btn-outline-danger remove">Delete</div></td>
 		            </tr>`
                     $('#table').append(append)
                     from++
@@ -35,8 +35,33 @@ function get_data(page) {
             } else {
                 $('#empty').show()
             }
-            $('#card').show()
-            $('#loading').hide()
         }
     })
 }
+
+$(document).on('click', '.remove', function () {
+    $('#modal-delete').modal('show')
+    let id = $(this).closest('tr').data('id')
+    let name = $(this).closest('tr').data('name')
+    $('#delete').data('id', id)
+    $('#modal-name').html(name)
+})
+
+$('#delete').click(function () {
+    $('#card').hide()
+    $('#loading').show()
+    $(this).attr('disabled', true)
+    let id = $(this).data('id')
+    $.ajax({
+        url: `${api_url}training/${id}/delete`,
+        type: 'DELETE',
+        beforeSend: function (xhr) {
+            xhr.setRequestHeader("Authorization", "Bearer " + localStorage.getItem('token'))
+        },
+        success: function (result) {
+            get_data()
+            $('#delete').attr('disabled', false)
+            $('#modal-delete').modal('hide')
+        }
+    })
+})

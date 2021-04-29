@@ -35,30 +35,30 @@
 						</div>
 			            <div class="card-body">
 			                <div class="form-group row">
-			                    <label for="name" class="col-form-label col-md-4">Nama Lengkap</label>
+			                    <label for="name" class="col-form-label col-md-4">Nama Lengkap*</label>
 			                    <div class="col-md-8">
 			                        <input class="form-control" id="name">
 			                        <div class="invalid-feedback" id="name-feedback"></div>
 			                    </div>
 			                </div>
 			                <div class="form-group row">
-			                    <label for="username" class="col-form-label col-md-4">Username</label>
+			                    <label for="username" class="col-form-label col-md-4">Username*</label>
 			                    <div class="col-md-8">
 			                        <input class="form-control" id="username">
 			                        <div class="invalid-feedback" id="username-feedback"></div>
 			                    </div>
 			                </div>
 			                <div class="form-group row">
-			                    <label for="password" class="col-form-label col-md-4">Password</label>
+			                    <label for="password" class="col-form-label col-md-4">Password*</label>
 			                    <div class="col-md-8">
-			                        <input class="form-control" id="password">
+			                        <input type="password" class="form-control" id="password" minlength="8">
 			                        <div class="invalid-feedback" id="password-feedback"></div>
 			                    </div>
 			                </div>
 			                <div class="form-group row">
-			                    <label for="cpassword" class="col-form-label col-md-4">Konfirmasi Password</label>
+			                    <label for="cpassword" class="col-form-label col-md-4">Konfirmasi Password*</label>
 			                    <div class="col-md-8">
-			                        <input class="form-control" id="cpassword">
+			                        <input type="password" class="form-control" id="cpassword" minlength="8">
 			                        <div class="invalid-feedback" id="cpassword-feedback"></div>
 			                    </div>
 			                </div>

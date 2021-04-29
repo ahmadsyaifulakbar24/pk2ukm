@@ -20,8 +20,10 @@ $('form').submit(function (e) {
             localStorage.setItem('user', value.user.id)
             localStorage.setItem('name', value.user.name)
             localStorage.setItem('role', value.user.role_id)
-            if (value.user.profile_photo_url != `${root}storage/`) {
+            if (value.user.profile_photo_path != null) {
 	            localStorage.setItem('photo', value.user.profile_photo_path)
+	        } else {
+	            localStorage.setItem('photo', value.user.profile_photo_url)
 	        }
             $.ajax({
                 url: `${root}session/login`,
@@ -33,8 +35,10 @@ $('form').submit(function (e) {
                 success: function (result) {
                 	if (value.user.role_id == 1 || value.user.role_id == 100) {
 	                    location.href = `${root}dashboard`
-                	} else {
+                	} else if (value.user.role_id == 200) {
 	                    location.href = `${root}dinkot/dashboard`
+	                } else {
+	                    location.href = `${root}pendamping/dashboard`
 	                }
                 }
             })

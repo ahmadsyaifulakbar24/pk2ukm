@@ -3,6 +3,7 @@ if (localStorage.getItem('photo')) $('.avatar').attr('src', localStorage.getItem
 const token = localStorage.getItem('token')
 const user = localStorage.getItem('user')
 const role = localStorage.getItem('role')
+const photo = localStorage.getItem('photo')
 
 $('#logout').click(function() {
 	get_logout()

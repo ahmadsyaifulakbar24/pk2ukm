@@ -20,118 +20,80 @@
 						</div>
 						<div class="card-body text-center">
 							<img src="{{asset('assets/images/user.png')}}" class="mx-auto rounded-circle mb-3 profile_photo" width="150" data-toggle="modal" data-target="#modal-photo" role="button">
-							<h5 class="name">Dwi Mei Yani</h5>
-							<div class="text-secondary id_number">3213304205770005</div>
+							<h5 class="nama"></h5>
+							<div class="text-secondary no_ktp"></div>
 						</div>
 					</div>
 				</div>
-				<form class="col-lg-8">
+				<div class="col-lg-8">
 					<div class="card card-custom">
 						<div class="card-header">
 							<h6 class="mb-0">Data Pendamping</h6>
 						</div>
 			            <div class="card-body">
-			                <div class="form-group row">
-			                    <label for="name" class="col-form-label col-md-4">Nama Lengkap</label>
-			                    <div class="col-md-8">
-			                        <input class="form-control" id="name">
-			                        <div class="invalid-feedback" id="name-feedback"></div>
-			                    </div>
+			                <div class="form-group row align-items-center">
+			                    <label for="name" class="col-form-label col-5 col-md-4">Nama Lengkap</label>
+			                    <div class="col">:</div>
+			                    <div class="col-6 col-md-7 nama"></div>
 			                </div>
-			                <div class="form-group row">
-			                    <label for="no_ktp" class="col-form-label col-md-4">Nomor KTP</label>
-			                    <div class="col-md-8">
-			                        <input type="tel" class="form-control" id="no_ktp" min="16" max="16">
-			                        <div class="invalid-feedback" id="no_ktp-feedback"></div>
-			                    </div>
+			                <div class="form-group row align-items-center">
+			                    <label for="no_ktp" class="col-form-label col-5 col-md-4">Nomor KTP</label>
+			                    <div class="col">:</div>
+			                    <div class="col-6 col-md-7 no_ktp"></div>
 			                </div>
-			                <div class="form-group row">
-			                    <label for="status" class="col-form-label col-md-4">Status</label>
-			                    <div class="col-md-8">
-			                    	<select class="custom-select" id="status" role="button">
-			                    		<option disabled selected>Pilih</option>
-			                    		<option value="lajang">Lajang</option>
-			                    		<option value="menikah">Menikah</option>
-			                    	</select>
-			                        <div class="invalid-feedback" id="status-feedback"></div>
-			                    </div>
+			                <div class="form-group row align-items-center">
+			                    <label for="status" class="col-form-label col-5 col-md-4">Status</label>
+			                    <div class="col">:</div>
+			                    <div class="col-6 col-md-7 text-capitalize" id="status"></div>
 			                </div>
-			                <div class="form-group row">
-			                    <label for="gender" class="col-form-label col-md-4">Jenis Kelamin</label>
-			                    <div class="col-md-8">
-			                    	<select class="custom-select" id="gender" role="button">
-			                    		<option disabled selected>Pilih</option>
-			                    		<option value="laki-laki">Laki-Laki</option>
-			                    		<option value="perempuan">Perempuan</option>
-			                    	</select>
-			                        <div class="invalid-feedback" id="gender-feedback"></div>
-			                    </div>
+			                <div class="form-group row align-items-center">
+			                    <label for="gender" class="col-form-label col-5 col-md-4">Jenis Kelamin</label>
+			                    <div class="col">:</div>
+			                    <div class="col-6 col-md-7 text-capitalize" id="gender"></div>
 			                </div>
-			                <div class="form-group row">
-			                    <label for="place_birth" class="col-form-label col-md-4">Tempat Lahir</label>
-			                    <div class="col-md-8">
-			                        <input class="form-control" id="place_birth">
-			                        <div class="invalid-feedback" id="place_birth-feedback"></div>
-			                    </div>
+			                <div class="form-group row align-items-center">
+			                    <label for="place_birth" class="col-form-label col-5 col-md-4">Tempat Lahir</label>
+			                    <div class="col">:</div>
+			                    <div class="col-6 col-md-7" id="place_birth"></div>
 			                </div>
-			                <div class="form-group row">
-			                    <label for="date_birth" class="col-form-label col-md-4">Tanggal Lahir</label>
-			                    <div class="col-md-8">
-			                        <input type="date" class="form-control" id="date_birth">
-			                        <div class="invalid-feedback" id="date_birth-feedback"></div>
-			                    </div>
+			                <div class="form-group row align-items-center">
+			                    <label for="date_birth" class="col-form-label col-5 col-md-4">Tanggal Lahir</label>
+			                    <div class="col">:</div>
+			                    <div class="col-6 col-md-7" id="date_birth"></div>
 			                </div>
-			                <div class="form-group row">
-			                    <label for="religion_id" class="col-form-label col-md-4">Agama</label>
-			                    <div class="col-md-8">
-			                    	<select class="custom-select" id="religion_id" role="button">
-			                    		<option disabled selected>Pilih</option>
-			                    	</select>
-			                        <div class="invalid-feedback" id="religion_id-feedback"></div>
-			                    </div>
+			                <div class="form-group row align-items-center">
+			                    <label for="religion_id" class="col-form-label col-5 col-md-4">Agama</label>
+			                    <div class="col">:</div>
+			                    <div class="col-6 col-md-7" id="religion_id"></div>
 			                </div>
-			                <div class="form-group row">
-			                    <label for="education_id" class="col-form-label col-md-4">Pendidikan Terakhir</label>
-			                    <div class="col-md-8">
-			                    	<select class="custom-select" id="education_id" role="button">
-			                    		<option disabled selected>Pilih</option>
-			                    	</select>
-			                        <div class="invalid-feedback" id="education_id-feedback"></div>
-			                    </div>
+			                <div class="form-group row align-items-center">
+			                    <label for="education_id" class="col-form-label col-5 col-md-4">Pendidikan Terakhir</label>
+			                    <div class="col">:</div>
+			                    <div class="col-6 col-md-7" id="education_id"></div>
 			                </div>
-			                <div class="form-group row">
-			                    <label for="home_address" class="col-form-label col-md-4">Alamat Rumah</label>
-			                    <div class="col-md-8">
-			                        <textarea class="form-control form-control-sm" id="home_address" rows="3"></textarea>
-			                        <div class="invalid-feedback" id="home_address-feedback"></div>
-			                    </div>
+			                <div class="form-group row align-items-center">
+			                    <label for="home_address" class="col-form-label col-5 col-md-4">Alamat Rumah</label>
+			                    <div class="col">:</div>
+			                    <div class="col-6 col-md-7" id="home_address"></div>
 			                </div>
-			                <div class="form-group row">
-			                    <label for="districts_city_id" class="col-form-label col-md-4">Kab/Kota</label>
-			                    <div class="col-md-8">
-			                    	<select class="custom-select" id="districts_city_id" role="button" disabled>
-			                    		<option disabled selected>Pilih</option>
-			                    	</select>
-			                        <div class="invalid-feedback" id="districts_city_id-feedback"></div>
-			                    </div>
+			                <div class="form-group row align-items-center">
+			                    <label for="districts_city_id" class="col-form-label col-5 col-md-4">Kab/Kota</label>
+			                    <div class="col">:</div>
+			                    <div class="col-6 col-md-7" id="districts_city_id"></div>
 			                </div>
-			                <div class="form-group row">
-			                    <label for="phone_number" class="col-form-label col-md-4">Telp/HP</label>
-			                    <div class="col-md-8">
-			                        <input type="tel" class="form-control" id="phone_number" min="10" max="20">
-			                        <div class="invalid-feedback" id="phone_number-feedback"></div>
-			                    </div>
+			                <div class="form-group row align-items-center">
+			                    <label for="phone_number" class="col-form-label col-5 col-md-4">Telp/HP</label>
+			                    <div class="col">:</div>
+			                    <div class="col-6 col-md-7" id="phone_number"></div>
 			                </div>
-			                <div class="form-group row">
-			                    <label for="email" class="col-form-label col-md-4">Email</label>
-			                    <div class="col-md-8">
-			                        <input type="email" class="form-control" id="email">
-			                        <div class="invalid-feedback" id="email-feedback"></div>
-			                    </div>
+			                <div class="form-group row align-items-center">
+			                    <label for="email" class="col-form-label col-5 col-md-4">Email</label>
+			                    <div class="col">:</div>
+			                    <div class="col-6 col-md-7" id="email"></div>
 			                </div>
 			            </div>
 			        </div>
-				</form>
+			    </div>
 			</div>
 		</div>
 		<div id="loading">
@@ -150,7 +112,7 @@
 				<img src="{{asset('assets/images/user.png')}}" class="rounded-circle mb-3 profile_photo" width="400" data-dismiss="modal">
 			</div>
 		</div>
-</div>
+	</div>
 </div>
 @endsection
 

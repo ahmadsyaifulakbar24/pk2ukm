@@ -17,10 +17,12 @@ class PendampingMiddleware
     public function handle(Request $request, Closure $next)
     {
     	$role = session()->get('role');
-    	if($role == 201) {
-	        return $next($request);
-    	} else {
+    	if ($role == 1 || $role == 100) {
 	        return redirect('dashboard');
+    	} else if ($role == 200) {
+	        return redirect('dinkot/dashboard');
+    	} else {
+	        return $next($request);
     	}
     }
 }

@@ -17,10 +17,12 @@ class AdminMiddleware
     public function handle(Request $request, Closure $next)
     {
     	$role = session()->get('role');
-    	if($role == 1 || $role == 100) {
+    	if ($role == 1 || $role == 100) {
 	        return $next($request);
-    	} else {
+    	} else if ($role == 200) {
 	        return redirect('dinkot/dashboard');
+    	} else {
+	        return redirect('pendamping/dashboard');
     	}
     }
 }

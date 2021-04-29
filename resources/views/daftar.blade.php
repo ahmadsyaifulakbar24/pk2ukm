@@ -1,17 +1,17 @@
-@extends('layouts/app')
+ @extends('layouts/app')
 
-@section('title','Edit Peserta')
+@section('title','Daftar Peserta')
 
 @section('style')
 <link rel="stylesheet" href="{{asset('assets/vendors/croppie/croppie.css')}}">
 @endsection
 
 @section('content')
-	<div class="container">
-		<div class="d-flex justify-content-between align-items-center mb-2">
-			<h4>Edit Peserta</h4>
-		</div>
+	<div class="container my-4">
 		<div class="none" id="card">
+			<div class="d-flex justify-content-between align-items-center mb-2">
+				<h4>Daftar Peserta</h4>
+			</div>
 			<div class="row">
 				<div class="col-lg-4">
 					<div class="card card-custom mb-4">
@@ -170,7 +170,7 @@
 			                    </div>
 			                </div>
 			                <div class="form-group row">
-			                    <label for="date_establishment_umkm" class="col-form-label col-md-4">Tanggal UMKM Didirikan</label>
+			                    <label for="date_establishment_umkm" class="col-form-label col-md-4">Tanggal Pendirian UMKM</label>
 			                    <div class="col-md-8">
 			                        <input type="date" class="form-control" id="date_establishment_umkm">
 			                        <div class="invalid-feedback" id="date_establishment_umkm-feedback"></div>
@@ -304,6 +304,18 @@
 				</form>
 			</div>
 		</div>
+		<div class="card col-lg-6 mx-auto none" id="success">
+			<div class="d-flex flex-column justify-content-center align-items-center card-body text-center">
+				<i class="mdi mdi-check-circle-outline mdi-48px text-success pr-0"></i>
+				<h5>Pendaftaran berhasil</h5>
+			</div>
+		</div>
+		<div class="card col-lg-6 mx-auto none" id="danger">
+			<div class="d-flex flex-column justify-content-center align-items-center card-body text-center">
+				<i class="mdi mdi-close-circle-outline mdi-48px text-danger pr-0"></i>
+				<h5>Link tidak ditemukan atau pelatihan sudah ditutup!</h5>
+			</div>
+		</div>
 		<div id="loading">
 			<div class="d-flex flex-column justify-content-center align-items-center state">
 				<div class="loader">
@@ -353,8 +365,8 @@
 @endsection
 
 @section('script')
-	<script>const id = {{$id}}</script>
+	<script>const id = '{{$id}}'</script>
     <script src="{{asset('assets/vendors/croppie/croppie.js')}}"></script>
 	<script src="{{asset('assets/js/photo.js')}}"></script>
-	<script src="{{asset('api/dinkot/edit-peserta.js')}}"></script>
+	<script src="{{asset('api/daftar.js')}}"></script>
 @endsection

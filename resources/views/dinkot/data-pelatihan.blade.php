@@ -8,7 +8,7 @@
 			<h4 id="title">Data Pelatihan</h4>
 			<div class="btn btn-sm btn-outline-primary mb-1">Unduh Kegiatan Lengkap</div>
 		</div>
-		<div class="card card-custom none" id="data">
+		<div class="card card-custom none" id="card">
 			<div class="table-custom">
 				<div class="table-responsive">
 					<table class="table table-middle">
@@ -56,14 +56,14 @@
 			</div>
 		</div>
 		<div class="compose">
-			<a href="{{url('dinkot/data-pelatihan/create')}}" class="btn btn-sm btn-primary d-flex align-items-center shadow">
+			<a href="{{url('kegiatan/create')}}" class="btn btn-sm btn-primary d-flex align-items-center shadow">
 				<i class="mdi mdi-plus mdi-18px"></i> Tambah Kegiatan
 			</a>
 		</div>
 		<div class="none" id="empty">
 			<div class="d-flex flex-column justify-content-center align-items-center state">
 				<i class="mdi mdi-account-group-outline mdi-48px pr-0"></i>
-				<h5>Belum ada Data Pelatihan</h5>
+				<h5>Belum ada data pelatihan</h5>
 			</div>
 		</div>
 		<div id="loading">
@@ -72,6 +72,23 @@
 					<svg class="circular" viewBox="25 25 50 50">
 						<circle class="path-primary" cx="50" cy="50" r="20" fill="none" stroke-width="5" stroke-miterlimit="10"/>
 					</svg>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" id="modal-delete" tabindex="-1" aria-hidden="true">
+		<div class="modal-sm modal-dialog modal-dialog-centered" role="document">
+			<div class="modal-content">
+				<div class="modal-header border-bottom-0">
+					<h5 class="modal-title">Hapus Kegiatan</h5>
+					<div role="button" class="close" data-dismiss="modal" aria-label="Close">
+						<i class="mdi mdi-close mdi-18px pr-0"></i>
+					</div>
+				</div>
+				<div class="modal-body py-0">Anda yakin ingin menghapus kegiatan <b id="modal-name"></b>?</div>
+				<div class="modal-footer border-top-0">
+					<div class="btn btn-sm btn-link" data-dismiss="modal">Batal</div>
+					<button class="btn btn-sm btn-primary" id="delete">Hapus</button>
 				</div>
 			</div>
 		</div>

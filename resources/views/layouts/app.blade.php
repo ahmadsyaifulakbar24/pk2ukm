@@ -14,11 +14,12 @@
 	@yield('style')
 </head>
 <body>
+	@if(!Request::is('daftar/*'))
     <nav class="navbar navbar-expand-sm navbar-light bg-white border-bottom">
         <div class="form-inline">
             <i class="mdi mdi-menu mdi-24px d-block d-lg-none pointer text-dark mr-2" id="menu"></i>
             <a class="navbar-brand d-none d-lg-block" href="{{url('dashboard')}}">
-				<img src="{{asset('assets/images/logo.png')}}" width="150" class="d-inline-block align-top mr-2" alt="Logo" loading="lazy">
+				<img src="{{asset('assets/images/logo.png')}}" width="120" class="d-inline-block align-top mr-2" alt="Logo" loading="lazy">
             </a>
         </div>
         <div class="dropdown ml-auto">
@@ -50,7 +51,7 @@
     </nav>
 	<div class="sidebar">
 		<div class="py-2 pl-3 border-bottom">
-			<img src="{{asset('assets/images/logo.png')}}" width="150" class="d-inline-block align-top mr-2" alt="Logo" loading="lazy">
+			<img src="{{asset('assets/images/logo.png')}}" width="120" class="d-inline-block align-top mr-2" alt="Logo" loading="lazy">
 		</div>
 		<small class="text-secondary text-uppercase font-weight-bold">Menu</small>
         @if(session("role") == 1 || session("role") == 100)
@@ -72,10 +73,13 @@
         <a href="{{url('bantuan')}}" class="{{Request::is('bantuan')?'active':''}}">
             <i class="mdi mdi-help-circle-outline mdi-18px"></i><span>Bantuan</span>
         </a>
-        @elseif(session("role") == 200)
+        @endif
+        @if(session("role") == 200 || session("role") == 201)
         <a href="{{url('dinkot/dashboard')}}" class="{{Request::is('dinkot/dashboard')?'active':''}}">
             <i class="mdi mdi-apps mdi-18px"></i><span>Dashboard</span>
         </a>
+        @endif
+        @if(session("role") == 200)
 		<a href="{{url('dinkot/data-skpd')}}" class="{{Request::is('dinkot/data-skpd')?'active':''}}">
 			<i class="mdi mdi-account-badge-horizontal-outline mdi-18px"></i><span>Data SKPD</span>
 		</a>
@@ -94,8 +98,13 @@
 		@endif
 		<small class="text-secondary" style="position:absolute;bottom:5px">2021 &copy; PK2UKM - Deputi Bidang Pengembangan SDM</small>
 	</div>
+	@endif
 	<div class="overlay"></div>
+	@if(!Request::is('daftar/*'))
 	<div class="main">@yield('content')</div>
+	@else
+	@yield('content')
+	@endif
 	<div class="customAlert d-flex align-items-center small"></div>
 	@include('layouts.partials.script')
 	@yield('script')

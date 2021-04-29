@@ -24,16 +24,16 @@
 					</table>
 				</div>
 			</div>
-			<div class="card-footer" id="pagination">
+			<div class="card-footer hide" id="pagination">
 				<div class="d-flex flex-column flex-md-row justify-content-between align-items-center">
 					<small class="text-secondary pb-3 pb-md-0" id="pagination-label"></small>
 					<nav>
 						<ul class="pagination pagination-sm mb-0" data-filter="request">
 							<li class="page page-item disabled" id="first">
-								<span class="page-link"><i class="pr-0 mdi mdi-chevron-double-left"></i></span>
+								<span class="page-link"><i class="mdi mdi-chevron-double-left"></i></span>
 							</li>
 							<li class="page page-item disabled" id="prev">
-								<span class="page-link"><i class="pr-0 mdi mdi-chevron-left"></i></span>
+								<span class="page-link"><i class="mdi mdi-chevron-left"></i></span>
 							</li>
 							<li class="page page-item" id="prevCurrentDouble"><span class="page-link"></span></li>
 							<li class="page page-item" id="prevCurrent"><span class="page-link"></span></li>
@@ -41,10 +41,10 @@
 							<li class="page page-item" id="nextCurrent"><span class="page-link"></span></li>
 							<li class="page page-item" id="nextCurrentDouble"><span class="page-link"></span></li>
 							<li class="page page-item" id="next">
-								<span class="page-link"><i class="pr-0 mdi mdi-chevron-right"></i></span>
+								<span class="page-link"><i class="mdi mdi-chevron-right"></i></span>
 							</li>
 							<li class="page page-item" id="last">
-								<span class="page-link"><i class="pr-0 mdi mdi-chevron-double-right"></i></span>
+								<span class="page-link"><i class="mdi mdi-chevron-double-right"></i></span>
 							</li>
 						</ul>
 					</nav>
@@ -54,7 +54,7 @@
 		<div class="none" id="empty">
 			<div class="d-flex flex-column justify-content-center align-items-center state">
 				<i class="mdi mdi-account-group-outline mdi-48px pr-0"></i>
-				<h5>Belum ada List Pendamping</h5>
+				<h5>Belum ada list pendamping</h5>
 			</div>
 		</div>
 		<div id="loading">

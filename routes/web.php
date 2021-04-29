@@ -45,20 +45,26 @@ Route::group(['middleware'=>['beforeMiddleware']], function () {
             return view('view-list-kegiatan', compact('id'));
         });
 
-        Route::get('pendamping-pelatihan', function () {
+        Route::get('pendamping-pelatihan', function () { //done
             return view('pendamping-pelatihan');
         });
-        Route::get('pendamping-pelatihan/{id}', function ($id) {
+        Route::get('pendamping-pelatihan/{id}', function ($id) { //done
             return view('view-pendamping-pelatihan', compact('id'));
         });
-        Route::get('list-pendamping/{id}', function ($id) {
+        Route::get('list-pendamping/{id}', function ($id) { //done
             return view('view-list-pendamping', compact('id'));
+        });
+    });
+
+    Route::group(['middleware'=>['pendampingMiddleware']], function () {
+        Route::get('pendamping/dashboard', function () {
+            return view('dinkot/dashboard');
         });
     });
 
     Route::group(['middleware'=>['dinkotMiddleware']], function () {
         Route::get('dinkot/dashboard', function () {
-            return view('dinkot/dashboard'); //done
+            return view('dinkot/dashboard');
         });
 
         Route::get('dinkot/data-skpd', function () { //done
@@ -78,26 +84,26 @@ Route::group(['middleware'=>['beforeMiddleware']], function () {
         Route::get('dinkot/data-pelatihan', function () { //done
             return view('dinkot/data-pelatihan');
         });
-        Route::get('dinkot/data-pelatihan/create', function () { //done
+        Route::get('kegiatan/create', function () { //done
             return view('dinkot/create-kegiatan');
         });
-        Route::get('dinkot/data-pelatihan/edit/{id}', function ($id) { //done
+        Route::get('kegiatan/edit/{id}', function ($id) { //done
             return view('dinkot/edit-kegiatan', compact('id'));
         });
 	    Route::get('peserta/create/{id}', function ($id) { //done
 	        return view('dinkot/create-peserta', compact('id'));
 	    });
-	    Route::get('peserta/edit/{id}', function ($id) { //waiting_api
+	    Route::get('peserta/edit/{id}', function ($id) { //done
 	        return view('dinkot/edit-peserta', compact('id'));
 	    });
 
-        Route::get('dinkot/data-pendamping', function () {
+        Route::get('dinkot/data-pendamping', function () { //done
             return view('dinkot/data-pendamping');
         });
-        Route::get('dinkot/data-pendamping/create', function () {
+        Route::get('pendamping/create', function () { //done
             return view('dinkot/create-pendamping');
         });
-        Route::get('dinkot/data-pendamping/edit/{id}', function ($id) {
+        Route::get('pendamping/edit/{id}', function ($id) { //done
             return view('dinkot/edit-pendamping', compact('id'));
         });
     });
@@ -105,12 +111,16 @@ Route::group(['middleware'=>['beforeMiddleware']], function () {
     Route::get('kegiatan/{id}', function ($id) { //done
         return view('view-kegiatan', compact('id'));
     });
-    Route::get('peserta/{id}', function ($id) { //waitingapi
+    Route::get('peserta/{id}', function ($id) { //done
         return view('view-peserta', compact('id'));
     });
-    Route::get('pendamping/{id}', function ($id) {
+    Route::get('pendamping/{id}', function ($id) { //done
         return view('view-pendamping', compact('id'));
     });
+
+	Route::get('daftar/{id}', function ($id) {
+	    return view('daftar', compact('id'));
+	});
 
 	Route::get('bantuan', function () { //done
 	    return view('bantuan');

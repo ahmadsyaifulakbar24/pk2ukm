@@ -5,7 +5,7 @@
 @section('content')
 	<div class="container container-compose">
 		<div class="d-flex justify-content-between align-items-center mb-2">
-			<h4 id="title">Data Kegiatan</h4>
+			<h4>Data Kegiatan</h4>
 			<div class="btn btn-sm btn-outline-primary mb-1">Unduh Peserta Lengkap</div>
 		</div>
 		<div class="none" id="card">
@@ -106,7 +106,6 @@
 			<div class="d-flex flex-column justify-content-center align-items-center pt-5">
 				<i class="mdi mdi-account-group-outline mdi-48px pr-0"></i>
 				<h5>Belum ada list peserta</h5>
-				<!-- <p class="text-secondary">Buat Project untuk membuat Project baru.</p> -->
 			</div>
 		</div>
 		<div id="loading">
@@ -115,6 +114,23 @@
 					<svg class="circular" viewBox="25 25 50 50">
 						<circle class="path-primary" cx="50" cy="50" r="20" fill="none" stroke-width="5" stroke-miterlimit="10"/>
 					</svg>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" id="modal-delete" tabindex="-1" aria-hidden="true">
+		<div class="modal-sm modal-dialog modal-dialog-centered" role="document">
+			<div class="modal-content">
+				<div class="modal-header border-bottom-0">
+					<h5 class="modal-title">Hapus Peserta</h5>
+					<div role="button" class="close" data-dismiss="modal" aria-label="Close">
+						<i class="mdi mdi-close mdi-18px pr-0"></i>
+					</div>
+				</div>
+				<div class="modal-body py-0">Anda yakin ingin menghapus peserta <b id="modal-name"></b>?</div>
+				<div class="modal-footer border-top-0">
+					<div class="btn btn-sm btn-link" data-dismiss="modal">Batal</div>
+					<button class="btn btn-sm btn-primary" id="delete">Hapus</button>
 				</div>
 			</div>
 		</div>

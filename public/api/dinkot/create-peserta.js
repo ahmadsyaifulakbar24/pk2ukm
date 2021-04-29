@@ -1,3 +1,13 @@
+$('#copy_link').click(function() {
+    const el = document.createElement('textarea');
+    el.value = `${root}daftar/${btoa(`peserta/${id}`)}`;
+    document.body.appendChild(el);
+    el.select();
+    document.execCommand('copy');
+    document.body.removeChild(el);
+    customAlert('success', 'Link berhasil di copy')
+})
+
 $.ajax({
     url: `${api_url}param/religion`,
     type: 'GET',
@@ -159,22 +169,20 @@ $(document).ajaxStop(function() {
 })
 
 $('#province_id').change(function() {
-	get_districs_city($(this).val())
+    get_districs_city($(this).val())
 })
 
 $('#business_status_id').change(function() {
-	if ($(this).val() == 14) {
-		$('#umkm').show()
-		$('#koperasi').hide()
-	}
-	else if ($(this).val() == 15) {
-		$('#umkm').hide()
-		$('#koperasi').show()
-	}
-	else {
-		$('#umkm').hide()
-		$('#koperasi').hide()
-	}
+    if ($(this).val() == 14) {
+        $('#umkm').show()
+        $('#koperasi').hide()
+    } else if ($(this).val() == 15) {
+        $('#umkm').hide()
+        $('#koperasi').show()
+    } else {
+        $('#umkm').hide()
+        $('#koperasi').hide()
+    }
 })
 
 $(document).on('keyup', '#business_turnover', function() {
@@ -185,63 +193,62 @@ $(document).on('keyup', '#business_turnover', function() {
 $('form').submit(function(e) {
     $('#profile_photo-feedback').addClass('hide')
     $('.is-invalid').removeClass('is-invalid')
-	e.preventDefault()
-	addLoading()
-	console.clear()
+    e.preventDefault()
+    addLoading()
+    console.clear()
 
-	let formData = new FormData($('form')[0]);
-	formData.append('name', $('#name').val())
-	formData.append('id_number', $('#id_number').val())
-	formData.append('gender', $('#gender').val())
-	formData.append('place_birth', $('#place_birth').val())
-	formData.append('date_birth', $('#date_birth').val())
-	formData.append('religion_id', $('#religion_id').val())
-	formData.append('education_id', $('#education_id').val())
-	formData.append('province_id', $('#province_id').val())
-	formData.append('districts_city_id', $('#districts_city_id').val())
-	formData.append('phone_number', $('#phone_number').val())
-	formData.append('email', $('#email').val())
-	formData.append('business_status_id', $('#business_status_id').val())
-	if ($('#business_status_id').val() == 14) {
-		formData.append('business_sector_id', $('#business_sector_id').val())
-		formData.append('name_umkm', $('#name_umkm').val())
-		formData.append('address_umkm', $('#address_umkm').val())
-		formData.append('date_establishment_umkm', $('#date_establishment_umkm').val())
-		formData.append('no_iumk', $('#no_iumk').val())
-		formData.append('position_umkm_id', $('#position_umkm_id').val())
-		formData.append('business_turnover', number($('#business_turnover').val()))
-		formData.append('number_employees', $('#number_employees').val())
-	}
-	else if ($('#business_status_id').val() == 15) {
-		formData.append('name_koperasi', $('#name_koperasi').val())
-		formData.append('address_koperasi', $('#address_koperasi').val())
-		formData.append('type_koperasi_id', $('#type_koperasi_id').val())
-		formData.append('date_establishment_koperasi', $('#date_establishment_koperasi').val())
-		formData.append('registrasion_number_koperasi', $('#registrasion_number_koperasi').val())
-		formData.append('position_koperasi_id', $('#position_koperasi_id').val())
+    let formData = new FormData($('form')[0])
+    formData.append('name', $('#name').val())
+    formData.append('id_number', $('#id_number').val())
+    formData.append('gender', $('#gender').val())
+    formData.append('place_birth', $('#place_birth').val())
+    formData.append('date_birth', $('#date_birth').val())
+    formData.append('religion_id', $('#religion_id').val())
+    formData.append('education_id', $('#education_id').val())
+    formData.append('province_id', $('#province_id').val())
+    formData.append('districts_city_id', $('#districts_city_id').val())
+    formData.append('phone_number', $('#phone_number').val())
+    formData.append('email', $('#email').val())
+    formData.append('business_status_id', $('#business_status_id').val())
+    if ($('#business_status_id').val() == 14) {
+        formData.append('name_umkm', $('#name_umkm').val())
+        formData.append('address_umkm', $('#address_umkm').val())
+        formData.append('business_sector_id', $('#business_sector_id').val())
+        formData.append('date_establishment_umkm', $('#date_establishment_umkm').val())
+        formData.append('no_iumk', $('#no_iumk').val())
+        formData.append('position_umkm_id', $('#position_umkm_id').val())
+        formData.append('business_turnover', number($('#business_turnover').val()))
+        formData.append('number_employees', $('#number_employees').val())
+    } else if ($('#business_status_id').val() == 15) {
+        formData.append('name_koperasi', $('#name_koperasi').val())
+        formData.append('address_koperasi', $('#address_koperasi').val())
+        formData.append('type_koperasi_id', $('#type_koperasi_id').val())
+        formData.append('date_establishment_koperasi', $('#date_establishment_koperasi').val())
+        formData.append('registrasion_number_koperasi', $('#registrasion_number_koperasi').val())
+        formData.append('position_koperasi_id', $('#position_koperasi_id').val())
     }
-	formData.append('m1', $('#m1').val())
-	formData.append('m2_id', $('#m2_id').val())
-	formData.append('m3', $('#m3').val())
-	formData.append('profile_photo', profile_photo)
+    formData.append('m1', $('#m1').val())
+    formData.append('m2_id', $('#m2_id').val())
+    formData.append('m3', $('#m3').val())
+    formData.append('profile_photo', profile_photo)
 
     $.ajax({
-	    url: `${api_url}participant/${id}/create`,
-	    type: 'POST',
+        url: `${api_url}participant/${id}/create`,
+        type: 'POST',
         processData: false,
         contentType: false,
         data: formData,
-	    beforeSend: function(xhr) {
-	        xhr.setRequestHeader("Authorization", "Bearer " + token)
-	    },
-	    success: function(result) {
-	    	// console.log(result)
-	    	location.href = `${root}kegitan/${id}`
-	    },
-	    error: function(xhr) {
+        beforeSend: function(xhr) {
+            xhr.setRequestHeader("Authorization", "Bearer " + token)
+        },
+        success: function(result) {
+            // console.log(result)
+            location.href = `${root}kegiatan/${id}`
+        },
+        error: function(xhr) {
             removeLoading('Simpan')
             let err = xhr.responseJSON.errors
-            console.log(err)
+            // console.log(err)
             if (err.profile_photo) {
                 $('#profile_photo-feedback').removeClass('hide')
                 $('#profile_photo-feedback').html('Masukkan Foto')
@@ -295,10 +302,6 @@ $('form').submit(function(e) {
                 $('#business_status_id-feedback').html('Pilih status usaha')
             }
 
-            if (err.business_sector_id) {
-                $('#business_sector_id').addClass('is-invalid')
-                $('#business_sector_id-feedback').html('Pilih sektor umkm')
-            }
             if (err.name_umkm) {
                 $('#name_umkm').addClass('is-invalid')
                 $('#name_umkm-feedback').html('Masukkan nama umkm')
@@ -307,9 +310,13 @@ $('form').submit(function(e) {
                 $('#address_umkm').addClass('is-invalid')
                 $('#address_umkm-feedback').html('Masukkan alamat umkm')
             }
+            if (err.business_sector_id) {
+                $('#business_sector_id').addClass('is-invalid')
+                $('#business_sector_id-feedback').html('Pilih sektor umkm')
+            }
             if (err.date_establishment_umkm) {
                 $('#date_establishment_umkm').addClass('is-invalid')
-                $('#date_establishment_umkm-feedback').html('Masukkan tanggal umkm didirikan')
+                $('#date_establishment_umkm-feedback').html('Masukkan tanggal pendirian umkm')
             }
             if (err.no_iumk) {
                 $('#no_iumk').addClass('is-invalid')
@@ -317,15 +324,15 @@ $('form').submit(function(e) {
             }
             if (err.position_umkm_id) {
                 $('#position_umkm_id').addClass('is-invalid')
-                $('#position_umkm_id-feedback').html('Pilih posisi umkm')
+                $('#position_umkm_id-feedback').html('Pilih jabatan di umkm')
             }
             if (err.business_turnover) {
                 $('#business_turnover').addClass('is-invalid')
-                $('#business_turnover-feedback').html('Masukkan omset umkm per bulan')
+                $('#business_turnover-feedback').html('Masukkan volume (omset) usaha')
             }
             if (err.number_employees) {
                 $('#number_employees').addClass('is-invalid')
-                $('#number_employees-feedback').html('Masukkan jumlah tenaga kerja umkm')
+                $('#number_employees-feedback').html('Masukkan jumlah karyawan')
             }
 
             if (err.name_koperasi) {
@@ -342,7 +349,7 @@ $('form').submit(function(e) {
             }
             if (err.date_establishment_koperasi) {
                 $('#date_establishment_koperasi').addClass('is-invalid')
-                $('#date_establishment_koperasi-feedback').html('Masukkan tanggal koperasi didirikan')
+                $('#date_establishment_koperasi-feedback').html('Masukkan tanggal pendirian koperasi')
             }
             if (err.registrasion_number_koperasi) {
                 $('#registrasion_number_koperasi').addClass('is-invalid')
@@ -350,7 +357,7 @@ $('form').submit(function(e) {
             }
             if (err.position_koperasi_id) {
                 $('#position_koperasi_id').addClass('is-invalid')
-                $('#position_koperasi_id-feedback').html('Pilih posisi koperasi')
+                $('#position_koperasi_id-feedback').html('Pilih jabatan di koperasi')
             }
 
             if (err.m1) {
@@ -365,6 +372,6 @@ $('form').submit(function(e) {
                 $('#m3').addClass('is-invalid')
                 $('#m3-feedback').html('Masukkan rekomendasi')
             }
-	    }
-	})
+        }
+    })
 })

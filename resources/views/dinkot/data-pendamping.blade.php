@@ -55,7 +55,7 @@
 			</div>
 		</div>
 		<div class="compose">
-			<a href="{{url('dinkot/data-pendamping/create')}}" class="btn btn-sm btn-primary d-flex align-items-center shadow">
+			<a href="{{url('pendamping/create')}}" class="btn btn-sm btn-primary d-flex align-items-center shadow">
 				<i class="mdi mdi-plus mdi-18px"></i> Tambah Pendamping
 			</a>
 		</div>
@@ -71,6 +71,23 @@
 					<svg class="circular" viewBox="25 25 50 50">
 						<circle class="path-primary" cx="50" cy="50" r="20" fill="none" stroke-width="5" stroke-miterlimit="10"/>
 					</svg>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" id="modal-delete" tabindex="-1" aria-hidden="true">
+		<div class="modal-sm modal-dialog modal-dialog-centered" role="document">
+			<div class="modal-content">
+				<div class="modal-header border-bottom-0">
+					<h5 class="modal-title">Hapus Pendamping</h5>
+					<div role="button" class="close" data-dismiss="modal" aria-label="Close">
+						<i class="mdi mdi-close mdi-18px pr-0"></i>
+					</div>
+				</div>
+				<div class="modal-body py-0">Anda yakin ingin menghapus pendamping <b id="modal-name"></b>?</div>
+				<div class="modal-footer border-top-0">
+					<div class="btn btn-sm btn-link" data-dismiss="modal">Batal</div>
+					<button class="btn btn-sm btn-primary" id="delete">Hapus</button>
 				</div>
 			</div>
 		</div>

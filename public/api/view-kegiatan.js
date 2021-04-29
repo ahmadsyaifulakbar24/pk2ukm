@@ -33,7 +33,7 @@ get_data()
 
 function get_data(page) {
     $.ajax({
-        url: `${api_url}participant/${id}`,
+        url: `${api_url}participant/${id}/by_training`,
         type: 'GET',
         data: {
             page: page
@@ -51,14 +51,14 @@ function get_data(page) {
                 $.each(result.data, function(index, value) {
 		            // console.log(value)
 		            if (role == 200) {
-						append = `<tr>
+						append = `<tr data-id="${value.id}" data-name="${value.name}">
 			            	<td class="text-center">${from}.</td>
 			            	<td><a href="${root}peserta/${value.id}">${value.name}</a></td>
 			            	<td class="text-capitalize">${value.gender}</td>
 			            	<td class="text-truncate">${parseInt(year.getFullYear()) - parseInt(value.date_birth)} Tahun</td>
 			            	<td>${value.phone_number}</td>
 			            	<td><a href="${root}peserta/edit/${value.id}" class="btn btn-block btn-sm btn-outline-primary">Edit</a></td>
-			            	<td><div class="btn btn-block btn-sm btn-outline-danger">Delete</div></td>
+			            	<td><div class="btn btn-block btn-sm btn-outline-danger remove">Delete</div></td>
 			            </tr>`
 			        } else {
 						append = `<tr>
@@ -81,3 +81,30 @@ function get_data(page) {
         }
     })
 }
+
+$(document).on('click', '.remove', function () {
+    $('#modal-delete').modal('show')
+    let id = $(this).closest('tr').data('id')
+    let name = $(this).closest('tr').data('name')
+    $('#delete').data('id', id)
+    $('#modal-name').html(name)
+})
+
+$('#delete').click(function () {
+    $('#data').hide()
+    $('#loading').show()
+    $(this).attr('disabled', true)
+    let id = $(this).data('id')
+    $.ajax({
+        url: `${api_url}participant/${id}/delete`,
+        type: 'DELETE',
+        beforeSend: function (xhr) {
+            xhr.setRequestHeader("Authorization", "Bearer " + localStorage.getItem('token'))
+        },
+        success: function (result) {
+            get_data()
+            $('#delete').attr('disabled', false)
+            $('#modal-delete').modal('hide')
+        }
+    })
+})

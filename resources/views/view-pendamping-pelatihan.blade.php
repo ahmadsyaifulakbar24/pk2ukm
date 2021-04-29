@@ -15,7 +15,7 @@
 							<tr>
 								<th class="text-center">No.</th>
 								<th class="text-truncate">Nama User</th>
-								<th class="text-truncate">Total Kegiatan</th>
+								<th class="text-truncate">Total Pendamping</th>
 							</tr>
 						</thead>
 						<tbody id="table"></tbody>

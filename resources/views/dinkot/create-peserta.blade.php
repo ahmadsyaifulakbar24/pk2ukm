@@ -10,6 +10,7 @@
 	<div class="container">
 		<div class="d-flex justify-content-between align-items-center mb-2">
 			<h4>Tambah Peserta</h4>
+			<div class="btn btn-sm btn-outline-primary mb-1" id="copy_link" data-link="{{url('daftar')}}">Copy Link</div>
 		</div>
 		<div class="none" id="card">
 			<div class="row">
@@ -147,15 +148,6 @@
 						</div>
 			            <div class="card-body">
 			                <div class="form-group row">
-			                    <label for="business_sector_id" class="col-form-label col-md-4">Sektor UMKM</label>
-			                    <div class="col-md-8">
-			                    	<select class="custom-select" id="business_sector_id" role="button">
-			                    		<option disabled selected>Pilih</option>
-			                    	</select>
-			                        <div class="invalid-feedback" id="business_sector_id-feedback"></div>
-			                    </div>
-			                </div>
-			                <div class="form-group row">
 			                    <label for="name_umkm" class="col-form-label col-md-4">Nama UMKM</label>
 			                    <div class="col-md-8">
 			                        <input class="form-control" id="name_umkm">
@@ -170,7 +162,16 @@
 			                    </div>
 			                </div>
 			                <div class="form-group row">
-			                    <label for="date_establishment_umkm" class="col-form-label col-md-4">Tanggal UMKM Didirikan</label>
+			                    <label for="business_sector_id" class="col-form-label col-md-4">Sektor UMKM</label>
+			                    <div class="col-md-8">
+			                    	<select class="custom-select" id="business_sector_id" role="button">
+			                    		<option disabled selected>Pilih</option>
+			                    	</select>
+			                        <div class="invalid-feedback" id="business_sector_id-feedback"></div>
+			                    </div>
+			                </div>
+			                <div class="form-group row">
+			                    <label for="date_establishment_umkm" class="col-form-label col-md-4">Tanggal Pendirian UMKM</label>
 			                    <div class="col-md-8">
 			                        <input type="date" class="form-control" id="date_establishment_umkm">
 			                        <div class="invalid-feedback" id="date_establishment_umkm-feedback"></div>
@@ -184,7 +185,7 @@
 			                    </div>
 			                </div>
 			                <div class="form-group row">
-			                    <label for="position_umkm_id" class="col-form-label col-md-4">Posisi UMKM</label>
+			                    <label for="position_umkm_id" class="col-form-label col-md-4">Jabatan di UMKM</label>
 			                    <div class="col-md-8">
 			                    	<select class="custom-select" id="position_umkm_id" role="button">
 			                    		<option disabled selected>Pilih</option>
@@ -193,7 +194,7 @@
 			                    </div>
 			                </div>
 			                <div class="form-group row">
-			                    <label for="business_turnover" class="col-form-label col-md-4">Omset Usaha per Bulan</label>
+			                    <label for="business_turnover" class="col-form-label col-md-4">Volume (Omset) Usaha</label>
 			                    <div class="col-md-8">
 									<div class="input-group">
 										<div class="input-group-prepend">
@@ -205,7 +206,7 @@
 			                    </div>
 			                </div>
 			                <div class="form-group row">
-			                    <label for="number_employees" class="col-form-label col-md-4">Jumlah Tenaga Kerja UMKM</label>
+			                    <label for="number_employees" class="col-form-label col-md-4">Jumlah Karyawan</label>
 			                    <div class="col-md-8">
 			                        <input type="tel" class="form-control" id="number_employees">
 			                        <div class="invalid-feedback" id="number_employees-feedback"></div>
@@ -242,7 +243,7 @@
 			                    </div>
 			                </div>
 			                <div class="form-group row">
-			                    <label for="date_establishment_koperasi" class="col-form-label col-md-4">Tanggal Koperasi Didirikan</label>
+			                    <label for="date_establishment_koperasi" class="col-form-label col-md-4">Tanggal Pendirian Koperasi</label>
 			                    <div class="col-md-8">
 			                        <input type="date" class="form-control" id="date_establishment_koperasi">
 			                        <div class="invalid-feedback" id="date_establishment_koperasi-feedback"></div>
@@ -256,7 +257,7 @@
 			                    </div>
 			                </div>
 			                <div class="form-group row">
-			                    <label for="position_koperasi_id" class="col-form-label col-md-4">Posisi Koperasi</label>
+			                    <label for="position_koperasi_id" class="col-form-label col-md-4">Jabatan di Koperasi</label>
 			                    <div class="col-md-8">
 			                    	<select class="custom-select" id="position_koperasi_id" role="button">
 			                    		<option disabled selected>Pilih</option>
