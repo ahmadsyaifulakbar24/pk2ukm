@@ -41,37 +41,43 @@ class UpdateCompanionController extends Controller
             'email' => ['nullable', 'string'],
         ]);
 
-        if($request->file('profile_photo')) {
-            $profile_photo_path = $request->File('profile_photo')->store('profile_photo', 'public');
-            if(Storage::disk('public')->exists(($user->profile_photo_path))) {
-                Storage::disk('public')->delete($user->profile_photo_path);
+        $user = User::where([['id', $user->id], ['role_id', 201]])->first();
+        if($user) {
+            if($request->file('profile_photo')) {
+                $profile_photo_path = $request->File('profile_photo')->store('profile_photo', 'public');
+                if(Storage::disk('public')->exists(($user->profile_photo_path))) {
+                    Storage::disk('public')->delete($user->profile_photo_path);
+                }
             }
-        }
 
-        $user = User::where([['id', $user->id], ['role_id', 200]])->first();
-        $user->update([
-            'name' => $request->name,
-            'profile_photo_path' => !empty($profile_photo_path) ? $profile_photo_path : NULL,
-        ]);
+            $user->update([
+                'name' => $request->name,
+                'profile_photo_path' => !empty($profile_photo_path) ? $profile_photo_path : NULL,
+            ]);
 
+            $user->companion()->update([
+                'no_ktp' => $request->no_ktp,
+                'status' => $request->status,
+                'gender' => $request->gender,
+                'place_birth' => $request->place_birth,
+                'date_birth' => $request->date_birth,
+                'religion_id' => $request->religion_id,
+                'education_id' => $request->education_id,
+                'home_address' => $request->home_address,
+                'districts_city_id' => $request->districts_city_id,
+                'phone_number' => $request->phone_number,
+                'email' => $request->email,
+            ]);
+
+            return ResponseFormatter::success(
+                new CompanionResource($user->companion),
+                'success update account companion',
+            );
+        } else {
+            return ResponseFormatter::error([
+                'companion user not found'
+            ], 'error update companion', 404);
+        }        
         
-        $user->companion()->update([
-            'no_ktp' => $request->no_ktp,
-            'status' => $request->status,
-            'gender' => $request->gender,
-            'place_birth' => $request->place_birth,
-            'date_birth' => $request->date_birth,
-            'religion_id' => $request->religion_id,
-            'education_id' => $request->education_id,
-            'home_address' => $request->home_address,
-            'districts_city_id' => $request->districts_city_id,
-            'phone_number' => $request->phone_number,
-            'email' => $request->email,
-        ]);
-        
-        return ResponseFormatter::success(
-            new CompanionResource($user->companion),
-            'success update account companion',
-        );
     }
 }
