@@ -17,7 +17,8 @@ class CreateCompanionController extends Controller
         $this->validate($request, [
             'name' => ['required', 'string'],
             'username' => ['required', 'unique:users,username'],
-            'password' => ['required', 'min:8'],
+            'password' => ['required', 'confirmed', 'min:8'],
+            'password_confirmation' => ['required', 'min:8'],
             'profile_photo' => ['nullable', 'mimes:jpg,jpeg,png', 'max:2048'],
             'no_ktp' => ['nullable', 'numeric'],
             'status' => ['nullable', 'in:lajang,menikah'],
