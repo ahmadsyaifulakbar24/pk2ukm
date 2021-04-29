@@ -74,7 +74,8 @@ Route::middleware('auth:sanctum')->group(function () {
     });
 
     Route::prefix('participant')->group(function () {
-        Route::get('{training:id}', GetParticipantController::class);
+        Route::get('{participant:id}/by_id', [GetParticipantController::class, 'by_id']);
+        Route::get('{training:id}/by_training', [GetParticipantController::class, 'by_training']);
         Route::post('{participant:id}/update', UpdateParticipantController::class);
         Route::delete('{participant:id}/delete', DeleteParticipantController::class);
     });
