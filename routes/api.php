@@ -23,6 +23,7 @@ use App\Http\Controllers\API\Training\DeleteTrainingController;
 use App\Http\Controllers\API\Training\GetTrainingController;
 use App\Http\Controllers\API\Training\UpdateTrainingController;
 use App\Http\Controllers\API\User\GetUserController;
+use App\Http\Controllers\API\User\UserController as UserUserController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -49,6 +50,7 @@ Route::middleware('auth:sanctum')->group(function () {
 
     Route::prefix('user')->group(function () {
         Route::get('/', [GetUserController::class, 'get']);
+        Route::post('{user:id}/update_photo', [UserUserController::class, 'update_photo']);
     });
     
     Route::prefix('training')->group(function () {
