@@ -35,7 +35,7 @@ class Participant extends Model
         'name_umkm', 
         'address_umkm',
         'business_sector_id',
-        'date_establieshment_umkm', 
+        'date_establishment_umkm',
         'no_iumk',
         'position_umkm_id',
         'business_turnover',
