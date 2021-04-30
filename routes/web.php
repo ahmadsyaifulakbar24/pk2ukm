@@ -129,5 +129,9 @@ Route::group(['middleware'=>['beforeMiddleware']], function () {
     Route::get('unduh-kegiatan', function() {
         return view('export/kegiatan-lengkap');
     });
+
+    Route::get('unduh-peserta/{training_id}', function($training_id) {
+        return view('export/peserta-pelatihan', compact('training_id'));
+    });
 });
 

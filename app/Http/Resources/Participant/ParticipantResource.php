@@ -18,7 +18,7 @@ class ParticipantResource extends JsonResource
     {
         return [
             'id' => $this->id,
-            'training_id' => $this->trainig_id,
+            'training_id' => $this->training_id,
             'name' => $this->name,
             'gender' => $this->gender,
             'religion_id' => new ParamResource($this->religion),

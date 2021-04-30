@@ -13,8 +13,16 @@ class GetParticipantController extends Controller
 {
     public function by_training(Request $request, Training $training)
     {
-        $limit = $request->input('limit', 15);
-        $participant = $training->participant()->orderBy('id', 'desc')->paginate($limit);
+        $this->validate($request, [
+            'limit' => ['nullable', 'in:true,false']
+        ]);
+
+        if($request->limit == 'false') {
+            $participant = $training->participant()->orderBy('id', 'desc')->get();
+        } else {
+            $limit = $request->input('limit', 15);
+            $participant = $training->participant()->orderBy('id', 'desc')->paginate($limit);
+        }
         return ParticipantResource::collection($participant);
     }
 
