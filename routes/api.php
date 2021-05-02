@@ -71,7 +71,8 @@ Route::middleware('auth:sanctum')->group(function () {
 
     Route::prefix('budged_performance')->group(function () {
         Route::get('{user:id}/get', [GetBudgedPerformanceController::class, 'fetch']);
-        Route::get('{province_id}/by_province', [GetBudgedPerformanceController::class, 'by_province']);
+        Route::get('{province_id}/by_province', [GetBudgedPerformanceController::class, 'all_data']);
+        Route::get('all_budged_performance', [GetBudgedPerformanceController::class, 'all_data']);
         Route::get('persentase_budged_realization', [GetBudgedPerformanceController::class, 'persentase_budged_realization']);
         Route::post('update', UpdateBudgedPerformanceController::class);
     });

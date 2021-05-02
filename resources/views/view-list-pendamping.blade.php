@@ -6,6 +6,7 @@
 	<div class="container">
 		<div class="d-flex justify-content-between align-items-center mb-2">
 			<h4 id="title">List Pendamping</h4>
+			<a href="{{ url('unduh-pendamping-lengkap/by_user/'.$id) }}" class="btn btn-sm btn-outline-primary mb-1" target="_blank">Unduh Pendamping Lengkap</a>
 		</div>
 		<div class="card card-custom none" id="data">
 			<div class="table-custom">

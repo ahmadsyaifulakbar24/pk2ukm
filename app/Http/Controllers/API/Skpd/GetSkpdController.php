@@ -14,6 +14,10 @@ class GetSkpdController extends Controller
 {
     public function get(Request $request, $user_id = null) 
     {
+        $this->validate($request, [
+            'use_limit' => ['nullable', 'in:true,false'],
+        ]);
+
         if($user_id) {
             $skpd = Skpd::where('user_id', $user_id)->first();
 
@@ -28,8 +32,12 @@ class GetSkpdController extends Controller
                 'success get data skpd'
             );
         } else {
-            $limit = $request->input('limit', 15);
-            $skpd = Skpd::paginate($limit);
+            if($request->use_limit == 'true') {
+                $limit = $request->input('limit', 15);
+                $skpd = Skpd::paginate($limit);
+            } else {
+                $skpd = Skpd::all();
+            }
             return SkpdResource::collection($skpd);
         }
     }

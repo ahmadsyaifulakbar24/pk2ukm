@@ -20,9 +20,8 @@ class GetCompanionController extends Controller
 
         
         if(!$request->parent_user_id && !$request->user_id) {
-            return ResponseFormatter::error([
-                'message' => 'wrong parameter'
-            ], 'failed get companion data', 401);
+            $companion = Companion::all();
+            $return_companion = CompanionResource::collection($companion);
         }
         
         if($request->parent_user_id) {

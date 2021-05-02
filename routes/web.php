@@ -133,5 +133,25 @@ Route::group(['middleware'=>['beforeMiddleware']], function () {
     Route::get('unduh-peserta/{training_id}', function($training_id) {
         return view('export/peserta-pelatihan', compact('training_id'));
     });
+
+    Route::get('unduh-profile-peserta/{peserta_id}', function($peserta_id) {
+        return view('export/profile-peserta', compact('peserta_id'));
+    });
+
+    Route::get('unduh-pendamping-lengkap/{param}', function($param) {
+        return view('export/pendamping-lengkap', compact('param'));
+    });
+
+    Route::get('unduh-pendamping-lengkap/by_user/{user_id}', function($user_id) {
+        return view('export/pendamping-lengkap', ['param' => 'user_id', 'user_id' => $user_id]);
+    });
+    
+    Route::get('unduh-skpd-lengkap', function() {
+        return view('export/skpd-lengkap');
+    });
+
+    Route::get('unduh-kinerja-anggaran', function() {
+        return view('export/kinerja-anggaran');
+    });
 });
 

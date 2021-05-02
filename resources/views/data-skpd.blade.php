@@ -6,7 +6,7 @@
 	<div class="container">
 		<div class="d-flex justify-content-between align-items-center mb-2">
 			<h4>Data SKPD</h4>
-			<div class="btn btn-sm btn-outline-primary mb-1">Unduh Data SKPD</div>
+			<a href="{{ url('unduh-skpd-lengkap') }}" class="btn btn-sm btn-outline-primary mb-1" target="_blank">Unduh Data SKPD</a>
 		</div>
 		<div class="none" id="card">
 			<div class="row" id="data"></div>

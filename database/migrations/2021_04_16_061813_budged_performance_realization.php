@@ -29,7 +29,8 @@ class BudgedPerformanceRealization extends Migration
                 participant1.target_participant1 AS realization_participant1,
                 participant2.target_participant2 AS realization_participant2,
                 a.target_companion,
-                companion.realization_companion AS realization_companion
+                companion1.realization_companion1 AS realization_companion1,
+                companion2.realization_companion2 AS realization_companion2
             FROM
             budged_performances a
             LEFT JOIN 
@@ -37,7 +38,7 @@ class BudgedPerformanceRealization extends Migration
                 SELECT  b.user_id, COUNT(*) as target_participant1
                 FROM participants AS a
                 LEFT JOIN trainings AS b ON a.training_id = b.id
-                WHERE MONTH(b.finish_date) BETWEEN 7 AND 12
+                WHERE MONTH(b.finish_date) BETWEEN 1 AND 6
                 GROUP BY b.user_id
             ) AS participant1 ON a.user_id = participant1.user_id
             
@@ -47,17 +48,27 @@ class BudgedPerformanceRealization extends Migration
                 SELECT  b.user_id, COUNT(*) as target_participant2
                 FROM participants AS a
                 LEFT JOIN trainings AS b ON a.training_id = b.id
-                WHERE MONTH(b.finish_date) BETWEEN 1 AND 6
+                WHERE MONTH(b.finish_date) BETWEEN 7 AND 12
                 GROUP BY b.user_id
             ) AS participant2 ON participant1.user_id = participant2.user_id
             
             LEFT JOIN
             
             (
-                SELECT parent_user_id, COUNT(*) as realization_companion
+                SELECT parent_user_id, user_id, COUNT(*) as realization_companion1
                 FROM companions
+                WHERE MONTH(companions.created_at) BETWEEN 1 AND 6
                 GROUP BY parent_user_id
-            ) AS companion ON a.user_id = companion.parent_user_id
+            ) AS companion1 ON a.user_id = companion1.parent_user_id
+
+            LEFT JOIN
+            
+            (
+                SELECT parent_user_id, COUNT(*) as realization_companion2
+                FROM companions
+                WHERE MONTH(companions.created_at) BETWEEN 7 AND 12
+                GROUP BY parent_user_id
+            ) AS companion2 ON companion1.user_id = companion2.parent_user_id
         ');
     }
 

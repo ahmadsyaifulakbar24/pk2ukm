@@ -15,7 +15,7 @@ class BudgedPerformanceResource extends JsonResource
      */
     public function toArray($request)
     {
-        $realization = DB::table('vw_budged_performance_realization')->select('realization_participant1', 'realization_participant2', 'realization_companion')->where('id', $this->id)->first();
+        $realization = DB::table('vw_budged_performance_realization')->select('realization_participant1', 'realization_participant2', 'realization_companion1', 'realization_companion2')->where('id', $this->id)->first();
         return [
             'id' => $this->id,
             'user' => $this->user,
@@ -30,8 +30,9 @@ class BudgedPerformanceResource extends JsonResource
             'realization_participant2' => $realization->realization_participant2,
             'persentase_realization_participant' => (($realization->realization_participant1 + $realization->realization_participant2) * 100) / $this->target_participant,
             'target_companion' => $this->target_companion,
-            'realization_companion' => $realization->realization_companion,
-            'persentase_realizaiton_companion' => ($realization->realization_companion * 100) / $this->target_companion
+            'realization_companion1' => $realization->realization_companion1,
+            'realization_companion2' => $realization->realization_companion2,
+            'persentase_realizaiton_companion' => (($realization->realization_companion1 + $realization->realization_companion2) * 100) / $this->target_companion
         ];
     }
 }

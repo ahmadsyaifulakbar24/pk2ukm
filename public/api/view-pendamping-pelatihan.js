@@ -23,7 +23,7 @@ function get_data(page) {
                     append = `<tr>
                     	<td class="text-center">${from}.</td>	
 		            	<td><a href="${root}list-pendamping/${value.id}">${name}</a></td>
-		            	<td class="text-center">${value.total_training}</td>
+		            	<td class="text-center">${value.total_companion}</td>
 		            </tr>`
                     $('#table').append(append)
                     from++

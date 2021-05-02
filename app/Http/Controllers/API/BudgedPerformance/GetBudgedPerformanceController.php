@@ -21,11 +21,16 @@ class GetBudgedPerformanceController extends Controller
         );
     }
 
-    public function by_province($province_id) 
+    public function all_data($province_id = null) 
     {
-        $user_budged_performance = User::with('budged_performance')->where('province_id', $province_id)->get();
+        $user = User::query();
+        $user->with('budged_performance')->where('role_id', 200);
+        if($province_id) {
+            $user->where('province_id', $province_id);
+        }
+        $user->orderBy('order_province', 'ASC')->orderBy('order_city', 'ASC');
         return ResponseFormatter::success(
-            UserBudgedPerformanceResource::collection($user_budged_performance),
+            UserBudgedPerformanceResource::collection($user->get()),
             'success get budged performance by id'
         );
     }

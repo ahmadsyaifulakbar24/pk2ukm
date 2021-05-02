@@ -20,6 +20,7 @@ class UserBudgedPerformanceResource extends JsonResource
             'name' => $this->name,
             'username' => $this->username,
             'province' => $this->province,
+            'order_province' => $this->order_province,
             'districts_city' => new DistrictsCityResource($this->districts_city),
             'role_id' => $this->role_id,
             'profile_photo_url' => $this->profile_photo_url,

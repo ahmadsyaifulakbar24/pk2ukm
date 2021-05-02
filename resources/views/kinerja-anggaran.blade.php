@@ -6,7 +6,7 @@
 	<div class="container">
 		<div class="d-flex justify-content-between align-items-center mb-2">
 			<h4>Kinerja Anggaran</h4>
-			<div class="btn btn-sm btn-outline-primary mb-1">Unduh Kinerja Anggaran</div>
+			<a href="{{ url('unduh-kinerja-anggaran') }}" class="btn btn-sm btn-outline-primary mb-1" target="_blank">Unduh Kinerja Anggaran</a>
 		</div>
 		<div class="none" id="card">
 			<div class="row" id="data"></div>

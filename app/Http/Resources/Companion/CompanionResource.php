@@ -16,6 +16,10 @@ class CompanionResource extends JsonResource
     public function toArray($request)
     {
         return [
+            'parent_user' => [
+                'name' => $this->parent_user->name,
+                'province' => $this->parent_user->province->province
+            ],
             'user_id' => $this->user_id,
             'name' => $this->user->name,
             'username' => $this->user->username,

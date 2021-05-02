@@ -6,7 +6,7 @@
 	<div class="container">
 		<div class="d-flex justify-content-between align-items-center mb-2">
 			<h4 id="title">Data Peserta</h4>
-			<div class="btn btn-sm btn-outline-primary mb-1">Unduh Peserta</div>
+			<a href="{{ url('unduh-profile-peserta/'.$id) }}" class="btn btn-sm btn-outline-primary mb-1" target="_blank">Unduh Profile</a>
 		</div>
 		<div class="none" id="card">
 			<div class="row">

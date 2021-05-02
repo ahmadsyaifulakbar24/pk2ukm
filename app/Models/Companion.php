@@ -31,6 +31,11 @@ class Companion extends Model
         return $this->belongsTo(User::class, 'user_id');
     }
 
+    public function parent_user() 
+    {
+        return $this->belongsTo(User::class, 'parent_user_id');
+    }
+
     public function  religion()
     {
         return $this->belongsTo(Param::class, 'religion_id');
