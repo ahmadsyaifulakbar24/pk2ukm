@@ -228,3 +228,107 @@ $.ajax({
 		})
     }
 })
+
+// Rekapitulasi per provoinsi
+$.ajax({
+	url: `${api_url}param/province`,
+    type: 'GET',
+    beforeSend: function(xhr) {
+        xhr.setRequestHeader("Authorization", "Bearer " + localStorage.getItem('token'))
+	},
+	success: function (result) {
+		let append
+		$.each(result.data, function (index, province) {
+			append += `
+				<option value="${province.id}">${province.province}</option>
+			`
+		})
+		$("#select-province").append(append)
+	}
+})
+// Rekapitulasi per provoinsi
+$.ajax({
+	url: `${api_url}param/province`,
+    type: 'GET',
+    beforeSend: function(xhr) {
+        xhr.setRequestHeader("Authorization", "Bearer " + localStorage.getItem('token'))
+	},
+	success: function (result) {
+		let append
+		$.each(result.data, function (index, province) {
+			append += `
+				<option value="${province.id}">${province.province}</option>
+			`
+		})
+		$("#select-province").append(append)
+	}
+})
+
+$(".cekRekapitulasiProvinsi").click(function () {
+	$("#rekapitulasi-province-table").removeClass('d-none')
+	let province_id = $("#select-province option:selected").val()
+	let type = $(this).data('type')
+	rekapitulasiProvinsi(province_id, type)
+});
+
+function rekapitulasiProvinsi(province_id, type) {
+	if (type == 'budget') {
+		$(".th-budget").show()
+		$(".th-participant").hide()
+		$(".th-companion").hide()
+	} else if (type == 'participant') {
+		$(".th-budget").hide()
+		$(".th-participant").show()
+		$(".th-companion").hide()
+	} else if (type == 'companion') {
+		$(".th-budget").hide()
+		$(".th-participant").hide()
+		$(".th-companion").show()
+	}
+
+	$("#rekapitulasi-provinsi").html('');
+    $.ajax({
+        url: `${api_url}budged_performance/${province_id}/by_province`,
+        type: 'GET',
+        beforeSend: function(xhr) {
+            xhr.setRequestHeader("Authorization", "Bearer " + localStorage.getItem('token'))
+        },
+		success: function (result) {
+            let append
+            let no = 1
+            $.each(result.data, function (index, budget) {
+                let budget_realizaition = budget.budged_performance.budged_realization1 + budget.budged_performance.budged_realization2
+                let realizaiton_participant = budget.budged_performance.realization_participant1 + budget.budged_performance.realization_participant2
+                let realizaiton_companion = budget.budged_performance.realization_companion1 + budget.budged_performance.realization_companion2
+                append += '<tr>'
+                append += `
+                    <td>${no++}</td>
+                    <td>${budget.province.province}</td>
+                    <td>${budget.name}</td>
+                `
+                if (type == 'budget') {
+                    append += `
+                        <td>${budget.budged_performance.budged}</td>
+                        <td>${budget_realizaition}</td>
+                        <td>${(budget_realizaition * 100 / budget.budged_performance.budged).toFixed(2)}%</td>
+                    `
+                } else if (type == 'participant') {
+                    append += `
+                        <td>${budget.budged_performance.target_participant}</td>
+                        <td>${realizaiton_participant}</td>
+                        <td>${(realizaiton_participant * 100 / budget.budged_performance.target_participant).toFixed(2)}%</td>
+                    `
+                } else if (type == 'companion') {
+                    append += `
+                        <td>${budget.budged_performance.target_companion}</td>
+                        <td>${realizaiton_companion}</td>
+                        <td>${(realizaiton_companion * 100 / budget.budged_performance.target_companion).toFixed(2)}%</td>
+                    `
+                }
+    
+                append += '</tr>'
+            })
+            $("#rekapitulasi-provinsi").append(append)
+        }
+    })
+}

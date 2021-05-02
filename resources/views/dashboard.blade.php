@@ -51,6 +51,41 @@
 				<div class="card card-custom">
 					<div class="card-body">
 						<h6>Rekapitulasi per Provinsi</h6>
+						<div class="input-group mb-3">
+							<select class="custom-select" id="select-province"></select>
+							<button class="btn btn-primary ml-3 cekRekapitulasiProvinsi" data-type="budget">Anggaran</button>
+							<button class="btn btn-primary ml-3 cekRekapitulasiProvinsi" data-type="participant">Peserta</button>
+							<button class="btn btn-primary ml-3 cekRekapitulasiProvinsi" data-type="companion">Pendamping</button>
+						</div>
+						<div id="rekapitulasi-province-table" class="table-responsive d-none">
+							<table class="table">
+								<thead>
+									<tr>
+										<th>No</th>
+										<th>Provinsi</th>
+										<th>Pengguna</th>
+		
+										{{-- Anggaran --}}
+										<th class="th-budget">Pagu Anggaran</th>
+										<th class="th-budget">Realisasi Anggaran</th>
+										<th class="th-budget">Persentase</th>
+		
+										{{-- Peserta --}}
+										<th class="th-participant">Target Peserta</th>
+										<th class="th-participant">Realisasi Peserta</th>
+										<th class="th-participant">Persentase</th>
+		
+										{{-- Pendamping --}}
+										<th class="th-companion">Target Pendamping</th>
+										<th class="th-companion">Realiasi Pendamping</th>
+										<th class="th-companion">Persentase</th>
+									</tr>
+								</thead>
+								<tbody id="rekapitulasi-provinsi">
+	
+								</tbody>
+							</table>
+						</div>
 					</div>
 				</div>
 			</div>
