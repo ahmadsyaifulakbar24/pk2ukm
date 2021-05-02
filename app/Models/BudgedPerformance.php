@@ -29,12 +29,12 @@ class BudgedPerformance extends Model
 
     public function getDocumentBudgedRealization1UrlAttribute()
     {
-        return url('') . Storage::url($this->attributes['document_budged_realization1']);
+        return ($this->attributes['document_budged_realization1']) ? url('') . Storage::url($this->attributes['document_budged_realization1']) : NULL;
     }
 
     public function getDocumentBudgedRealization2UrlAttribute()
     {
-        return url('') . Storage::url($this->attributes['document_budged_realization2']);
+        return ($this->attributes['document_budged_realization2']) ? url('') . Storage::url($this->attributes['document_budged_realization2']) : NULL;
     }
     public function user()
     {

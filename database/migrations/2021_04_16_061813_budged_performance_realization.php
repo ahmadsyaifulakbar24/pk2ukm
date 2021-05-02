@@ -26,11 +26,11 @@ class BudgedPerformanceRealization extends Migration
                 a.budged_realization2,
                 a.document_budged_realization2,
                 a.target_participant,
-                participant1.target_participant1 AS realization_participant1,
-                participant2.target_participant2 AS realization_participant2,
+                IFNULL(participant1.target_participant1, 0) AS realization_participant1,
+                IFNULL(participant2.target_participant2, 0) AS realization_participant2,
                 a.target_companion,
-                companion1.realization_companion1 AS realization_companion1,
-                companion2.realization_companion2 AS realization_companion2
+                IFNULL(companion1.realization_companion1, 0) AS realization_companion1,
+                IFNULL(companion2.realization_companion2, 0) AS realization_companion2
             FROM
             budged_performances a
             LEFT JOIN 

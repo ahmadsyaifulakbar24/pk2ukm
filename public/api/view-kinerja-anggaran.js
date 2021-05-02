@@ -16,14 +16,15 @@ $.ajax({
         	value.budged_performance.realization_participant2 != null ? realisasi_peserta_tahap2 = value.budged_performance.realization_participant2 : realisasi_peserta_tahap2 = 0
 
         	value.budged_performance.target_companion != null ? target_pendamping = value.budged_performance.target_companion : target_pendamping = 0
-        	value.budged_performance.realization_companion != null ? realisasi_pendamping = value.budged_performance.realization_companion : realisasi_pendamping = 0
+        	value.budged_performance.realization_companion1 != null ? realisasi_pendamping_tahap1 = value.budged_performance.realization_companion1 : realisasi_pendamping_tahap1 = 0
+        	value.budged_performance.realization_companion2 != null ? realisasi_pendamping_tahap2 = value.budged_performance.realization_companion2 : realisasi_pendamping_tahap2 = 0
 
-        	if (value.budged_performance.document_budged_realization1 != `${root}storage/0`) {
+        	if (value.budged_performance.document_budged_realization1 != null) {
         		file_tahap_1 = `<a href="${value.budged_performance.document_budged_realization1}" target="_blank" class="btn btn-sm btn-outline-primary">Download file</a>`
         	} else {
 	        	file_tahap_1 = `Belum upload file`
         	}
-        	if (value.budged_performance.document_budged_realization2 != `${root}storage/0`) {
+        	if (value.budged_performance.document_budged_realization2 != null) {
         		file_tahap_2 = `<a href="${value.budged_performance.document_budged_realization2}" target="_blank" class="btn btn-sm btn-outline-primary">Download file</a>`
         	} else {
 	        	file_tahap_2 = `Belum upload file`
@@ -78,7 +79,7 @@ $.ajax({
 		                <div class="row">
 		                    <label class="col-form-label col-6">Realisasi Pendamping</label>
 		                    <div class="col-form-label col text-center">:</div>
-		                    <div class="col-form-label col-5">${convert(realisasi_pendamping)}</div>
+		                    <div class="col-form-label col-5">${convert(realisasi_pendamping_tahap1+realisasi_pendamping_tahap2)}</div>
 		                </div>
 		                <hr>
 						<h6>File Realisasi Anggaran</h6>

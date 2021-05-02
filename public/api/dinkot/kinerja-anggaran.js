@@ -17,7 +17,8 @@ $.ajax({
     	value.realization_participant2 != null ? realisasi_peserta_tahap2 = value.realization_participant2 : realisasi_peserta_tahap2 = 0
 
     	value.document_budged_realization1 != null ? target_pendamping = value.target_companion : target_pendamping = 0
-    	value.realization_companion != null ? realisasi_pendamping = value.realization_companion : realisasi_pendamping = 0
+    	value.realization_companion1 != null ? realisasi_pendamping_tahap1 = value.realization_companion1 : realisasi_pendamping_tahap1 = 0
+    	value.realization_companion2 != null ? realisasi_pendamping_tahap2 = value.realization_companion2 : realisasi_pendamping_tahap2 = 0
 
     	if (value.document_budged_realization1 != `${root}storage/0`) {
     		file_tahap_1 = `<a href="${value.document_budged_realization1}" target="_blank" class="btn btn-sm btn-outline-primary">Download file</a>`
@@ -39,7 +40,7 @@ $.ajax({
         $('#realization_participant2').html(convert(realisasi_peserta_tahap2))
         
         $('#target_companion').html(convert(target_pendamping))
-        $('#realization_companion').html(convert(realisasi_pendamping))
+        $('#realization_companion').html(convert(realisasi_pendamping_tahap1 + realisasi_pendamping_tahap2))
         
         $('#document_budged_realization1').html(file_tahap_1)
         $('#document_budged_realization2').html(file_tahap_2)
