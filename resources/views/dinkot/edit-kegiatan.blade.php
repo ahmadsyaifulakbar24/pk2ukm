@@ -44,7 +44,7 @@
                         <div class="invalid-feedback" id="place-feedback"></div>
                     </div>
                 </div>
-                <div class="form-group row pb-3">
+                <div class="form-group row">
                     <label for="districts_city_id" class="col-form-label col-md-4">Kab/Kota Kegiatan</label>
                     <div class="col-md-8">
                     	<select id="districts_city_id" class="custom-select" role="button">
@@ -54,6 +54,17 @@
                     </div>
                 </div>
                 <div class="form-group row">
+                    <label for="status" class="col-form-label col-md-4">Status</label>
+                    <div class="col-md-8">
+                    	<select id="status" class="custom-select" role="button">
+                    		<option disabled selected>Pilih</option>
+                    		<option value="publish">Dibuka</option>
+                    		<option value="unpublish">Ditutup</option>
+                    	</select>
+                        <div class="invalid-feedback" id="status-feedback"></div>
+                    </div>
+                </div>
+                <div class="form-group row pt-3">
                     <div class="offset-md-4 col-md-8">
                         <button class="btn btn-block btn-primary" id="submit">Simpan</button>
                     </div>

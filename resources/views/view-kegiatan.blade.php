@@ -41,6 +41,11 @@
 	                    <div class="col-form-label col text-center">:</div>
 	                    <div class="col-form-label col-lg-8 col-6" id="province"></div>
 	                </div>
+	                <div class="row">
+	                    <label class="col-form-label col-lg-3 col-5">Status</label>
+	                    <div class="col-form-label col text-center">:</div>
+	                    <div class="col-form-label col-lg-8 col-6" id="status"></div>
+	                </div>
 	            </div>
 	        </div>
 			<div class="card card-custom none" id="data">

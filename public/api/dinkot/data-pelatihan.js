@@ -11,13 +11,14 @@ function get_data(page) {
             xhr.setRequestHeader("Authorization", "Bearer " + token)
         },
         success: function(result) {
-            // console.log(result)
             $('#table').html('')
             $('#loading').hide()
             if (result.data.length > 0) {
 	            $('#card').show()
                 let from = result.meta.from
                 $.each(result.data, function(index, value) {
+		            // console.log(value)
+		            value.status == 'publish' ? status = 'Dibuka' : status = 'Ditutup'
 					append = `<tr data-id="${value.id}" data-name="${value.training_title}">
 		            	<td class="text-center">${from}.</td>
 		            	<td><a href="${root}kegiatan/${value.id}">${value.training_title}</a></td>
@@ -25,6 +26,7 @@ function get_data(page) {
 		            	<td>${tanggal(value.start_date)} s.d ${tanggal(value.finish_date)}</td>
 		            	<td>${value.user.name}</td>
 		            	<td class="text-center">${value.total_participant}</td>
+		            	<td>${status}</td>
 		            	<td><a href="${root}kegiatan/edit/${value.id}" class="btn btn-block btn-sm btn-outline-primary">Edit</a></td>
 		            	<td><div class="btn btn-block btn-sm btn-outline-danger remove">Delete</div></td>
 		            </tr>`

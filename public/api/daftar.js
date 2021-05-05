@@ -166,9 +166,13 @@ function get_kegiatan() {
 	    success: function(result) {
 	        let value = result.data
 	        // console.log(value)
-
-		    $('#card').show()
-		    $('#loading').hide()
+	        if (value.status == 'publish') {
+			    $('#card').show()
+			    $('#loading').hide()
+			} else {
+			    $('#danger').show()
+			    $('#loading').hide()
+			}
 	    },
 	    error: function(xhr) {
             let err = xhr.responseJSON.message

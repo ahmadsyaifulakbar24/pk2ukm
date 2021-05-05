@@ -65,6 +65,7 @@ function get_training_by_id() {
 	        $('#finish_date').val(value.finish_date)
 	        $('#place').val(value.place)
 	        $('#districts_city_id').val(value.districts_city.id)
+	        $('#status').val(value.status)
 		    
 		    $('#card').show()
 		    $('#loading').hide()
@@ -75,6 +76,25 @@ function get_training_by_id() {
 
 $(document).ajaxStop(function() {
     stop == false ? get_training_by_id() : '' 
+})
+
+$(document).on('change', '#status', function() {
+    let value = $(this).val()
+    $('#submit').attr('disabled', true)
+    $.ajax({
+        url: `${api_url}training/${id}/update_status`,
+        type: 'PATCH',
+        data: {
+        	status: value
+        },
+        beforeSend: function(xhr) {
+            xhr.setRequestHeader("Authorization", "Bearer " + token)
+        },
+        success: function(result) {
+            // console.log(result.data)
+		    $('#submit').attr('disabled', false)
+        }
+    })
 })
 
 $('form').submit(function(e) {

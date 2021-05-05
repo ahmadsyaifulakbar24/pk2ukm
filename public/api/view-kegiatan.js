@@ -20,7 +20,8 @@ $.ajax({
         $('#date').html(`${tanggal(value.start_date)} s.d ${tanggal(value.finish_date)}`)
         $('#districts_city').html(value.districts_city.districts_city)
         $('#province').html(value.province.province)
-
+        value.status == 'publish' ? status = 'Dibuka' : status = 'Ditutup'
+        $('#status').html(status)
     }
 })
 

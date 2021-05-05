@@ -19,6 +19,7 @@
 								<th class="text-truncate">Tanggal Pelaksanaan</th>
 								<th class="text-truncate">User</th>
 								<th class="text-truncate">Total Peserta</th>
+								<th class="text-truncate">Status</th>
 							</tr>
 						</thead>
 						<tbody id="table"></tbody>
